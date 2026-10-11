@@ -26,7 +26,7 @@
       "type": "exercise",
       "id": "2a",
       "title": "a",
-      "instructions": "Write the words in the chart.",
+      "instructions": "Move the words into the correct sound columns.",
       "layout": "pronunciation-choice-table",
       "hideAnswersOnError": true,
       "items": [
@@ -370,10 +370,12 @@
       ]
     },
     {
-      "type": "info",
+      "type": "audio",
       "id": "2d",
       "title": "d",
-      "text": "1.2 Listen and check. Then listen again and repeat the words."
+      "text": "1.2 Listen and check. Then listen again and repeat the words.",
+      "audio": "audio/English_File_4e_Intermediate_WB_1.2.mp3",
+      "response": false
     },
     {
       "type": "section",
@@ -568,7 +570,9 @@
           "acceptedAnswers": [
             "That cake looks",
             "that cake looks"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         },
         {
           "id": "4",
@@ -580,7 +584,9 @@
             "✓",
             "✔",
             "correct"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         },
         {
           "id": "5",
@@ -591,7 +597,9 @@
           "acceptedAnswers": [
             "Do you think",
             "do you think"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         },
         {
           "id": "6",
@@ -603,7 +611,9 @@
             "✓",
             "✔",
             "correct"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         },
         {
           "id": "7",
@@ -615,7 +625,9 @@
             "✓",
             "✔",
             "correct"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         },
         {
           "id": "8",
@@ -626,7 +638,9 @@
           "acceptedAnswers": [
             "I love",
             "i love"
-          ]
+          ],
+          "allowTick": true,
+          "placeholder": "Correct the highlighted phrase, or tick if the sentence is correct"
         }
       ]
     },
@@ -820,8 +834,11 @@
       "items": [
         {
           "id": "greeting",
-          "displayOnly": true,
-          "prompt": "Hi __________,"
+          "number": "",
+          "prompt": "Hi",
+          "input": "text",
+          "scored": false,
+          "placeholder": "name"
         },
         {
           "id": "starter",
@@ -829,10 +846,32 @@
           "prompt": "Right now, I’m doing my English homework."
         },
         {
-          "id": "body",
-          "input": "textarea",
+          "id": "line-1",
+          "number": "",
+          "input": "text",
           "scored": false,
-          "placeholder": ""
+          "placeholder": "Write your next sentence..."
+        },
+        {
+          "id": "line-2",
+          "number": "",
+          "input": "text",
+          "scored": false,
+          "placeholder": "Continue your email..."
+        },
+        {
+          "id": "line-3",
+          "number": "",
+          "input": "text",
+          "scored": false,
+          "placeholder": "Continue your email..."
+        },
+        {
+          "id": "line-4",
+          "number": "",
+          "input": "text",
+          "scored": false,
+          "placeholder": "Finish the main part of your email..."
         },
         {
           "id": "hope",
@@ -846,9 +885,10 @@
         },
         {
           "id": "signature",
+          "number": "",
           "input": "text",
           "scored": false,
-          "placeholder": ""
+          "placeholder": "your name"
         }
       ]
     }
