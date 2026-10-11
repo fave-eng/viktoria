@@ -837,6 +837,86 @@ window.GRAMMAR_DATA = [
       line-height: 1.55;
     }
 
+    .v-compare-wrap {
+      overflow-x: auto;
+      margin-top: 4px;
+      padding-bottom: 4px;
+    }
+    .v-compare-table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border: 1px solid #dbe3ef;
+      border-radius: 18px;
+      background: #fff;
+    }
+    .v-compare-table th,
+    .v-compare-table td {
+      padding: 15px 16px;
+      vertical-align: top;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+    }
+    .v-compare-table th:last-child,
+    .v-compare-table td:last-child { border-right: 0; }
+    .v-compare-table tr:last-child td { border-bottom: 0; }
+    .v-compare-table thead th {
+      background: #111827;
+      color: #fff;
+      font-size: .92rem;
+    }
+    .v-compare-table thead th:nth-child(2) { background: #3730a3; }
+    .v-compare-table thead th:nth-child(3) { background: #6d28d9; }
+    .v-compare-label {
+      width: 22%;
+      min-width: 150px;
+      background: #f8fafc;
+      color: #334155;
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+    .v-formula {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 6px 9px;
+      border-radius: 9px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: .86rem;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+    .v-compare-table td:nth-child(3) .v-formula {
+      background: #f3e8ff;
+      color: #6d28d9;
+    }
+    .v-compare-example {
+      margin: 0;
+      color: #111827;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .v-compare-translation {
+      margin: 4px 0 0;
+      color: #64748b;
+      font-size: .9rem;
+      line-height: 1.45;
+    }
+    .v-compare-note {
+      margin: 14px 0 0;
+      padding: 13px 15px;
+      border-radius: 14px;
+      background: #f8fafc;
+      color: #475569;
+      line-height: 1.55;
+    }
+    .v-compare-note strong { color: #111827; }
+
     .v-state-groups {
       display: grid;
       grid-template-columns: repeat(2, minmax(0,1fr));
@@ -1053,6 +1133,113 @@ window.GRAMMAR_DATA = [
         <div class="v-grammar-section-head">
           <span class="v-grammar-number">1</span>
           <div>
+            <h2>Сравнение Present Simple и Present Continuous</h2>
+            <p>Эта таблица показывает не только, когда использовать каждое время, но и как построить утверждение, отрицание и вопрос.</p>
+          </div>
+        </div>
+
+        <div class="v-compare-wrap">
+          <table class="v-compare-table">
+            <thead>
+              <tr>
+                <th>Что строим</th>
+                <th>Present Simple</th>
+                <th>Present Continuous</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="v-compare-label">Когда используем</td>
+                <td>
+                  <span class="v-formula">обычно · регулярно · факт · состояние</span>
+                  <p class="v-compare-example">I work every day.</p>
+                  <p class="v-compare-translation">Я работаю каждый день.</p>
+                </td>
+                <td>
+                  <span class="v-formula">сейчас · в текущий период · временно</span>
+                  <p class="v-compare-example">I’m working now.</p>
+                  <p class="v-compare-translation">Я сейчас работаю.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="v-compare-label">Утверждение</td>
+                <td>
+                  <span class="v-formula">I / you / we / they + verb<br>he / she / it + verb-s</span>
+                  <p class="v-compare-example">She plays tennis every Friday.</p>
+                  <p class="v-compare-translation">Она играет в теннис каждую пятницу.</p>
+                </td>
+                <td>
+                  <span class="v-formula">subject + am / is / are + verb-ing</span>
+                  <p class="v-compare-example">She is playing tennis now.</p>
+                  <p class="v-compare-translation">Она сейчас играет в теннис.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="v-compare-label">Отрицание</td>
+                <td>
+                  <span class="v-formula">I / you / we / they + don’t + verb<br>he / she / it + doesn’t + verb</span>
+                  <p class="v-compare-example">She doesn’t play tennis on Mondays.</p>
+                  <p class="v-compare-translation">Она не играет в теннис по понедельникам.</p>
+                </td>
+                <td>
+                  <span class="v-formula">subject + am not / isn’t / aren’t + verb-ing</span>
+                  <p class="v-compare-example">She isn’t playing tennis now.</p>
+                  <p class="v-compare-translation">Она сейчас не играет в теннис.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="v-compare-label">Общий вопрос</td>
+                <td>
+                  <span class="v-formula">Do / Does + subject + verb?</span>
+                  <p class="v-compare-example">Does she play tennis every week?</p>
+                  <p class="v-compare-translation">Она играет в теннис каждую неделю?</p>
+                </td>
+                <td>
+                  <span class="v-formula">Am / Is / Are + subject + verb-ing?</span>
+                  <p class="v-compare-example">Is she playing tennis now?</p>
+                  <p class="v-compare-translation">Она сейчас играет в теннис?</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="v-compare-label">Wh-вопрос</td>
+                <td>
+                  <span class="v-formula">Wh-word + do / does + subject + verb?</span>
+                  <p class="v-compare-example">Where does she usually play tennis?</p>
+                  <p class="v-compare-translation">Где она обычно играет в теннис?</p>
+                </td>
+                <td>
+                  <span class="v-formula">Wh-word + am / is / are + subject + verb-ing?</span>
+                  <p class="v-compare-example">What is she doing right now?</p>
+                  <p class="v-compare-translation">Что она делает прямо сейчас?</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="v-compare-label">Краткий ответ</td>
+                <td>
+                  <span class="v-formula">Yes, she does. / No, she doesn’t.</span>
+                  <p class="v-compare-translation">В ответе повторяем do / does.</p>
+                </td>
+                <td>
+                  <span class="v-formula">Yes, she is. / No, she isn’t.</span>
+                  <p class="v-compare-translation">В ответе повторяем am / is / are.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="v-compare-note"><strong>Главное различие:</strong> в Present Simple для вопросов и отрицаний нужен помощник <b>do / does</b>, а в Present Continuous глагол <b>be</b> уже находится внутри конструкции: <b>am / is / are + verb-ing</b>.</p>
+      </section>
+
+      <section class="v-grammar-section">
+        <div class="v-grammar-section-head">
+          <span class="v-grammar-number">2</span>
+          <div>
             <h2>Глаголы состояния: почему они обычно не идут в Continuous</h2>
             <p>Они описывают не действие в процессе, а мнение, чувство, принадлежность, знание или восприятие.</p>
           </div>
@@ -1084,7 +1271,7 @@ window.GRAMMAR_DATA = [
 
       <section class="v-grammar-section">
         <div class="v-grammar-section-head">
-          <span class="v-grammar-number">2</span>
+          <span class="v-grammar-number">3</span>
           <div>
             <h2>Как образуется форма с -ing</h2>
             <p>Окончание не всегда просто добавляется. Смотри на последние буквы глагола и на ударение.</p>
@@ -1136,7 +1323,7 @@ window.GRAMMAR_DATA = [
 
       <section class="v-grammar-section">
         <div class="v-grammar-section-head">
-          <span class="v-grammar-number">3</span>
+          <span class="v-grammar-number">4</span>
           <div>
             <h2>Один глагол, два значения</h2>
             <p>Иногда выбор времени зависит не от самого глагола, а от его значения в конкретном предложении.</p>
