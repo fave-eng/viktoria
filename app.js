@@ -2387,14 +2387,14 @@
 
   function renderGrammarExercise(block, index) {
     const id = safeText(block.id, `grammar-exercise-${index + 1}`);
-    const title = escapeHtml(block.title || `Exercise ${index + 1}`);
-    const difficulty = safeText(block.difficulty, 'Practice');
+    const title = escapeHtml(block.title || `Упражнение ${index + 1}`);
+    const difficulty = safeText(block.difficulty, 'Практика');
     const wordBank = Array.isArray(block.wordBank) && block.wordBank.length
-      ? `<div class="word-bank" aria-label="Word bank"><strong class="word-bank-label">Word bank</strong>${block.wordBank.map((word) => `<span>${escapeHtml(word)}</span>`).join('')}</div>`
+      ? `<div class="word-bank" aria-label="Word bank"><strong class="word-bank-label">Слова</strong>${block.wordBank.map((word) => `<span>${escapeHtml(word)}</span>`).join('')}</div>`
       : '';
     return `<article class="card lesson-block exercise-card grammar-exercise-card" data-task="${escapeHtml(id)}" data-type="exercise" data-grammar-exercise="${index}">
       <div class="exercise-heading grammar-exercise-heading">
-        <div class="grammar-step-row"><span class="grammar-step-badge">Step ${index + 1}</span><span class="grammar-difficulty">${escapeHtml(difficulty)}</span></div>
+        <div class="grammar-step-row"><span class="grammar-step-badge">Шаг ${index + 1}</span><span class="grammar-difficulty">${escapeHtml(difficulty)}</span></div>
         <h3>${title}</h3>
         ${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}
         ${wordBank}
@@ -2413,7 +2413,7 @@
   function renderGrammarPractice(topic, root) {
     const exercises = Array.isArray(topic.exercises) ? topic.exercises : [];
     if (!exercises.length) {
-      root.innerHTML = emptyState('🧩', 'Practice has not been added yet', 'Exercises will appear with the teacher’s material.');
+      root.innerHTML = emptyState('🧩', 'Практика пока не добавлена', 'Упражнения появятся вместе с материалом преподавателя.');
       return;
     }
 
@@ -2422,8 +2422,8 @@
       const savedTopic = progress.topics[topic.id] || {};
       root.innerHTML = `${exercises.map((block, index) => renderGrammarExercise(block, index)).join('')}
         <div class="card grammar-practice-actions">
-          <div id="grammar-result"><h3>Practise step by step</h3><p class="muted">Start with the easier tasks and move on to the more challenging ones.</p></div>
-          <div class="button-row"><button class="btn btn-primary" type="button" id="check-grammar">Check exercises</button><button class="btn btn-secondary" type="button" id="retry-grammar">Start again</button></div>
+          <div id="grammar-result"><h3>Выполняй по шагам</h3><p class="muted">Начни с более простых заданий и постепенно переходи к сложным.</p></div>
+          <div class="button-row"><button class="btn btn-primary" type="button" id="check-grammar">Проверить</button><button class="btn btn-secondary" type="button" id="retry-grammar">Начать заново</button></div>
         </div>`;
 
       exercises.forEach((block, index) => {
@@ -2440,7 +2440,7 @@
         checkButton.disabled = true;
         retryButton.disabled = true;
         retryButton.hidden = true;
-        byId('grammar-result').innerHTML = '<h3>Topic completed</h3><p class="grammar-success-note">All answers are correct. The topic is marked as learned, and the answer fields are locked.</p>';
+        byId('grammar-result').innerHTML = '<h3>Тема пройдена</h3><p class="grammar-success-note">Все ответы правильные. Тема отмечена как изученная, поля ответов заблокированы.</p>';
         return;
       }
 
@@ -2458,7 +2458,7 @@
           total += Number(result.total || 0);
         });
         const percent = safePercent(correct, total);
-        byId('grammar-result').innerHTML = `<h3>Score: ${correct} of ${total}</h3><p class="muted">${percent}% correct</p>${percent === 100 ? '<p class="grammar-success-note">Excellent! All answers are correct. The topic is marked as learned.</p>' : '<p class="grammar-success-note">There are errors. Correct them and check the exercises again.</p>'}`;
+        byId('grammar-result').innerHTML = `<h3>Результат: ${correct} из ${total}</h3><p class="muted">${percent}% правильных ответов</p>${percent === 100 ? '<p class="grammar-success-note">Отлично! Все ответы правильные. Тема отмечена как изученная.</p>' : '<p class="grammar-success-note">Есть ошибки. Исправь их и проверь упражнения ещё раз.</p>'}`;
         const latestProgress = window.ProgressService.loadGrammarProgress();
         const previous = latestProgress.topics[topic.id] || {};
         latestProgress.topics[topic.id] = {
@@ -2489,12 +2489,12 @@
     const topic = GRAMMAR_DATA.find((item) => item.id === id && item.status !== 'draft');
     const root = byId('grammar-topic-root');
     if (!topic || topic.status === 'locked') {
-      root.innerHTML = emptyState('📐', 'This grammar topic has not been published yet', 'The material will appear after the teacher publishes it.');
+      root.innerHTML = emptyState('📐', 'Эта тема грамматики пока не опубликована', 'Материал появится после публикации преподавателем.');
       return;
     }
 
-    byId('grammar-hero-title').textContent = safeText(topic.title, 'Grammar');
-    byId('grammar-hero-subtitle').textContent = `${safeText(topic.level, student.level)} Level · explanations and practice`;
+    byId('grammar-hero-title').textContent = safeText(topic.title, 'Грамматика');
+    byId('grammar-hero-subtitle').textContent = `${safeText(topic.level, student.level)} уровень · объяснение и практика`;
 
     const glanceCards = Array.isArray(topic.glanceCards) ? topic.glanceCards : [];
     const anchorLinks = Array.isArray(topic.anchorLinks) ? topic.anchorLinks : [];
@@ -2506,24 +2506,24 @@
 
     root.innerHTML = `
       <article class="card grammar-intro-card">
-        <span class="eyebrow">Grammar focus</span>
+        <span class="eyebrow">Грамматика</span>
         <h2>${escapeHtml(topic.title)}</h2>
         <p class="muted grammar-lead">${escapeHtml(topic.explanation || '')}</p>
-        ${topic.formula ? `<div class="grammar-formula-box"><strong>Quick formula</strong><p>${escapeHtml(topic.formula)}</p></div>` : ''}
+        ${topic.formula ? `<div class="grammar-formula-box"><strong>Краткая формула</strong><p>${escapeHtml(topic.formula)}</p></div>` : ''}
         ${anchorLinks.length ? `<div class="grammar-anchor-links">${anchorLinks.map((link) => `<a class="grammar-anchor-link" href="#${escapeHtml(link.id)}">${escapeHtml(link.title)}</a>`).join('')}</div>` : ''}
       </article>
 
-      ${glanceCards.length ? `<section class="section" id="grammar-at-a-glance" aria-labelledby="grammar-at-a-glance-title"><div class="section-heading"><div><span class="eyebrow">Quick overview</span><h2 id="grammar-at-a-glance-title">How to choose the right form quickly</h2></div></div><div class="grammar-glance-grid">${glanceCards.map((card) => `<article class="card grammar-glance-card"><div class="grammar-glance-head"><span class="grammar-glance-icon">${escapeHtml(card.icon || '✦')}</span><div><h3>${escapeHtml(card.label || '')}</h3><p class="muted">${escapeHtml(card.hint || '')}</p></div></div><div class="grammar-pattern">${escapeHtml(card.pattern || '')}</div><p class="grammar-example-sentence">${escapeHtml(card.example || '')}</p></article>`).join('')}</div></section>` : ''}
+      ${glanceCards.length ? `<section class="section" id="grammar-at-a-glance" aria-labelledby="grammar-at-a-glance-title"><div class="section-heading"><div><span class="eyebrow">Кратко</span><h2 id="grammar-at-a-glance-title">Как быстро выбрать правильную форму</h2></div></div><div class="grammar-glance-grid">${glanceCards.map((card) => `<article class="card grammar-glance-card"><div class="grammar-glance-head"><span class="grammar-glance-icon">${escapeHtml(card.icon || '✦')}</span><div><h3>${escapeHtml(card.label || '')}</h3><p class="muted">${escapeHtml(card.hint || '')}</p></div></div><div class="grammar-pattern">${escapeHtml(card.pattern || '')}</div><p class="grammar-example-sentence">${escapeHtml(card.example || '')}</p></article>`).join('')}</div></section>` : ''}
 
-      ${miniRules.length ? `<section class="section" id="grammar-rule-map" aria-labelledby="grammar-rule-map-title"><div class="section-heading"><div><span class="eyebrow">Rule map</span><h2 id="grammar-rule-map-title">Step-by-step guide</h2></div></div><div class="grammar-mini-grid">${miniRules.map((rule) => `<article class="card grammar-mini-card"><h3>${escapeHtml(rule.title || '')}</h3><p>${escapeHtml(rule.text || '')}</p>${rule.example ? `<div class="grammar-mini-example">${escapeHtml(rule.example)}</div>` : ''}</article>`).join('')}</div></section>` : ''}
+      ${miniRules.length ? `<section class="section" id="grammar-rule-map" aria-labelledby="grammar-rule-map-title"><div class="section-heading"><div><span class="eyebrow">Правила</span><h2 id="grammar-rule-map-title">Объяснение по шагам</h2></div></div><div class="grammar-mini-grid">${miniRules.map((rule) => `<article class="card grammar-mini-card"><h3>${escapeHtml(rule.title || '')}</h3><p>${escapeHtml(rule.text || '')}</p>${rule.example ? `<div class="grammar-mini-example">${escapeHtml(rule.example)}</div>` : ''}</article>`).join('')}</div></section>` : ''}
 
-      ${tables.length ? `<section class="section" id="grammar-tables" aria-labelledby="grammar-tables-title"><div class="section-heading"><div><span class="eyebrow">Tables</span><h2 id="grammar-tables-title">Tables</h2></div></div><div class="list">${tables.map((table) => `<article class="card lesson-block"><h3>${escapeHtml(table.title || 'Table')}</h3>${grammarTable(table)}</article>`).join('')}</div></section>` : ''}
+      ${tables.length ? `<section class="section" id="grammar-tables" aria-labelledby="grammar-tables-title"><div class="section-heading"><div><span class="eyebrow">Таблицы</span><h2 id="grammar-tables-title">Сравнение форм</h2></div></div><div class="list">${tables.map((table) => `<article class="card lesson-block"><h3>${escapeHtml(table.title || 'Таблица')}</h3>${grammarTable(table)}</article>`).join('')}</div></section>` : ''}
 
-      ${exampleGroups.length || examples.length ? `<section class="section" id="grammar-examples" aria-labelledby="grammar-examples-title"><div class="section-heading"><div><span class="eyebrow">Examples</span><h2 id="grammar-examples-title">Examples in context</h2></div></div><div class="list">${exampleGroups.map((group) => `<article class="card lesson-block grammar-example-group"><h3>${escapeHtml(group.title || 'Examples')}</h3><div class="list">${(group.items || []).map((item) => `<p class="grammar-example-item">• ${escapeHtml(item)}</p>`).join('')}</div></article>`).join('')}${examples.length ? `<article class="card lesson-block grammar-example-group"><h3>More examples</h3><div class="list">${examples.map((example) => `<p class="grammar-example-item">• ${escapeHtml(example)}</p>`).join('')}</div></article>` : ''}</div></section>` : ''}
+      ${exampleGroups.length || examples.length ? `<section class="section" id="grammar-examples" aria-labelledby="grammar-examples-title"><div class="section-heading"><div><span class="eyebrow">Примеры</span><h2 id="grammar-examples-title">Примеры в контексте</h2></div></div><div class="list">${exampleGroups.map((group) => `<article class="card lesson-block grammar-example-group"><h3>${escapeHtml(group.title || 'Примеры')}</h3><div class="list">${(group.items || []).map((item) => `<p class="grammar-example-item">• ${escapeHtml(item)}</p>`).join('')}</div></article>`).join('')}${examples.length ? `<article class="card lesson-block grammar-example-group"><h3>Ещё примеры</h3><div class="list">${examples.map((example) => `<p class="grammar-example-item">• ${escapeHtml(example)}</p>`).join('')}</div></article>` : ''}</div></section>` : ''}
 
-      ${mistakes.length ? `<section class="section" id="grammar-mistakes" aria-labelledby="grammar-mistakes-title"><div class="section-heading"><div><span class="eyebrow">Common mistakes</span><h2 id="grammar-mistakes-title">Common mistakes</h2></div></div><article class="card info-card lesson-block"><div class="list">${mistakes.map((mistake) => `<p>• ${escapeHtml(mistake)}</p>`).join('')}</div></article></section>` : ''}
+      ${mistakes.length ? `<section class="section" id="grammar-mistakes" aria-labelledby="grammar-mistakes-title"><div class="section-heading"><div><span class="eyebrow">Важно</span><h2 id="grammar-mistakes-title">Частые ошибки</h2></div></div><article class="card info-card lesson-block"><div class="list">${mistakes.map((mistake) => `<p>• ${escapeHtml(mistake)}</p>`).join('')}</div></article></section>` : ''}
 
-      <section class="section" id="grammar-practice-section" aria-labelledby="grammar-practice-title"><div class="section-heading"><div><span class="eyebrow">Practice</span><h2 id="grammar-practice-title">${Array.isArray(topic.exercises) ? topic.exercises.length : 0} exercises: from easier to more challenging</h2></div></div><div id="grammar-quiz"></div></section>
+      <section class="section" id="grammar-practice-section" aria-labelledby="grammar-practice-title"><div class="section-heading"><div><span class="eyebrow">Практика</span><h2 id="grammar-practice-title">${Array.isArray(topic.exercises) ? topic.exercises.length : 0} упражнения: от простого к сложному</h2></div></div><div id="grammar-quiz"></div></section>
     `;
 
     renderGrammarPractice(topic, byId('grammar-quiz'));
