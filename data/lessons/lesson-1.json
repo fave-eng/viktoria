@@ -367,76 +367,110 @@
           "example": true,
           "exampleLabel": "EXAMPLE",
           "showExampleNumber": true,
-          "exampleMode": "gaps",
+          "exampleMode": "select",
           "segments": [
             "We don’t need ",
-            " tomatoes, we need ",
-            " ones."
+            " tomatoes, we need fresh ones."
           ],
-          "exampleAnswers": [
-            "tinned",
-            "fresh"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 5
         },
         {
           "id": "2",
           "number": 2,
-          "input": "gaps",
+          "input": "select",
           "segments": [
             "Are there any ",
             " peas in the freezer?"
           ],
-          "answers": [
-            "frozen"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 1
         },
         {
           "id": "3",
           "number": 3,
-          "input": "gaps",
+          "input": "select",
           "segments": [
             "I don’t like ",
             " fish, so I never eat sushi."
           ],
-          "answers": [
-            "raw"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 3
         },
         {
           "id": "4",
           "number": 4,
-          "input": "gaps",
+          "input": "select",
           "segments": [
             "Hannah’s on a diet, so she’s bought some ",
             " yoghurt to have for dessert."
           ],
-          "answers": [
-            "low-fat"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 2
         },
         {
           "id": "5",
           "number": 5,
-          "input": "gaps",
+          "input": "select",
           "segments": [
             "We buy ",
             " bread from the baker’s every morning."
           ],
-          "answers": [
-            "fresh"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 0
         },
         {
           "id": "6",
           "number": 6,
-          "input": "gaps",
+          "input": "select",
           "segments": [
             "Mexican food can be very ",
             "."
           ],
-          "answers": [
-            "spicy"
-          ]
+          "options": [
+            "fresh",
+            "frozen",
+            "low-fat",
+            "raw",
+            "spicy",
+            "tinned"
+          ],
+          "answer": 4
         }
       ]
     },
