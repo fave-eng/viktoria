@@ -272,8 +272,15 @@
           "number": 1,
           "example": true,
           "exampleLabel": "EXAMPLE",
-          "exampleTarget": "grilled salmon",
-          "showExampleNumber": true
+          "showExampleNumber": true,
+          "exampleMode": "gaps",
+          "segments": [
+            "",
+            " salmon"
+          ],
+          "exampleAnswers": [
+            "grilled"
+          ]
         },
         {
           "id": "2",
@@ -359,8 +366,17 @@
           "number": 1,
           "example": true,
           "exampleLabel": "EXAMPLE",
-          "exampleTarget": "We don’t need tinned tomatoes, we need fresh ones.",
-          "showExampleNumber": true
+          "showExampleNumber": true,
+          "exampleMode": "gaps",
+          "segments": [
+            "We don’t need ",
+            " tomatoes, we need ",
+            " ones."
+          ],
+          "exampleAnswers": [
+            "tinned",
+            "fresh"
+          ]
         },
         {
           "id": "2",
@@ -442,7 +458,7 @@
           "number": 1,
           "example": true,
           "prompt": "Are there any food or drinks you’d like to cut down on? Which one(s)?",
-          "exampleAnswer": "c"
+          "exampleAnswer": "to eat less of something"
         },
         {
           "id": "2",
@@ -450,9 +466,9 @@
           "prompt": "Have you ever tried to cut out any food or drinks completely? Which one(s)?",
           "input": "select",
           "options": [
-            "a",
-            "b",
-            "c"
+            "to stop eating something completely",
+            "to have lunch or dinner in a restaurant",
+            "to eat less of something"
           ],
           "answer": 0
         },
@@ -462,9 +478,9 @@
           "prompt": "Where do you usually go when you want to eat out? What do you usually have?",
           "input": "select",
           "options": [
-            "a",
-            "b",
-            "c"
+            "to stop eating something completely",
+            "to have lunch or dinner in a restaurant",
+            "to eat less of something"
           ],
           "answer": 1
         }
@@ -504,8 +520,6 @@
       "id": "1g",
       "title": "g · VOCABULARY FROM LISTENING",
       "instructions": "Complete the sentences.",
-      "image": "images/lesson-1-ex1g-tea.jpg",
-      "imageAlt": "A cup of tea and a teapot on a tray.",
       "inlineNumberedItems": true,
       "hideAnswersOnError": true,
       "items": [
@@ -514,8 +528,15 @@
           "number": 1,
           "example": true,
           "exampleLabel": "EXAMPLE",
-          "exampleTarget": "I miss drinking English tea when I go abroad.",
-          "showExampleNumber": true
+          "showExampleNumber": true,
+          "exampleMode": "gaps",
+          "segments": [
+            "I m",
+            " drinking English tea when I go abroad."
+          ],
+          "exampleAnswers": [
+            "iss"
+          ]
         },
         {
           "id": "2",
