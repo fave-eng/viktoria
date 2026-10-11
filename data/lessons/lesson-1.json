@@ -1,0 +1,599 @@
+{
+  "id": "lesson-1",
+  "number": 1,
+  "title": "1A Eating in...and out",
+  "subtitle": "Vocabulary: food and cooking",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-1",
+  "grammarIds": [],
+  "publishedAt": "2026-10-11",
+  "totalPoints": 30,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "sectionNumber": 1,
+      "eyebrow": "1A Eating in...and out",
+      "titleLead": "VOCABULARY",
+      "titleTail": "food and cooking"
+    },
+    {
+      "type": "exercise",
+      "id": "1a",
+      "title": "a",
+      "instructions": "Circle the word that is different. Explain why.",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleLabel": "EXAMPLE",
+          "input": "odd-one-out",
+          "options": [
+            "peach",
+            "chicken",
+            "raspberries",
+            "pear"
+          ],
+          "answer": 1,
+          "reasonAnswer": "fruit",
+          "showExampleNumber": true
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "odd-one-out",
+          "options": [
+            "pork",
+            "lamb",
+            "squid",
+            "beef"
+          ],
+          "answer": 2,
+          "reasonAnswer": "meat"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "odd-one-out",
+          "options": [
+            "melon",
+            "cherries",
+            "peach",
+            "cucumber"
+          ],
+          "answer": 3,
+          "reasonAnswer": "fruit"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "odd-one-out",
+          "options": [
+            "green beans",
+            "beetroot",
+            "cabbage",
+            "duck"
+          ],
+          "answer": 3,
+          "reasonAnswer": "vegetables"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "odd-one-out",
+          "options": [
+            "lemon",
+            "salmon",
+            "grapes",
+            "cherries"
+          ],
+          "answer": 1,
+          "reasonAnswer": "fruit"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "odd-one-out",
+          "options": [
+            "courgette",
+            "crab",
+            "mussels",
+            "prawns"
+          ],
+          "answer": 0,
+          "reasonAnswer": "seafood"
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1b",
+      "title": "b",
+      "instructions": "Match the words from the list to definitions 1–8.",
+      "wordBankLabel": "",
+      "wordBank": [
+        "aubergine",
+        "avocado",
+        "lobster",
+        "mango",
+        "melon",
+        "red pepper",
+        "squid",
+        "tuna"
+      ],
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "prompt": "a large sea fish that we eat",
+          "exampleAnswer": "tuna"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "a vegetable with dark purple skin",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "a tropical fruit with hard, dark green skin, soft, light green flesh, and a large seed inside",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "a sea animal with a soft body, eight arms, and two tentacles",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "a red vegetable that is empty inside",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "a tropical fruit, which has a yellow and red skin and is yellow inside",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "a sea creature with a hard shell and eight legs",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "a large round fruit with a thick yellow or green skin and a lot of seeds",
+          "input": "select",
+          "options": [
+            "aubergine",
+            "avocado",
+            "lobster",
+            "mango",
+            "melon",
+            "red pepper",
+            "squid",
+            "tuna"
+          ],
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1c",
+      "title": "c",
+      "instructions": "Label the pictures.",
+      "image": "images/lesson-1-ex1c-food-cooking.jpg",
+      "imageAlt": "Six food pictures numbered 1 to 6: salmon, egg, potato, egg, chicken, peas.",
+      "stickyImage": true,
+      "inlineNumberedItems": true,
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleLabel": "EXAMPLE",
+          "exampleTarget": "grilled salmon",
+          "showExampleNumber": true
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "",
+            " egg"
+          ],
+          "answers": [
+            "boiled"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "",
+            " potato"
+          ],
+          "answers": [
+            "baked"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "",
+            " egg"
+          ],
+          "answers": [
+            "fried"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "",
+            " chicken"
+          ],
+          "answers": [
+            "roast"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "",
+            " peas"
+          ],
+          "answers": [
+            "steamed"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1d",
+      "title": "d",
+      "instructions": "Complete the sentences with a word from the list.",
+      "wordBankLabel": "",
+      "wordBank": [
+        "fresh",
+        "frozen",
+        "low-fat",
+        "raw",
+        "spicy",
+        "tinned"
+      ],
+      "inlineNumberedItems": true,
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleLabel": "EXAMPLE",
+          "exampleTarget": "We don’t need tinned tomatoes, we need fresh ones.",
+          "showExampleNumber": true
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "Are there any ",
+            " peas in the freezer?"
+          ],
+          "answers": [
+            "frozen"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "I don’t like ",
+            " fish, so I never eat sushi."
+          ],
+          "answers": [
+            "raw"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "Hannah’s on a diet, so she’s bought some ",
+            " yoghurt to have for dessert."
+          ],
+          "answers": [
+            "low-fat"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "We buy ",
+            " bread from the baker’s every morning."
+          ],
+          "answers": [
+            "fresh"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "Mexican food can be very ",
+            "."
+          ],
+          "answers": [
+            "spicy"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1e",
+      "title": "e",
+      "instructions": "Match the phrasal verbs in bold in questions 1–3 to definitions a–c.",
+      "wordBankLabel": "Definitions",
+      "wordBank": [
+        "a to stop eating something completely",
+        "b to have lunch or dinner in a restaurant",
+        "c to eat less of something"
+      ],
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "prompt": "Are there any food or drinks you’d like to cut down on? Which one(s)?",
+          "exampleAnswer": "c"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Have you ever tried to cut out any food or drinks completely? Which one(s)?",
+          "input": "select",
+          "options": [
+            "a",
+            "b",
+            "c"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Where do you usually go when you want to eat out? What do you usually have?",
+          "input": "select",
+          "options": [
+            "a",
+            "b",
+            "c"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1f",
+      "title": "f",
+      "instructions": "Answer the questions in e.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Are there any food or drinks you’d like to cut down on? Which one(s)?",
+          "input": "textarea",
+          "scored": false
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Have you ever tried to cut out any food or drinks completely? Which one(s)?",
+          "input": "textarea",
+          "scored": false
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Where do you usually go when you want to eat out? What do you usually have?",
+          "input": "textarea",
+          "scored": false
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1g",
+      "title": "g · VOCABULARY FROM LISTENING",
+      "instructions": "Complete the sentences.",
+      "image": "images/lesson-1-ex1g-tea.jpg",
+      "imageAlt": "A cup of tea and a teapot on a tray.",
+      "inlineNumberedItems": true,
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleLabel": "EXAMPLE",
+          "exampleTarget": "I miss drinking English tea when I go abroad.",
+          "showExampleNumber": true
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "My favourite pizza t",
+            " is ham and mushroom."
+          ],
+          "answers": [
+            "opping"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "I eat chocolate when I’m unhappy to ch",
+            " myself u",
+            "."
+          ],
+          "answers": [
+            "eer",
+            "p"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "We sometimes eat r",
+            "-m",
+            " food for dinner when we get home from work late."
+          ],
+          "answers": [
+            "eady",
+            "ade"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "I’m a",
+            " to peaches, so I never eat them."
+          ],
+          "answers": [
+            "llergic"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "Do you ever get t",
+            " food from the Chinese restaurant on the corner?"
+          ],
+          "answers": [
+            "akeaway"
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "gaps",
+          "segments": [
+            "I don’t like tuna as a sandwich f",
+            "."
+          ],
+          "answers": [
+            "illing"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,48 @@
 /**
  * Published vocabulary topics for Viktoria.
- * Add new topics here as they are covered in lessons.
  */
-window.VOCABULARY_DATA = [];
+window.VOCABULARY_DATA = [
+  {
+    id: "vocab-lesson-1",
+    order: 1,
+    title: "1A Eating in...and out",
+    label: "Homework #1 · Food and cooking",
+    icon: "🍽️",
+    type: "lesson",
+    linkedLessonId: "lesson-1",
+    publishedAt: "2026-10-11",
+    page: "vocabulary.html?id=vocab-lesson-1",
+    words: [
+      { id: "v1-aubergine", en: "aubergine", ru: "баклажан", exampleEn: "I usually grill aubergine with olive oil.", exampleRu: "Я обычно готовлю баклажан на гриле с оливковым маслом." },
+      { id: "v1-avocado", en: "avocado", ru: "авокадо", exampleEn: "She put avocado in the salad.", exampleRu: "Она добавила авокадо в салат." },
+      { id: "v1-lobster", en: "lobster", ru: "омар, лобстер", exampleEn: "Lobster is a type of seafood.", exampleRu: "Омар — это вид морепродуктов." },
+      { id: "v1-squid", en: "squid", ru: "кальмар", exampleEn: "We ordered grilled squid.", exampleRu: "Мы заказали кальмара на гриле." },
+      { id: "v1-tuna", en: "tuna", ru: "тунец", exampleEn: "I often have tuna in a sandwich.", exampleRu: "Я часто ем тунец в сэндвиче." },
+      { id: "v1-courgette", en: "courgette", ru: "кабачок, цукини", exampleEn: "Cut the courgette into small pieces.", exampleRu: "Нарежь кабачок на маленькие кусочки." },
+      { id: "v1-prawns", en: "prawns", ru: "креветки", exampleEn: "These prawns are very fresh.", exampleRu: "Эти креветки очень свежие." },
+      { id: "v1-mussels", en: "mussels", ru: "мидии", exampleEn: "They serve mussels with bread.", exampleRu: "Они подают мидии с хлебом." },
+      { id: "v1-beetroot", en: "beetroot", ru: "свёкла", exampleEn: "Beetroot is common in salads and soups.", exampleRu: "Свёкла часто используется в салатах и супах." },
+      { id: "v1-grilled", en: "grilled", ru: "приготовленный на гриле", exampleEn: "I’d like the grilled salmon, please.", exampleRu: "Я бы хотел(а) лосося на гриле." },
+      { id: "v1-boiled", en: "boiled", ru: "варёный", exampleEn: "He had a boiled egg for breakfast.", exampleRu: "Он съел варёное яйцо на завтрак." },
+      { id: "v1-baked", en: "baked", ru: "запечённый", exampleEn: "We had a baked potato with cheese.", exampleRu: "Мы ели запечённую картошку с сыром." },
+      { id: "v1-fried", en: "fried", ru: "жареный", exampleEn: "She doesn’t eat much fried food.", exampleRu: "Она не ест много жареной еды." },
+      { id: "v1-roast", en: "roast", ru: "запечённый в духовке", exampleEn: "We’re having roast chicken tonight.", exampleRu: "Сегодня вечером у нас запечённая курица." },
+      { id: "v1-steamed", en: "steamed", ru: "приготовленный на пару", exampleEn: "Steamed vegetables are easy to cook.", exampleRu: "Овощи на пару легко готовить." },
+      { id: "v1-frozen", en: "frozen", ru: "замороженный", exampleEn: "There are some frozen peas in the freezer.", exampleRu: "В морозилке есть замороженный горошек." },
+      { id: "v1-raw", en: "raw", ru: "сырой", exampleEn: "I don’t like raw fish.", exampleRu: "Я не люблю сырую рыбу." },
+      { id: "v1-low-fat", en: "low-fat", ru: "с низким содержанием жира", exampleEn: "She buys low-fat yoghurt.", exampleRu: "Она покупает йогурт с низким содержанием жира." },
+      { id: "v1-spicy", en: "spicy", ru: "острый", exampleEn: "This curry is too spicy for me.", exampleRu: "Это карри для меня слишком острое." },
+      { id: "v1-tinned", en: "tinned", ru: "консервированный", exampleEn: "We keep tinned tomatoes in the cupboard.", exampleRu: "Мы храним консервированные помидоры в шкафу." },
+      { id: "v1-topping", en: "topping", ru: "начинка, топпинг", exampleEn: "My favourite pizza topping is mushrooms.", exampleRu: "Моя любимая начинка для пиццы — грибы." },
+      { id: "v1-ready-made", en: "ready-made", ru: "готовый, готовый к употреблению", exampleEn: "We bought a ready-made meal after work.", exampleRu: "После работы мы купили готовую еду." },
+      { id: "v1-allergic", en: "allergic to", ru: "иметь аллергию на", exampleEn: "I’m allergic to peaches.", exampleRu: "У меня аллергия на персики." },
+      { id: "v1-takeaway", en: "takeaway", ru: "еда навынос", exampleEn: "We got a Chinese takeaway last night.", exampleRu: "Вчера вечером мы заказали китайскую еду навынос." },
+      { id: "v1-filling", en: "filling", ru: "начинка", exampleEn: "Chicken is my favourite sandwich filling.", exampleRu: "Курица — моя любимая начинка для сэндвича." },
+      { id: "v1-cut-down-on", en: "cut down on", ru: "сократить потребление", exampleEn: "I’m trying to cut down on sugar.", exampleRu: "Я стараюсь сократить потребление сахара." },
+      { id: "v1-cut-out", en: "cut out", ru: "полностью исключить", exampleEn: "He decided to cut out fizzy drinks.", exampleRu: "Он решил полностью исключить газированные напитки." },
+      { id: "v1-eat-out", en: "eat out", ru: "есть вне дома, в ресторане", exampleEn: "We usually eat out on Fridays.", exampleRu: "По пятницам мы обычно едим вне дома." },
+      { id: "v1-cheer-up", en: "cheer up", ru: "подбодрить, поднять настроение", exampleEn: "Chocolate sometimes cheers me up.", exampleRu: "Шоколад иногда поднимает мне настроение." },
+      { id: "v1-seafood", en: "seafood", ru: "морепродукты", exampleEn: "This restaurant is famous for seafood.", exampleRu: "Этот ресторан известен своими морепродуктами." }
+    ]
+  }
+];
