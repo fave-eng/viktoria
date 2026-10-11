@@ -682,3 +682,554 @@ window.GRAMMAR_DATA = [
     apply();
   });
 })();
+
+/* Viktoria grammar topic bespoke guide */
+(() => {
+  const TOPIC_ID = 'present-simple-continuous-action-nonaction';
+
+  const styles = `
+    .grammar-bespoke-hidden { display: none !important; }
+
+    .v-grammar-guide {
+      display: grid;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+    .v-grammar-guide * { box-sizing: border-box; }
+
+    .v-grammar-hero {
+      overflow: hidden;
+      border: 1px solid #d9e1ee;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 92% 10%, rgba(99,102,241,.14), transparent 28%),
+        linear-gradient(135deg, #ffffff 0%, #f7f8ff 52%, #f8fafc 100%);
+      box-shadow: 0 18px 45px rgba(15,23,42,.07);
+    }
+    .v-grammar-hero-top {
+      padding: 28px 30px 22px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .v-grammar-kicker {
+      margin: 0 0 8px;
+      color: #4f46e5;
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .v-grammar-hero h2 {
+      margin: 0;
+      max-width: 800px;
+      color: #111827;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      line-height: 1.08;
+    }
+    .v-grammar-hero-top > p:last-child {
+      max-width: 820px;
+      margin: 13px 0 0;
+      color: #526077;
+      line-height: 1.65;
+    }
+
+    .v-tense-lanes {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .v-tense-lane {
+      min-width: 0;
+      padding: 26px 30px 30px;
+    }
+    .v-tense-lane + .v-tense-lane {
+      border-left: 1px solid #e2e8f0;
+      background: rgba(238,242,255,.46);
+    }
+    .v-tense-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      margin-bottom: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: .7rem;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+    .v-tense-lane:nth-child(2) .v-tense-tag {
+      background: #ede9fe;
+      color: #6d28d9;
+    }
+    .v-tense-lane h3 {
+      margin: 0 0 6px;
+      color: #0f172a;
+      font-size: 1.35rem;
+    }
+    .v-tense-formula {
+      margin: 0 0 18px;
+      color: #64748b;
+      font-weight: 800;
+    }
+    .v-criterion-list {
+      display: grid;
+      gap: 12px;
+    }
+    .v-criterion {
+      padding: 14px 15px;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      background: #fff;
+    }
+    .v-criterion-label {
+      display: block;
+      margin-bottom: 7px;
+      color: #475569;
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .v-example-en {
+      margin: 0;
+      color: #111827;
+      font-weight: 850;
+      line-height: 1.48;
+    }
+    .v-example-ru {
+      margin: 4px 0 0;
+      color: #64748b;
+      line-height: 1.48;
+    }
+
+    .v-grammar-section {
+      padding: 27px 28px 30px;
+      border: 1px solid #dbe3ef;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(15,23,42,.045);
+    }
+    .v-grammar-section-head {
+      display: grid;
+      grid-template-columns: auto minmax(0,1fr);
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+    .v-grammar-number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #111827;
+      color: #fff;
+      font-weight: 900;
+    }
+    .v-grammar-section h2 {
+      margin: 0;
+      color: #111827;
+      font-size: clamp(1.4rem, 2.3vw, 1.9rem);
+    }
+    .v-grammar-section-head p {
+      margin: 5px 0 0;
+      color: #64748b;
+      line-height: 1.55;
+    }
+
+    .v-state-groups {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+    .v-state-group {
+      padding: 16px;
+      border-radius: 17px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+    .v-state-group strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #334155;
+    }
+    .v-state-words {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .v-state-words span {
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid #dbe3ef;
+      color: #1e293b;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+    .v-state-note {
+      margin: 16px 0 0;
+      padding: 14px 16px;
+      border-left: 4px solid #6366f1;
+      border-radius: 0 14px 14px 0;
+      background: #f5f7ff;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .v-ing-board {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+    .v-ing-rule {
+      position: relative;
+      overflow: hidden;
+      padding: 18px;
+      border: 1px solid #dfe6f0;
+      border-radius: 18px;
+      background: #fbfcfe;
+    }
+    .v-ing-rule::before {
+      content: attr(data-rule);
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      color: #cbd5e1;
+      font-size: 1.55rem;
+      font-weight: 950;
+    }
+    .v-ing-rule h3 {
+      margin: 0 44px 8px 0;
+      color: #111827;
+      font-size: 1rem;
+    }
+    .v-ing-rule p {
+      margin: 0;
+      color: #566176;
+      line-height: 1.55;
+    }
+    .v-ing-pattern {
+      display: block;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #fff;
+      color: #312e81;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 850;
+      line-height: 1.45;
+    }
+    .v-ing-rule em {
+      display: block;
+      margin-top: 9px;
+      color: #7c3aed;
+      font-style: normal;
+      font-size: .86rem;
+      font-weight: 750;
+    }
+    .v-ing-structure {
+      display: inline-flex;
+      gap: 4px;
+      margin-top: 8px;
+      font-size: .76rem;
+      font-weight: 900;
+    }
+    .v-ing-structure span {
+      padding: 4px 7px;
+      border-radius: 8px;
+      background: #eef2ff;
+      color: #4338ca;
+    }
+
+    .v-meaning-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 14px;
+    }
+    .v-meaning-card {
+      padding: 18px;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      background: linear-gradient(180deg,#fff,#f8fafc);
+    }
+    .v-meaning-card h3 {
+      margin: 0 0 12px;
+      color: #111827;
+    }
+    .v-meaning-pair {
+      display: grid;
+      gap: 11px;
+    }
+    .v-meaning-case {
+      padding-top: 11px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .v-meaning-case:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+    .v-meaning-case strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #475569;
+      font-size: .78rem;
+    }
+
+    @media (max-width: 820px) {
+      .v-tense-lanes,
+      .v-state-groups,
+      .v-ing-board,
+      .v-meaning-grid {
+        grid-template-columns: 1fr;
+      }
+      .v-tense-lane + .v-tense-lane {
+        border-left: 0;
+        border-top: 1px solid #e2e8f0;
+      }
+    }
+    @media (max-width: 520px) {
+      .v-grammar-hero-top,
+      .v-tense-lane,
+      .v-grammar-section {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+      .v-grammar-section-head {
+        grid-template-columns: 1fr;
+      }
+    }
+  `;
+
+  const guideHtml = `
+    <div class="v-grammar-guide" id="viktoria-grammar-guide">
+      <section class="v-grammar-hero">
+        <div class="v-grammar-hero-top">
+          <p class="v-grammar-kicker">Сначала выбери смысл, потом форму</p>
+          <h2>Present Simple или Present Continuous?</h2>
+          <p>Не начинай с окончания глагола. Сначала определи, что ты хочешь сказать: это обычное/постоянное или происходит сейчас/временно?</p>
+        </div>
+
+        <div class="v-tense-lanes">
+          <article class="v-tense-lane">
+            <span class="v-tense-tag">ОБЫЧНО · ВСЕГДА · ФАКТ · СОСТОЯНИЕ</span>
+            <h3>Present Simple</h3>
+            <p class="v-tense-formula">do / does · verb / verb-s</p>
+            <div class="v-criterion-list">
+              <div class="v-criterion">
+                <span class="v-criterion-label">Критерий: регулярное действие</span>
+                <p class="v-example-en">My boss cycles to work every morning.</p>
+                <p class="v-example-ru">Мой начальник ездит на работу на велосипеде каждое утро.</p>
+              </div>
+              <div class="v-criterion">
+                <span class="v-criterion-label">Критерий: мнение / состояние</span>
+                <p class="v-example-en">I think English is useful.</p>
+                <p class="v-example-ru">Я считаю, что английский полезен.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="v-tense-lane">
+            <span class="v-tense-tag">СЕЙЧАС · В ЭТОТ ПЕРИОД · ВРЕМЕННО</span>
+            <h3>Present Continuous</h3>
+            <p class="v-tense-formula">am / is / are + verb-ing</p>
+            <div class="v-criterion-list">
+              <div class="v-criterion">
+                <span class="v-criterion-label">Критерий: действие прямо сейчас</span>
+                <p class="v-example-en">We’re having a party right now.</p>
+                <p class="v-example-ru">У нас сейчас вечеринка.</p>
+              </div>
+              <div class="v-criterion">
+                <span class="v-criterion-label">Критерий: временная ситуация</span>
+                <p class="v-example-en">I’m not eating chocolate this month.</p>
+                <p class="v-example-ru">В этом месяце я временно не ем шоколад.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="v-grammar-section">
+        <div class="v-grammar-section-head">
+          <span class="v-grammar-number">1</span>
+          <div>
+            <h2>Глаголы состояния: почему они обычно не идут в Continuous</h2>
+            <p>Они описывают не действие в процессе, а мнение, чувство, принадлежность, знание или восприятие.</p>
+          </div>
+        </div>
+
+        <div class="v-state-groups">
+          <div class="v-state-group">
+            <strong>Мысли и знания</strong>
+            <div class="v-state-words"><span>believe</span><span>know</span><span>remember</span><span>understand</span><span>think = считать</span></div>
+          </div>
+          <div class="v-state-group">
+            <strong>Чувства и желания</strong>
+            <div class="v-state-words"><span>like</span><span>love</span><span>want</span><span>need</span></div>
+          </div>
+          <div class="v-state-group">
+            <strong>Принадлежность</strong>
+            <div class="v-state-words"><span>belong</span><span>have = иметь</span></div>
+          </div>
+          <div class="v-state-group">
+            <strong>Восприятие</strong>
+            <div class="v-state-words"><span>recognize</span><span>sound</span><span>look = выглядеть</span></div>
+          </div>
+        </div>
+
+        <div class="v-state-note">
+          <strong>Пример:</strong> I believe him. — Я ему верю. Здесь <b>believe</b> — состояние/мнение, поэтому нужен Present Simple, даже если речь идёт о том, что я думаю сейчас.
+        </div>
+      </section>
+
+      <section class="v-grammar-section">
+        <div class="v-grammar-section-head">
+          <span class="v-grammar-number">2</span>
+          <div>
+            <h2>Как образуется форма с -ing</h2>
+            <p>Окончание не всегда просто добавляется. Смотри на последние буквы глагола и на ударение.</p>
+          </div>
+        </div>
+
+        <div class="v-ing-board">
+          <article class="v-ing-rule" data-rule="01">
+            <h3>Обычный случай: просто + ing</h3>
+            <p>Если специальных условий нет, добавляем <b>-ing</b>.</p>
+            <span class="v-ing-pattern">work → working<br>play → playing<br>go → going</span>
+            <em>Конечная y обычно не меняется: study → studying.</em>
+          </article>
+
+          <article class="v-ing-rule" data-rule="02">
+            <h3>Немая -e в конце: убираем e</h3>
+            <p>Если глагол заканчивается на одну немую <b>-e</b>, она исчезает перед <b>-ing</b>.</p>
+            <span class="v-ing-pattern">make → making<br>write → writing<br>have → having</span>
+            <em>Но двойную ee не убираем: see → seeing, agree → agreeing.</em>
+          </article>
+
+          <article class="v-ing-rule" data-rule="03">
+            <h3>-ie в конце: ie → y + ing</h3>
+            <p>Сочетание <b>-ie</b> меняется на <b>y</b>, затем добавляется -ing.</p>
+            <span class="v-ing-pattern">lie → lying<br>die → dying<br>tie → tying</span>
+          </article>
+
+          <article class="v-ing-rule" data-rule="04">
+            <h3>Короткий ударный CVC: удваиваем согласную</h3>
+            <p>Если короткий глагол заканчивается по модели <b>согласная + гласная + согласная</b>, последнюю согласную обычно удваиваем.</p>
+            <div class="v-ing-structure"><span>C</span><span>V</span><span>C</span></div>
+            <span class="v-ing-pattern">run → running<br>sit → sitting<br>stop → stopping</span>
+          </article>
+
+          <article class="v-ing-rule" data-rule="05">
+            <h3>w, x, y обычно не удваиваются</h3>
+            <p>Даже если конец похож на CVC, буквы <b>w, x, y</b> в этой позиции не удваиваем.</p>
+            <span class="v-ing-pattern">snow → snowing<br>fix → fixing<br>play → playing</span>
+          </article>
+
+          <article class="v-ing-rule" data-rule="06">
+            <h3>Длинный глагол: смотри на ударение</h3>
+            <p>Если последний слог ударный и конец CVC, согласную удваиваем. Если ударение не на последнем слоге — обычно нет.</p>
+            <span class="v-ing-pattern">begin → beginning<br>prefer → preferring<br>visit → visiting<br>open → opening</span>
+            <em>В British English: travel → travelling. В American English чаще traveling.</em>
+          </article>
+        </div>
+      </section>
+
+      <section class="v-grammar-section">
+        <div class="v-grammar-section-head">
+          <span class="v-grammar-number">3</span>
+          <div>
+            <h2>Один глагол, два значения</h2>
+            <p>Иногда выбор времени зависит не от самого глагола, а от его значения в конкретном предложении.</p>
+          </div>
+        </div>
+
+        <div class="v-meaning-grid">
+          <article class="v-meaning-card">
+            <h3>think</h3>
+            <div class="v-meaning-pair">
+              <div class="v-meaning-case">
+                <strong>Мнение → Present Simple</strong>
+                <p class="v-example-en">Do you think English is easy?</p>
+                <p class="v-example-ru">Ты считаешь, что английский лёгкий?</p>
+              </div>
+              <div class="v-meaning-case">
+                <strong>Процесс размышления → Continuous</strong>
+                <p class="v-example-en">I’m thinking about what to cook.</p>
+                <p class="v-example-ru">Я сейчас думаю, что приготовить.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="v-meaning-card">
+            <h3>have</h3>
+            <div class="v-meaning-pair">
+              <div class="v-meaning-case">
+                <strong>Иметь / обладать → Present Simple</strong>
+                <p class="v-example-en">I have a car.</p>
+                <p class="v-example-ru">У меня есть машина.</p>
+              </div>
+              <div class="v-meaning-case">
+                <strong>Действие → Continuous</strong>
+                <p class="v-example-en">I’m having lunch right now.</p>
+                <p class="v-example-ru">Я сейчас обедаю.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="v-meaning-card">
+            <h3>look</h3>
+            <div class="v-meaning-pair">
+              <div class="v-meaning-case">
+                <strong>Выглядеть → Present Simple</strong>
+                <p class="v-example-en">That cake looks delicious.</p>
+                <p class="v-example-ru">Этот торт выглядит очень вкусно.</p>
+              </div>
+              <div class="v-meaning-case">
+                <strong>Смотреть → действие</strong>
+                <p class="v-example-en">I’m looking at the cake.</p>
+                <p class="v-example-ru">Я сейчас смотрю на торт.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  `;
+
+  const ensureStyle = () => {
+    if (document.getElementById('viktoria-grammar-guide-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'viktoria-grammar-guide-styles';
+    style.textContent = styles;
+    document.head.appendChild(style);
+  };
+
+  const apply = () => {
+    if (new URLSearchParams(location.search).get('id') !== TOPIC_ID) return;
+    const root = document.getElementById('grammar-topic-root');
+    if (!root || root.dataset.bespokeGrammarApplied === 'true') return;
+    const practice = root.querySelector('#grammar-practice-section');
+    if (!practice) return;
+
+    root.dataset.bespokeGrammarApplied = 'true';
+    ensureStyle();
+
+    [
+      '.grammar-intro-card',
+      '#grammar-at-a-glance',
+      '#grammar-rule-map',
+      '#grammar-tables',
+      '#grammar-examples',
+      '#grammar-mistakes'
+    ].forEach((selector) => root.querySelector(selector)?.classList.add('grammar-bespoke-hidden'));
+
+    practice.insertAdjacentHTML('beforebegin', guideHtml);
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('grammar-topic-root');
+    if (!root) return;
+    new MutationObserver(apply).observe(root, { childList: true, subtree: true });
+    apply();
+  });
+})();
