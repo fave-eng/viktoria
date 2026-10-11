@@ -457,13 +457,14 @@
             student_name: safeText(student.nameEn || student.nameRu),
             lesson_id: lessonId,
             lesson_title: [safeText(lesson.title, lessonId), safeText(lesson.subtitle)].filter(Boolean).join(' — '),
-            status: submission ? 'submitted' : 'checked',
+            status: submission ? 'submitted' : 'draft',
             answers: result.answers && typeof result.answers === 'object' ? result.answers : {},
             score_correct: total > 0 ? correct : null,
             score_total: total > 0 ? total : null,
             score_percent: total > 0 ? safePercent(correct, total) : null,
             checked_at: result.checkedAt || null,
-            submitted_at: submission?.savedAt || null
+            submitted_at: submission?.savedAt || null,
+            locked_at: submission?.savedAt || null
           };
         });
         if (rows.length) {
