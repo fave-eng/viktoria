@@ -6,92 +6,92 @@ window.GRAMMAR_DATA = [
     id: "present-simple-continuous-action-nonaction",
     order: 1,
     linkedLessonId: "lesson-2",
-    title: "Present simple and present continuous: action and non-action verbs",
+    title: "Present Simple и Present Continuous: глаголы действия и состояния",
     level: "A2.2",
     status: "available",
     publishedAt: "2026-10-11",
     page: "grammar-topic.html?id=present-simple-continuous-action-nonaction",
     lockOnPass: true,
     revealAnswersOnError: false,
-    explanation: "Use the present simple for routines, facts, and states. Use the present continuous for actions happening now or around now and for temporary situations. Some verbs usually describe a state rather than an action, so they normally stay in the present simple even when we mean ‘now’.",
-    formula: "routine / fact / state → present simple · happening now / temporary → am / is / are + verb-ing",
+    explanation: "Present Simple используем для привычек, регулярных действий, фактов и состояний. Present Continuous — для действий, которые происходят прямо сейчас или в текущий период, а также для временных ситуаций. Некоторые глаголы обозначают состояние, а не действие, поэтому обычно не употребляются в Continuous, даже если речь идёт о настоящем моменте.",
+    formula: "привычка / факт / состояние → Present Simple · действие сейчас / временная ситуация → am / is / are + verb-ing",
     glanceCards: [
       {
         icon: "1",
         label: "Present simple",
-        hint: "Routines, facts, repeated actions, and states.",
+        hint: "Привычки, факты, регулярные действия и состояния.",
         pattern: "I / you / we / they work · he / she / it works",
         example: "My boss cycles to work every morning."
       },
       {
         icon: "2",
         label: "Present continuous",
-        hint: "Something happening now, around now, or temporarily.",
+        hint: "Действие происходит сейчас, в текущий период или является временным.",
         pattern: "am / is / are + verb-ing",
         example: "We’re having a party right now."
       },
       {
         icon: "3",
-        label: "Non-action verbs",
-        hint: "Verbs such as believe, belong, know, love, recognize, and understand usually describe states.",
-        pattern: "usually present simple",
+        label: "Глаголы состояния",
+        hint: "Глаголы believe, belong, know, love, recognize, understand и другие обычно описывают состояние, а не действие.",
+        pattern: "обычно Present Simple",
         example: "I believe you. This bag doesn’t belong to me."
       },
       {
         icon: "4",
-        label: "Meaning can change",
-        hint: "Some verbs can be stative in one meaning and active in another.",
-        pattern: "think = opinion / think about = activity",
+        label: "Значение может меняться",
+        hint: "Некоторые глаголы в одном значении описывают состояние, а в другом — действие.",
+        pattern: "think = мнение / think about = процесс размышления",
         example: "Do you think it’s easy? · I’m thinking about dinner."
       }
     ],
     miniRules: [
       {
-        title: "Affirmative",
-        text: "Present simple: I work / she works. Present continuous: I am working / she is working.",
+        title: "Утвердительные предложения",
+        text: "Present Simple: I work / she works. Present Continuous: I am working / she is working.",
         example: "She plays tennis every week. She’s playing tennis now."
       },
       {
-        title: "Negative",
-        text: "Present simple: don’t / doesn’t + base verb. Present continuous: am not / isn’t / aren’t + verb-ing.",
+        title: "Отрицательные предложения",
+        text: "Present Simple: don’t / doesn’t + начальная форма глагола. Present Continuous: am not / isn’t / aren’t + verb-ing.",
         example: "He doesn’t use it every day. He isn’t using it now."
       },
       {
-        title: "Questions",
-        text: "Present simple: Do / Does + subject + base verb? Present continuous: Am / Is / Are + subject + verb-ing?",
+        title: "Вопросы",
+        text: "Present Simple: Do / Does + подлежащее + начальная форма глагола? Present Continuous: Am / Is / Are + подлежащее + verb-ing?",
         example: "Do you like it? · Are you watching TV?"
       },
       {
-        title: "Short answers",
-        text: "Present simple: Yes, I do. / No, she doesn’t. Present continuous: Yes, I am. / No, he isn’t.",
+        title: "Краткие ответы",
+        text: "Present Simple: Yes, I do. / No, she doesn’t. Present Continuous: Yes, I am. / No, he isn’t.",
         example: "Are they studying? – Yes, they are."
       },
       {
-        title: "Spelling with -ing",
-        text: "Usually add -ing. Drop final -e: make → making. Double the final consonant in some short stressed verbs: sit → sitting.",
+        title: "Как добавить -ing",
+        text: "Обычно просто добавляем -ing. Конечную -e убираем: make → making. В некоторых коротких глаголах с ударным последним слогом удваиваем конечную согласную: sit → sitting.",
         example: "cycle → cycling · have → having · run → running"
       },
       {
-        title: "Common non-action verbs",
-        text: "believe, belong, know, like, love, need, recognize, remember, understand, want, and think when it means ‘have an opinion’.",
+        title: "Частые глаголы состояния",
+        text: "believe, belong, know, like, love, need, recognize, remember, understand, want, а также think в значении «считать / иметь мнение».",
         example: "I love vegetables. Do you think the fish is cooked?"
       }
     ],
     tables: [
       {
-        title: "Present simple vs present continuous",
-        headers: ["Use", "Present simple", "Present continuous"],
+        title: "Present Simple и Present Continuous",
+        headers: ["Когда используем", "Present Simple", "Present Continuous"],
         rows: [
-          ["Routine", "I usually do my homework after class.", "—"],
-          ["Now", "—", "I’m doing my homework right now."],
-          ["State / opinion", "I think English is useful.", "—"],
-          ["Temporary situation", "—", "I’m not eating chocolate this month."]
+          ["Регулярное действие", "I usually do my homework after class.", "—"],
+          ["Прямо сейчас", "—", "I’m doing my homework right now."],
+          ["Состояние / мнение", "I think English is useful.", "—"],
+          ["Временная ситуация", "—", "I’m not eating chocolate this month."]
         ]
       }
     ],
     exampleGroups: [
       {
-        title: "Action verbs",
+        title: "Глаголы действия",
         items: [
           "She plays tennis every Saturday.",
           "She’s playing tennis at the moment.",
@@ -100,7 +100,7 @@ window.GRAMMAR_DATA = [
         ]
       },
       {
-        title: "Non-action verbs",
+        title: "Глаголы состояния",
         items: [
           "I believe him.",
           "This bag belongs to me.",
@@ -110,17 +110,17 @@ window.GRAMMAR_DATA = [
       }
     ],
     commonMistakes: [
-      "Don’t normally use a non-action verb in the continuous: I’m believing you ✗ → I believe you ✓.",
-      "After does / doesn’t, use the base verb: She doesn’t belongs ✗ → She doesn’t belong ✓.",
-      "Present continuous needs be: She playing tennis ✗ → She is playing tennis ✓.",
-      "Use do / does for present-simple questions and am / is / are for present-continuous questions."
+      "Глаголы состояния обычно не употребляются в Continuous: I’m believing you ✗ → I believe you ✓.",
+      "После does / doesn’t используем начальную форму глагола: She doesn’t belongs ✗ → She doesn’t belong ✓.",
+      "В Present Continuous обязательно нужен глагол be: She playing tennis ✗ → She is playing tennis ✓.",
+      "В вопросах Present Simple используем do / does, а в Present Continuous — am / is / are."
     ],
     exercises: [
       {
         id: "pspc-practice-1",
-        title: "Choose the correct form",
-        difficulty: "Easy",
-        instructions: "Choose the correct option.",
+        title: "Выбери правильную форму",
+        difficulty: "Легко",
+        instructions: "Выбери правильный вариант.",
         hideAnswersOnError: true,
         items: [
           { id: "1", number: 1, input: "single", segments: ["I ", " this soup."], options: ["like", "am liking"], answer: 0 },
@@ -131,9 +131,9 @@ window.GRAMMAR_DATA = [
       },
       {
         id: "pspc-practice-2",
-        title: "Complete the sentences",
-        difficulty: "Medium",
-        instructions: "Use the correct present simple or present continuous form.",
+        title: "Заполни пропуски",
+        difficulty: "Средне",
+        instructions: "Поставь глагол в правильную форму Present Simple или Present Continuous.",
         hideAnswersOnError: true,
         items: [
           { id: "1", number: 1, input: "gaps", segments: ["He usually ", " to work. (drive)"], answers: ["drives"] },
@@ -144,9 +144,9 @@ window.GRAMMAR_DATA = [
       },
       {
         id: "pspc-practice-3",
-        title: "Choose the form that fits the meaning",
-        difficulty: "Challenging",
-        instructions: "Choose the correct answer for the context.",
+        title: "Выбери форму по смыслу",
+        difficulty: "Сложнее",
+        instructions: "Выбери вариант, который подходит по смыслу.",
         hideAnswersOnError: true,
         items: [
           { id: "1", number: 1, input: "select", prompt: "Opinion: ___ English is useful?", options: ["Do you think", "Are you thinking"], answer: 0 },
@@ -157,9 +157,9 @@ window.GRAMMAR_DATA = [
       },
       {
         id: "pspc-practice-4",
-        title: "Build the sentence or question",
-        difficulty: "Most challenging",
-        instructions: "Write the complete sentence or question.",
+        title: "Составь предложение или вопрос",
+        difficulty: "Самое сложное",
+        instructions: "Напиши полное предложение или вопрос.",
         hideAnswersOnError: true,
         items: [
           { id: "1", number: 1, prompt: "what / you / do right now", input: "text", answer: "What are you doing right now?" },
