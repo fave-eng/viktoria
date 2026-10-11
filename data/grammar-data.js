@@ -1394,11 +1394,10 @@ window.GRAMMAR_DATA = [
   const apply = () => {
     if (new URLSearchParams(location.search).get('id') !== TOPIC_ID) return;
     const root = document.getElementById('grammar-topic-root');
-    if (!root || root.dataset.bespokeGrammarApplied === 'true') return;
+    if (!root) return;
     const practice = root.querySelector('#grammar-practice-section');
     if (!practice) return;
 
-    root.dataset.bespokeGrammarApplied = 'true';
     ensureStyle();
 
     [
@@ -1410,7 +1409,11 @@ window.GRAMMAR_DATA = [
       '#grammar-mistakes'
     ].forEach((selector) => root.querySelector(selector)?.classList.add('grammar-bespoke-hidden'));
 
-    practice.insertAdjacentHTML('beforebegin', guideHtml);
+    if (!root.querySelector('#viktoria-grammar-guide')) {
+      practice.insertAdjacentHTML('beforebegin', guideHtml);
+    }
+
+    root.dataset.bespokeGrammarApplied = 'true';
   };
 
   document.addEventListener('DOMContentLoaded', () => {
