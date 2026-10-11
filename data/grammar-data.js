@@ -398,20 +398,33 @@ window.GRAMMAR_DATA = [
       outline: none;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] {
-      display: grid;
-      grid-template-columns: auto minmax(120px, 220px) auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
       gap: 8px;
-      align-items: end;
       margin-top: 18px;
       margin-bottom: 10px;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-item-header {
-      align-self: end;
-      padding-bottom: 7px;
+      flex: 0 0 auto;
+      align-self: flex-end;
+      margin: 0;
+      padding: 0 0 7px;
+    }
+    [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control {
+      flex: 0 1 220px;
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      padding: 0;
+    }
+    [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control .text-field {
+      width: 100%;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control::after {
       content: ",";
       margin-left: 2px;
+      padding-bottom: 7px;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item^="line-"] {
       margin: 2px 0;
