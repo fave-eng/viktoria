@@ -1,0 +1,854 @@
+{
+  "id": "lesson-2",
+  "number": 2,
+  "title": "1A Eating in...and out",
+  "subtitle": "Pronunciation + Grammar: present simple and continuous",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-2",
+  "grammarIds": [
+    "present-simple-continuous-action-nonaction"
+  ],
+  "publishedAt": "2026-10-11",
+  "totalPoints": 50,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "sectionNumber": 2,
+      "eyebrow": "1A Eating in...and out",
+      "titleLead": "PRONUNCIATION",
+      "titleTail": "short and long vowel sounds"
+    },
+    {
+      "type": "exercise",
+      "id": "2a",
+      "title": "a",
+      "instructions": "Write the words in the chart.",
+      "layout": "pronunciation-choice-table",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "reference": "beef",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 1,
+          "example": true
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "reference": "carton",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "reference": "chicken",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "reference": "chocolate",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "reference": "cookie",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "reference": "crab",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "reference": "cucumber",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 7
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "reference": "jar",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "reference": "mango",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "reference": "peach",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "11",
+          "number": 11,
+          "reference": "pork",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "12",
+          "number": 12,
+          "reference": "prawns",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "13",
+          "number": 13,
+          "reference": "sausage",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "14",
+          "number": 14,
+          "reference": "squid",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "15",
+          "number": 15,
+          "reference": "sugar",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "16",
+          "number": 16,
+          "reference": "tuna",
+          "options": [
+            "fish /ɪ/",
+            "tree /iː/",
+            "cat /æ/",
+            "car /ɑː/",
+            "clock /ɒ/",
+            "horse /ɔː/",
+            "bull /ʊ/",
+            "boot /uː/"
+          ],
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "id": "2b",
+      "title": "b",
+      "text": "1.1 Listen and check. Then listen again and repeat the words."
+    },
+    {
+      "type": "exercise",
+      "id": "2c",
+      "title": "c",
+      "instructions": "Write the words.",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "/bɔɪld/",
+          "example": true,
+          "exampleAnswer": "boiled"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "/ˈkæbɪdʒ/",
+          "input": "text",
+          "answer": "cabbage"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "/ˈspaɪsi/",
+          "input": "text",
+          "answer": "spicy"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "/rəʊst/",
+          "input": "text",
+          "answer": "roast"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "/ɡreɪps/",
+          "input": "text",
+          "answer": "grapes"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "/fruːt/",
+          "input": "text",
+          "answer": "fruit"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "/beɪkt/",
+          "input": "text",
+          "answer": "baked"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "/ˈmelən/",
+          "input": "text",
+          "answer": "melon"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "/ˈəʊbədʒiːn/",
+          "input": "text",
+          "answer": "aubergine"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "id": "2d",
+      "title": "d",
+      "text": "1.2 Listen and check. Then listen again and repeat the words."
+    },
+    {
+      "type": "section",
+      "sectionNumber": 3,
+      "eyebrow": "1A Eating in...and out",
+      "titleLead": "GRAMMAR",
+      "titleTail": "present simple and continuous, action and non-action verbs"
+    },
+    {
+      "type": "exercise",
+      "id": "3a",
+      "title": "a",
+      "instructions": "Complete the sentences with the present simple or continuous form of the verbs in brackets.",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleTextOnly": true,
+          "prompt": "I sometimes feel tired after lunch. (feel)"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "We ",
+            " usually ",
+            " late at the weekend. (not get up)"
+          ],
+          "answers": [
+            [
+              "don’t",
+              "don't"
+            ],
+            "get up"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "",
+            " you ",
+            " the TV or can I turn it off? (watch)"
+          ],
+          "answers": [
+            "Are",
+            "watching"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "My boss ",
+            " to work every morning. (cycle)"
+          ],
+          "answers": [
+            "cycles"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "Can you call back later – I can’t hear you. We ",
+            " a party, and the music is very loud. (have)"
+          ],
+          "answers": [
+            [
+              "are having",
+              "'re having",
+              "’re having"
+            ]
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "There’s a man in our neighbours’ garden. What ",
+            " he ",
+            "? (do)"
+          ],
+          "answers": [
+            [
+              "is",
+              "'s",
+              "’s"
+            ],
+            "doing"
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "gaps",
+          "segments": [
+            "How often ",
+            " your teacher ",
+            " you homework? (give)"
+          ],
+          "answers": [
+            "does",
+            "give"
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "gaps",
+          "segments": [
+            "I ",
+            " chocolate this month. I need to cut down on sweet things. (not eat)"
+          ],
+          "answers": [
+            [
+              "am not eating",
+              "'m not eating",
+              "’m not eating"
+            ]
+          ]
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "input": "gaps",
+          "segments": [
+            "My mother ",
+            " often ",
+            " exercise. (not do)"
+          ],
+          "answers": [
+            [
+              "doesn’t",
+              "doesn't"
+            ],
+            "do"
+          ]
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "input": "gaps",
+          "segments": [
+            "My girlfriend has stopped eating snacks. She ",
+            " to be healthier. (try)"
+          ],
+          "answers": [
+            [
+              "is trying",
+              "'s trying",
+              "’s trying"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "3b",
+      "title": "b",
+      "instructions": "Correct any mistakes in the highlighted phrases. Tick (✓) the correct sentences.",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleTextOnly": true,
+          "prompt": "I like your jacket. Is it new? ✓"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "example": true,
+          "exampleTextOnly": true,
+          "prompt": "Something is smelling good. What are you making? → Something smells good."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "That cake is looking delicious. Did you make it?",
+          "input": "text",
+          "answer": "That cake looks",
+          "acceptedAnswers": [
+            "That cake looks",
+            "that cake looks"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "I don’t know what to cook for dinner.",
+          "input": "text",
+          "answer": "✓",
+          "acceptedAnswers": [
+            "✓",
+            "✔",
+            "correct"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Are you thinking the fish is cooked now?",
+          "input": "text",
+          "answer": "Do you think",
+          "acceptedAnswers": [
+            "Do you think",
+            "do you think"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Can I call you back? I’m having lunch right now.",
+          "input": "text",
+          "answer": "✓",
+          "acceptedAnswers": [
+            "✓",
+            "✔",
+            "correct"
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "This soup tastes quite spicy. What’s in it?",
+          "input": "text",
+          "answer": "✓",
+          "acceptedAnswers": [
+            "✓",
+            "✔",
+            "correct"
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "I’m loving all kinds of vegetables. There aren’t any I don’t eat.",
+          "input": "text",
+          "answer": "I love",
+          "acceptedAnswers": [
+            "I love",
+            "i love"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "3c",
+      "title": "c",
+      "instructions": "Complete the sentences using the correct form of a verb from the list.",
+      "wordBankLabel": "",
+      "wordBank": [
+        "believe",
+        "not belong",
+        "drive",
+        "play",
+        "not recognize",
+        "not sleep",
+        "sound",
+        "not use"
+      ],
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleTextOnly": true,
+          "prompt": "I can’t talk now, I’m driving. I’ll call you when I get to the office."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "I think your boyfriend is telling the truth – I ",
+            " him."
+          ],
+          "answers": [
+            "believe"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "Can you turn off your computer if you ",
+            " it?"
+          ],
+          "answers": [
+            [
+              "aren’t using",
+              "aren't using",
+              "are not using"
+            ]
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "This bag ",
+            " to me. Is it yours?"
+          ],
+          "answers": [
+            [
+              "doesn’t belong",
+              "doesn't belong",
+              "does not belong"
+            ]
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "Sarah isn’t at home. She ",
+            " tennis."
+          ],
+          "answers": [
+            [
+              "is playing",
+              "'s playing",
+              "’s playing"
+            ]
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "I’m tired because I ",
+            " well at the moment."
+          ],
+          "answers": [
+            [
+              "am not sleeping",
+              "'m not sleeping",
+              "’m not sleeping"
+            ]
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "gaps",
+          "segments": [
+            "I ",
+            " that woman. Do you know who she is?"
+          ],
+          "answers": [
+            [
+              "don’t recognize",
+              "don't recognize",
+              "do not recognize"
+            ]
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "gaps",
+          "segments": [
+            "That music ",
+            " awful. Would you mind turning it down?"
+          ],
+          "answers": [
+            "sounds"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "3d",
+      "title": "d",
+      "instructions": "Write questions.",
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "prompt": "what / you / do right now",
+          "exampleAnswer": "What are you doing right now?"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "where / you / usually do your homework",
+          "input": "text",
+          "answer": "Where do you usually do your homework?"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "why / you / study English",
+          "input": "text",
+          "answer": "Why are you studying English?"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "you / think English is easy",
+          "input": "text",
+          "answer": "Do you think English is easy?"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "you / enjoy the classes at the moment",
+          "input": "text",
+          "answer": "Are you enjoying the classes at the moment?"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "what / you / usually do after the class",
+          "input": "text",
+          "answer": "What do you usually do after the class?"
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "3e",
+      "title": "e",
+      "instructions": "Write an email to your teacher. Use the questions in d to help you.",
+      "items": [
+        {
+          "id": "greeting",
+          "displayOnly": true,
+          "prompt": "Hi __________,"
+        },
+        {
+          "id": "starter",
+          "displayOnly": true,
+          "prompt": "Right now, I’m doing my English homework."
+        },
+        {
+          "id": "body",
+          "input": "textarea",
+          "scored": false,
+          "placeholder": ""
+        },
+        {
+          "id": "hope",
+          "displayOnly": true,
+          "prompt": "Hope you’re well."
+        },
+        {
+          "id": "best-wishes",
+          "displayOnly": true,
+          "prompt": "Best wishes"
+        },
+        {
+          "id": "signature",
+          "input": "text",
+          "scored": false,
+          "placeholder": ""
+        }
+      ]
+    }
+  ]
+}

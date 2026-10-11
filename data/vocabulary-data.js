@@ -44,5 +44,32 @@ window.VOCABULARY_DATA = [
       { id: "v1-cheer-up", en: "cheer up", ru: "подбодрить, поднять настроение", exampleEn: "Chocolate sometimes cheers me up.", exampleRu: "Шоколад иногда поднимает мне настроение." },
       { id: "v1-seafood", en: "seafood", ru: "морепродукты", exampleEn: "This restaurant is famous for seafood.", exampleRu: "Этот ресторан известен своими морепродуктами." }
     ]
+  },
+  {
+    id: "vocab-lesson-2",
+    order: 2,
+    title: "1A Eating in...and out",
+    label: "Homework #2 · Grammar and pronunciation",
+    icon: "🗣️",
+    type: "lesson",
+    linkedLessonId: "lesson-2",
+    publishedAt: "2026-10-11",
+    page: "vocabulary.html?id=vocab-lesson-2",
+    words: [
+      { id: "v2-belong", en: "belong", ru: "принадлежать", exampleEn: "This bag belongs to me.", exampleRu: "Эта сумка принадлежит мне." },
+      { id: "v2-recognize", en: "recognize", ru: "узнавать, распознавать", exampleEn: "I don’t recognize that woman.", exampleRu: "Я не узнаю ту женщину." },
+      { id: "v2-sound", en: "sound", ru: "звучать, казаться по звучанию", exampleEn: "That music sounds awful.", exampleRu: "Эта музыка звучит ужасно." },
+      { id: "v2-at-the-moment", en: "at the moment", ru: "в данный момент", exampleEn: "I’m not sleeping well at the moment.", exampleRu: "Сейчас я плохо сплю." },
+      { id: "v2-right-now", en: "right now", ru: "прямо сейчас", exampleEn: "What are you doing right now?", exampleRu: "Что ты делаешь прямо сейчас?" },
+      { id: "v2-call-back", en: "call back", ru: "перезвонить", exampleEn: "Can you call back later?", exampleRu: "Можешь перезвонить позже?" },
+      { id: "v2-turn-off", en: "turn off", ru: "выключить", exampleEn: "Can you turn off the computer?", exampleRu: "Можешь выключить компьютер?" },
+      { id: "v2-tell-the-truth", en: "tell the truth", ru: "говорить правду", exampleEn: "I think he is telling the truth.", exampleRu: "Я думаю, что он говорит правду." },
+      { id: "v2-awful", en: "awful", ru: "ужасный, отвратительный", exampleEn: "That music sounds awful.", exampleRu: "Эта музыка звучит ужасно." },
+      { id: "v2-mind", en: "mind", ru: "быть против, возражать", exampleEn: "Would you mind turning it down?", exampleRu: "Ты не против сделать потише?" },
+      { id: "v2-all-kinds-of", en: "all kinds of", ru: "все виды, самые разные", exampleEn: "I love all kinds of vegetables.", exampleRu: "Я люблю самые разные овощи." },
+      { id: "v2-delicious", en: "delicious", ru: "очень вкусный", exampleEn: "That cake looks delicious.", exampleRu: "Этот торт выглядит очень вкусно." },
+      { id: "v2-get-up", en: "get up", ru: "вставать, подниматься с постели", exampleEn: "We don’t usually get up late.", exampleRu: "Мы обычно не встаём поздно." },
+      { id: "v2-try-to", en: "try to", ru: "стараться, пытаться", exampleEn: "She’s trying to be healthier.", exampleRu: "Она старается вести более здоровый образ жизни." }
+    ]
   }
 ];
