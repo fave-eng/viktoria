@@ -1,0 +1,39 @@
+name: Build Viktoria grammar archive
+
+on:
+  push:
+    branches:
+      - grammar-archive-textbook
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate grammar files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f deliverables/grammar/grammar-topic.html
+          test -f deliverables/grammar/data/grammar-topic-present-simple-continuous.js
+          test -f deliverables/grammar/data/grammar-topic-present-simple-continuous.css
+          test -f deliverables/grammar/data/grammar-topic-present-simple-continuous.html
+          node --check deliverables/grammar/data/grammar-topic-present-simple-continuous.js
+
+      - name: Build ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd deliverables/grammar
+          zip -r ../../Viktoria-Grammar-Textbook-Style.zip grammar-topic.html data
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Viktoria-Grammar-Textbook-Style
+          path: Viktoria-Grammar-Textbook-Style.zip
+          if-no-files-found: error
+          retention-days: 7
