@@ -1,0 +1,89 @@
+
+.grammar-bespoke-hidden{display:none!important}
+#viktoria-grammar-guide{display:grid;gap:28px;margin:0 0 36px}
+#viktoria-grammar-guide *{box-sizing:border-box}
+#viktoria-grammar-guide .tb-card{border:1px solid #dbe3ef;border-radius:24px;background:#fff;box-shadow:0 12px 32px rgba(15,23,42,.05);overflow:hidden}
+#viktoria-grammar-guide .tb-card-pad{padding:28px}
+#viktoria-grammar-guide .tb-eyebrow{margin:0 0 7px;color:#4f46e5;font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+#viktoria-grammar-guide h2,#viktoria-grammar-guide h3,#viktoria-grammar-guide p{margin-top:0}
+#viktoria-grammar-guide h2{margin-bottom:9px;color:#111827;font-size:clamp(1.45rem,2.5vw,2rem);line-height:1.15}
+#viktoria-grammar-guide h3{color:#172033;font-size:1.05rem;line-height:1.3}
+#viktoria-grammar-guide .tb-lead{max-width:860px;margin-bottom:0;color:#5c687d;line-height:1.65}
+#viktoria-grammar-guide .tb-core{background:radial-gradient(circle at 95% 0%,rgba(124,58,237,.12),transparent 27%),linear-gradient(135deg,#fff 0%,#f8f9ff 56%,#fbfcff 100%)}
+#viktoria-grammar-guide .tb-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #e2e8f0}
+#viktoria-grammar-guide .tb-choice{padding:24px 28px 28px;min-width:0}
+#viktoria-grammar-guide .tb-choice+.tb-choice{border-left:1px solid #e2e8f0;background:rgba(238,242,255,.42)}
+#viktoria-grammar-guide .tb-choice-tag{display:inline-flex;margin-bottom:10px;padding:5px 10px;border-radius:999px;background:#eef2ff;color:#4338ca;font-size:.7rem;font-weight:900;letter-spacing:.03em}
+#viktoria-grammar-guide .tb-choice:nth-child(2) .tb-choice-tag{background:#f3e8ff;color:#6d28d9}
+#viktoria-grammar-guide .tb-formula,#viktoria-grammar-guide .tb-code{display:inline-block;margin:0 0 14px;padding:8px 11px;border-radius:11px;background:#f1f5f9;color:#1e293b;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:850;line-height:1.5}
+#viktoria-grammar-guide .tb-example{padding:13px 14px;border:1px solid #e2e8f0;border-radius:15px;background:#fff}
+#viktoria-grammar-guide .tb-example+.tb-example{margin-top:10px}
+#viktoria-grammar-guide .tb-criterion{display:block;margin-bottom:6px;color:#64748b;font-size:.7rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+#viktoria-grammar-guide .tb-en{margin:0;color:#111827;font-weight:850;line-height:1.5}
+#viktoria-grammar-guide .tb-ru{margin:4px 0 0;color:#64748b;line-height:1.5}
+#viktoria-grammar-guide .tb-timeline{margin-top:16px;padding:14px 15px;border-radius:15px;background:#f8fafc}
+#viktoria-grammar-guide .tb-timeline-title{margin-bottom:8px;color:#475569;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+#viktoria-grammar-guide .tb-repeat,#viktoria-grammar-guide .tb-nowline{position:relative;height:26px}
+#viktoria-grammar-guide .tb-repeat:before,#viktoria-grammar-guide .tb-nowline:before{content:"";position:absolute;left:0;right:0;top:12px;height:2px;background:#cbd5e1}
+#viktoria-grammar-guide .tb-repeat span{position:absolute;top:6px;width:13px;height:13px;border-radius:50%;background:#4f46e5;transform:translateX(-50%)}
+#viktoria-grammar-guide .tb-repeat span:nth-child(1){left:12%}
+#viktoria-grammar-guide .tb-repeat span:nth-child(2){left:34%}
+#viktoria-grammar-guide .tb-repeat span:nth-child(3){left:56%}
+#viktoria-grammar-guide .tb-repeat span:nth-child(4){left:78%}
+#viktoria-grammar-guide .tb-nowline strong{position:absolute;left:54%;top:0;transform:translateX(-50%);color:#7c3aed;font-size:.75rem}
+#viktoria-grammar-guide .tb-nowline span{position:absolute;left:37%;width:34%;top:8px;height:10px;border-radius:999px;background:#c4b5fd}
+#viktoria-grammar-guide .tb-section-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;margin-bottom:20px}
+#viktoria-grammar-guide .tb-num{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:#111827;color:#fff;font-weight:900}
+#viktoria-grammar-guide .tb-section-head p{margin-bottom:0;color:#64748b;line-height:1.55}
+#viktoria-grammar-guide .tb-table-wrap{width:100%;overflow-x:auto;padding-bottom:3px}
+#viktoria-grammar-guide .tb-compare,#viktoria-grammar-guide .tb-ending-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid #dbe3ef;border-radius:17px}
+#viktoria-grammar-guide .tb-compare{min-width:860px}
+#viktoria-grammar-guide .tb-compare th,#viktoria-grammar-guide .tb-compare td,#viktoria-grammar-guide .tb-ending-table th,#viktoria-grammar-guide .tb-ending-table td{padding:14px 15px;vertical-align:top;border-right:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;text-align:left}
+#viktoria-grammar-guide .tb-compare th:last-child,#viktoria-grammar-guide .tb-compare td:last-child,#viktoria-grammar-guide .tb-ending-table th:last-child,#viktoria-grammar-guide .tb-ending-table td:last-child{border-right:0}
+#viktoria-grammar-guide .tb-compare tr:last-child td,#viktoria-grammar-guide .tb-ending-table tr:last-child td{border-bottom:0}
+#viktoria-grammar-guide .tb-compare thead th{background:#111827;color:#fff;font-size:.9rem}
+#viktoria-grammar-guide .tb-compare thead th:nth-child(2){background:#3730a3}
+#viktoria-grammar-guide .tb-compare thead th:nth-child(3){background:#6d28d9}
+#viktoria-grammar-guide .tb-row-label{width:21%;min-width:155px;background:#f8fafc;color:#334155;font-size:.78rem;font-weight:900}
+#viktoria-grammar-guide .tb-code{margin-bottom:8px;padding:6px 9px;border-radius:9px;background:#eef2ff;color:#3730a3;font-size:.84rem}
+#viktoria-grammar-guide td:nth-child(3) .tb-code{background:#f3e8ff;color:#6d28d9}
+#viktoria-grammar-guide .tb-note{margin:15px 0 0;padding:14px 16px;border-left:4px solid #6366f1;border-radius:0 14px 14px 0;background:#f5f7ff;color:#3f4a5d;line-height:1.6}
+#viktoria-grammar-guide .tb-rules,#viktoria-grammar-guide .tb-ing-grid,#viktoria-grammar-guide .tb-state-groups,#viktoria-grammar-guide .tb-meaning-grid,#viktoria-grammar-guide .tb-signals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#viktoria-grammar-guide .tb-rule,#viktoria-grammar-guide .tb-ing,#viktoria-grammar-guide .tb-state-group,#viktoria-grammar-guide .tb-meaning,#viktoria-grammar-guide .tb-signal-box{padding:17px;border:1px solid #dfe6f0;border-radius:17px;background:#fbfcfe}
+#viktoria-grammar-guide .tb-rule h3,#viktoria-grammar-guide .tb-ing h3,#viktoria-grammar-guide .tb-meaning h3,#viktoria-grammar-guide .tb-signal-box h3{margin-bottom:8px}
+#viktoria-grammar-guide .tb-rule>p,#viktoria-grammar-guide .tb-ing>p{margin-bottom:0;color:#5f6b80;line-height:1.55}
+#viktoria-grammar-guide .tb-rule-examples{display:grid;gap:8px;margin-top:12px}
+#viktoria-grammar-guide .tb-mini-example{padding:10px 11px;border-radius:11px;background:#fff;border:1px solid #e2e8f0}
+#viktoria-grammar-guide .tb-mini-example b{display:block;margin-bottom:3px;color:#111827}
+#viktoria-grammar-guide .tb-mini-example span{color:#64748b;font-size:.9rem}
+#viktoria-grammar-guide .tb-ending-table{margin-top:16px;border-radius:15px}
+#viktoria-grammar-guide .tb-ending-table thead th{background:#f1f5f9;color:#334155;font-size:.8rem;font-weight:900}
+#viktoria-grammar-guide .tb-ing-head{display:flex;gap:9px;align-items:center;margin-bottom:9px}
+#viktoria-grammar-guide .tb-ing-num{width:28px;height:28px;display:grid;place-items:center;flex:0 0 auto;border-radius:9px;background:#ede9fe;color:#6d28d9;font-size:.76rem;font-weight:900}
+#viktoria-grammar-guide .tb-ing h3{margin:0}
+#viktoria-grammar-guide .tb-pattern{display:block;margin-top:11px;padding:10px 12px;border-radius:11px;background:#fff;color:#312e81;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:850;line-height:1.55}
+#viktoria-grammar-guide .tb-small{display:block;margin-top:8px;color:#7c3aed;font-size:.86rem;line-height:1.5}
+#viktoria-grammar-guide .tb-cvc{display:inline-flex;gap:4px;margin-top:8px}
+#viktoria-grammar-guide .tb-cvc span{min-width:28px;padding:4px 7px;border-radius:8px;background:#eef2ff;color:#4338ca;text-align:center;font-size:.74rem;font-weight:900}
+#viktoria-grammar-guide .tb-state-groups{margin-bottom:18px}
+#viktoria-grammar-guide .tb-state-group strong{display:block;margin-bottom:8px;color:#334155}
+#viktoria-grammar-guide .tb-pills,#viktoria-grammar-guide .tb-signal-list{display:flex;flex-wrap:wrap;gap:7px}
+#viktoria-grammar-guide .tb-pills span,#viktoria-grammar-guide .tb-signal-list span{padding:6px 9px;border:1px solid #dbe3ef;border-radius:999px;background:#fff;color:#1e293b;font-size:.88rem;font-weight:760}
+#viktoria-grammar-guide .tb-meaning-case+.tb-meaning-case{margin-top:11px;padding-top:11px;border-top:1px solid #e2e8f0}
+#viktoria-grammar-guide .tb-meaning-case>strong{display:block;margin-bottom:5px;color:#475569;font-size:.76rem;text-transform:uppercase;letter-spacing:.03em}
+#viktoria-grammar-guide .tb-flow,#viktoria-grammar-guide .tb-mistakes{display:grid;gap:10px}
+#viktoria-grammar-guide .tb-flow-row{display:grid;grid-template-columns:36px minmax(0,1fr);gap:11px;align-items:start;padding:13px 14px;border:1px solid #e2e8f0;border-radius:14px;background:#fbfcfe}
+#viktoria-grammar-guide .tb-flow-num{width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:#111827;color:#fff;font-weight:900;font-size:.78rem}
+#viktoria-grammar-guide .tb-flow-row p{margin:0;color:#445065;line-height:1.55}
+#viktoria-grammar-guide .tb-mistake{padding:13px 14px;border-radius:14px;background:#fff7f7;border:1px solid #fecaca}
+#viktoria-grammar-guide .tb-wrong{color:#b91c1c;font-weight:850}
+#viktoria-grammar-guide .tb-right{color:#166534;font-weight:850}
+#viktoria-grammar-guide .tb-mistake p{margin:5px 0 0;color:#5f6b80;line-height:1.5}
+@media(max-width:820px){
+#viktoria-grammar-guide .tb-choice-grid,#viktoria-grammar-guide .tb-rules,#viktoria-grammar-guide .tb-ing-grid,#viktoria-grammar-guide .tb-state-groups,#viktoria-grammar-guide .tb-meaning-grid,#viktoria-grammar-guide .tb-signals{grid-template-columns:1fr}
+#viktoria-grammar-guide .tb-choice+.tb-choice{border-left:0;border-top:1px solid #e2e8f0}
+}
+@media(max-width:520px){
+#viktoria-grammar-guide .tb-card-pad,#viktoria-grammar-guide .tb-choice{padding-left:18px;padding-right:18px}
+#viktoria-grammar-guide .tb-section-head{grid-template-columns:1fr}
+}
