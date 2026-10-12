@@ -24,16 +24,13 @@ jobs:
           test -f deliverables/grammar/data/grammar-topic-present-simple-continuous.html
           node --check deliverables/grammar/data/grammar-topic-present-simple-continuous.js
 
-      - name: Build ZIP
-        shell: bash
-        run: |
-          set -euo pipefail
-          cd deliverables/grammar
-          zip -r ../../Viktoria-Grammar-Textbook-Style.zip grammar-topic.html data
-
       - uses: actions/upload-artifact@v4
         with:
           name: Viktoria-Grammar-Textbook-Style
-          path: Viktoria-Grammar-Textbook-Style.zip
+          path: |
+            deliverables/grammar/grammar-topic.html
+            deliverables/grammar/data/grammar-topic-present-simple-continuous.js
+            deliverables/grammar/data/grammar-topic-present-simple-continuous.css
+            deliverables/grammar/data/grammar-topic-present-simple-continuous.html
           if-no-files-found: error
           retention-days: 7
