@@ -173,6 +173,7 @@ window.GRAMMAR_DATA = [
 ];
 
 /* Viktoria HW2 UI enhancements */
+if (typeof document !== 'undefined') {
 (() => {
   const LESSON_ID = 'lesson-2';
 
@@ -682,8 +683,10 @@ window.GRAMMAR_DATA = [
     apply();
   });
 })();
+}
 
 /* Viktoria grammar topic bespoke guide */
+if (typeof document !== 'undefined') {
 (() => {
   const TOPIC_ID = 'present-simple-continuous-action-nonaction';
 
@@ -1423,3 +1426,4 @@ window.GRAMMAR_DATA = [
     apply();
   });
 })();
+}
