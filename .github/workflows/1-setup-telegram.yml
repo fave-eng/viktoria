@@ -1,0 +1,122 @@
+name: 1 - Setup Telegram notifications
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      NOTIFY_WEBHOOK_SECRET: ${{ secrets.NOTIFY_WEBHOOK_SECRET }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Read Viktoria settings from config.js
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SETTINGS="$(node - <<'NODE'
+          global.window = {}
+          require('./config.js')
+
+          const config = window.APP_CONFIG || {}
+          const supabaseUrl = String(config.supabase?.url || '')
+          const projectRef = (supabaseUrl.match(/^https:\/\/([^.]+)\.supabase\.co/) || [])[1] || ''
+          const publicKey = String(config.supabase?.anonKey || '')
+          const studentId = String(config.student?.id || '')
+          const topicId = String(config.telegram?.expectedTopicId ?? '')
+
+          console.log(`SUPABASE_PROJECT_ID=${projectRef}`)
+          console.log(`SITE_PUBLIC_API_KEY=${publicKey}`)
+          console.log(`STUDENT_ID=${studentId}`)
+          console.log(`EXPECTED_TOPIC_ID=${topicId}`)
+          NODE
+          )"
+
+          echo "$SETTINGS" >> "$GITHUB_ENV"
+
+      - name: Check settings
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -n "$SUPABASE_ACCESS_TOKEN" || (echo "Missing secret: SUPABASE_ACCESS_TOKEN" && exit 1)
+          test -n "$TELEGRAM_BOT_TOKEN" || (echo "Missing secret: TELEGRAM_BOT_TOKEN" && exit 1)
+          test -n "$NOTIFY_WEBHOOK_SECRET" || (echo "Missing secret: NOTIFY_WEBHOOK_SECRET" && exit 1)
+
+          test -n "$SUPABASE_PROJECT_ID" || (echo "Could not read Supabase project ID from config.js" && exit 1)
+          test -n "$SITE_PUBLIC_API_KEY" || (echo "Could not read public Supabase key from config.js" && exit 1)
+          test "$STUDENT_ID" = "viktoria" || (echo "config.js student.id must be viktoria" && exit 1)
+          test "$EXPECTED_TOPIC_ID" = "4" || (echo "config.js telegram.expectedTopicId must be 4" && exit 1)
+
+      - name: Save Edge Function secrets in Supabase
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          supabase secrets set \
+            --project-ref "$SUPABASE_PROJECT_ID" \
+            TELEGRAM_BOT_TOKEN="$TELEGRAM_BOT_TOKEN" \
+            NOTIFY_WEBHOOK_SECRET="$NOTIFY_WEBHOOK_SECRET" \
+            SITE_PUBLIC_API_KEY="$SITE_PUBLIC_API_KEY"
+
+      - name: Deploy notify-telegram
+        shell: bash
+        run: |
+          set -euo pipefail
+          supabase functions deploy notify-telegram \
+            --project-ref "$SUPABASE_PROJECT_ID" \
+            --no-verify-jwt
+
+      - name: Verify Viktoria recipient and diagnostics version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ENDPOINT="https://${SUPABASE_PROJECT_ID}.supabase.co/functions/v1/notify-telegram"
+
+          RESPONSE="$(curl --fail-with-body --silent --show-error \
+            -X POST "$ENDPOINT" \
+            -H "content-type: application/json" \
+            -H "apikey: $SITE_PUBLIC_API_KEY" \
+            -H "Authorization: Bearer $SITE_PUBLIC_API_KEY" \
+            --data "{\"kind\":\"diagnostics_health\",\"studentId\":\"$STUDENT_ID\"}")"
+
+          echo "$RESPONSE"
+
+          RESPONSE="$RESPONSE" EXPECTED_TOPIC_ID="$EXPECTED_TOPIC_ID" node - <<'NODE'
+          const result = JSON.parse(process.env.RESPONSE || '{}')
+          const expectedTopic = Number(process.env.EXPECTED_TOPIC_ID)
+
+          if (!result.ok) {
+            throw new Error(`Diagnostics failed: ${JSON.stringify(result)}`)
+          }
+
+          if (result.diagnosticVersion !== 'multi-student-diagnostics-v2') {
+            throw new Error(`Wrong diagnostics version: ${result.diagnosticVersion || 'missing'}`)
+          }
+
+          if (result.recipient?.source !== 'database') {
+            throw new Error(`Viktoria recipient must come from telegram_recipients; got ${result.recipient?.source || 'missing'}`)
+          }
+
+          if (Number(result.recipient?.threadId) !== expectedTopic) {
+            throw new Error(`Wrong Telegram topic: ${result.recipient?.threadId}; expected ${expectedTopic}`)
+          }
+
+          console.log(`OK: Viktoria notifications use Telegram topic ${expectedTopic}.`)
+          NODE
+
+      - name: Done
+        run: echo "Telegram notifications for Viktoria are configured."
