@@ -1,6 +1,6 @@
 import { createClient } from 'npm:@supabase/supabase-js@2'
 
-const FUNCTION_VERSION = 'homework-reports-v11-multi-student-db-topics'
+const FUNCTION_VERSION = 'homework-reports-v11.1-multi-student-db-topics'
 const DIAGNOSTIC_VERSION = 'multi-student-diagnostics-v2'
 const DIAGNOSTIC_COOLDOWN_MS = 30_000
 
@@ -13,6 +13,7 @@ type Recipient = {
   chat_id: number | string
   message_thread_id: number | null
   enabled: boolean
+  source?: 'database' | 'github_actions_secret'
 }
 
 const corsHeaders = {
@@ -145,12 +146,27 @@ async function getRecipient(admin: AdminClient, studentId: string): Promise<Reci
     .maybeSingle()
 
   if (error) throw error
-  if (!data || !data.enabled) throw new Error('Telegram recipient is not configured or disabled')
+
+  if (data) {
+    if (!data.enabled) throw new Error('Telegram recipient is explicitly disabled')
+    return {
+      chat_id: data.chat_id,
+      message_thread_id: data.message_thread_id === null || data.message_thread_id === undefined ? null : Number(data.message_thread_id),
+      enabled: Boolean(data.enabled),
+      source: 'database',
+    }
+  }
+
+  const fallbackChatId = (Deno.env.get('TEACHER_CHAT_ID') || '').trim()
+  if (!/^-?\d+$/.test(fallbackChatId)) {
+    throw new Error('Telegram recipient is not configured')
+  }
 
   return {
-    chat_id: data.chat_id,
-    message_thread_id: data.message_thread_id === null || data.message_thread_id === undefined ? null : Number(data.message_thread_id),
-    enabled: Boolean(data.enabled),
+    chat_id: Number(fallbackChatId),
+    message_thread_id: null,
+    enabled: true,
+    source: 'github_actions_secret',
   }
 }
 
@@ -779,7 +795,7 @@ async function handleDiagnostics(
     recipient: {
       ok: Boolean(recipient),
       enabled: Boolean(recipient?.enabled),
-      source: 'database',
+      source: recipient?.source || 'database',
       threadId: recipient?.message_thread_id ?? null,
       error: recipientResult.error || null,
     },
