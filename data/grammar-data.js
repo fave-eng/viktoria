@@ -1578,28 +1578,53 @@ if (typeof document !== 'undefined') {
 
     .prefix-flow-step {
       display: grid;
-      grid-template-columns: 38px minmax(0,1fr);
-      gap: 12px;
+      grid-template-columns: 42px minmax(0,1fr);
+      gap: 14px;
       align-items: start;
-      padding: 13px 14px;
+      padding: 16px 17px;
       border: 1px solid #e2e8f0;
-      border-radius: 14px;
+      border-radius: 16px;
       background: #fff;
     }
 
-    .prefix-flow-step b:first-child {
-      width: 38px;
-      height: 38px;
+    .prefix-flow-number {
+      width: 42px;
+      height: 42px;
       display: grid;
       place-items: center;
-      border-radius: 11px;
+      border-radius: 12px;
       background: #111827;
       color: #fff;
+      font-size: .95rem;
+      font-weight: 900;
     }
 
-    .prefix-flow-step span {
-      color: #475569;
-      line-height: 1.55;
+    .prefix-flow-copy {
+      min-width: 0;
+      display: grid;
+      gap: 5px;
+      padding-top: 1px;
+    }
+
+    .prefix-flow-title {
+      color: #111827;
+      font-size: .98rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .prefix-flow-text {
+      margin: 0;
+      color: #64748b;
+      line-height: 1.58;
+    }
+
+    .prefix-flow-example {
+      margin-top: 3px;
+      color: #4338ca;
+      font-size: .86rem;
+      font-weight: 800;
+      line-height: 1.45;
     }
 
     .prefix-pairs {
@@ -1762,16 +1787,30 @@ if (typeof document !== 'undefined') {
 
         <div class="prefix-flow">
           <div class="prefix-flow-step">
-            <b>1</b>
-            <span><b>Вспомни готовую пару.</b> Например, reliable ↔ unreliable или honest ↔ dishonest.</span>
+            <span class="prefix-flow-number">1</span>
+            <div class="prefix-flow-copy">
+              <div class="prefix-flow-title">Вспомни готовую пару</div>
+              <p class="prefix-flow-text">Сначала попробуй вспомнить противоположную форму как отдельное слово.</p>
+              <div class="prefix-flow-example">reliable ↔ unreliable · honest ↔ dishonest</div>
+            </div>
           </div>
+
           <div class="prefix-flow-step">
-            <b>2</b>
-            <span><b>Если слово относится к IN-family</b>, используй мнемонику: MPB → IM, L → IL, R → IR.</span>
+            <span class="prefix-flow-number">2</span>
+            <div class="prefix-flow-copy">
+              <div class="prefix-flow-title">Проверь, относится ли слово к IN-family</div>
+              <p class="prefix-flow-text">Если да, используй звуковую закономерность для выбора формы приставки.</p>
+              <div class="prefix-flow-example">MPB → IM · L → IL · R → IR</div>
+            </div>
           </div>
+
           <div class="prefix-flow-step">
-            <b>3</b>
-            <span><b>un- и dis- не выбираются по первой букве.</b> Их нужно запоминать как часть конкретного слова.</span>
+            <span class="prefix-flow-number">3</span>
+            <div class="prefix-flow-copy">
+              <div class="prefix-flow-title">Не угадывай un- и dis- по первой букве</div>
+              <p class="prefix-flow-text">Эти формы лучше запоминать вместе с самим прилагательным.</p>
+              <div class="prefix-flow-example">friendly → unfriendly · organized → disorganized</div>
+            </div>
           </div>
         </div>
       </section>
