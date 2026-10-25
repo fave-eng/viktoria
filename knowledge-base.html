@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Viktoria's English Knowledge Base">
+  <title>Knowledge Base</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="knowledge-base.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="data/vocabulary-data.js" defer></script>
+  <script src="data/grammar-data.js" defer></script>
+  <script src="data/knowledge-base-data.js" defer></script>
+  <script src="app.js?v=autosave-3" defer></script>
+  <script src="knowledge-base.js" defer></script>
+</head>
+<body class="has-bottom-nav kb-page" data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="hero hero-compact">
+    <span class="star one">✦</span><span class="star two">✦</span>
+    <div class="container hero-content reveal">
+      <span class="hero-badge">✦ <span data-config="level"></span> Level · Study Library</span>
+      <h1>Knowledge Base</h1>
+      <p>Всё пройденное в одном месте — для быстрого повторения и работы над ДЗ.</p>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#f8fafc" d="M0,66 C220,102 410,10 696,52 C963,91 1115,99 1440,35 L1440,100 L0,100 Z"></path></svg>
+  </header>
+
+  <main id="main" class="main-content container">
+    <section class="section reveal kb-shell">
+      <div class="kb-overview">
+        <div class="main">
+          <strong>Study Library</strong>
+          <p>Здесь собраны схемы, сравнения, словарь и pronunciation из уже пройденных Unit 1A и 1B.</p>
+        </div>
+        <div class="kb-stat"><b>2</b><span>Units</span></div>
+        <div class="kb-stat"><b>4</b><span>Sections</span></div>
+        <div class="kb-stat"><b id="kb-count">0</b><span>Materials</span></div>
+      </div>
+
+      <div class="kb-toolbar">
+        <input id="kb-search" class="kb-search" type="search" placeholder="Найти правило, слово или тему..." autocomplete="off">
+
+        <div class="kb-filter">
+          <label>Раздел</label>
+          <button class="kb-chip active" type="button" data-kb-category="all">All</button>
+          <button class="kb-chip" type="button" data-kb-category="grammar">Grammar</button>
+          <button class="kb-chip" type="button" data-kb-category="vocabulary">Vocabulary</button>
+          <button class="kb-chip" type="button" data-kb-category="pronunciation">Pronunciation</button>
+          <button class="kb-chip" type="button" data-kb-category="quick">Quick Reference</button>
+        </div>
+
+        <div class="kb-filter">
+          <label>Unit</label>
+          <button class="kb-chip active" type="button" data-kb-unit="all">All units</button>
+          <button class="kb-chip" type="button" data-kb-unit="1A">1A Eating in...and out</button>
+          <button class="kb-chip" type="button" data-kb-unit="1B">1B Modern families</button>
+        </div>
+      </div>
+
+      <div id="kb-root" class="kb-list"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="nav-link" data-nav="home" href="index.html"><span class="nav-icon">🏠</span><span>Home</span></a>
+    <a class="nav-link" data-nav="homework" href="homework.html"><span class="nav-icon">📝</span><span>HW</span></a>
+    <a class="nav-link" data-nav="grammar" href="grammar.html"><span class="nav-icon">📐</span><span>Grammar</span></a>
+    <a class="nav-link" data-nav="vocabulary" href="vocabulary-hub.html"><span class="nav-icon">💥</span><span>Vocab</span></a>
+  </nav>
+  <div class="toast" id="app-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
