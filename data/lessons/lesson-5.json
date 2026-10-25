@@ -1,0 +1,580 @@
+{
+  "id": "lesson-5",
+  "number": 5,
+  "title": "1B Modern families",
+  "subtitle": "Personality adjectives + future forms",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-4",
+  "grammarIds": [],
+  "publishedAt": "2026-10-26",
+  "totalPoints": 41,
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "id": "grammar-start",
+      "sectionNumber": "G",
+      "eyebrow": "Grammar first",
+      "title": "Future forms",
+      "text": "Сначала повтори, почему английский использует разные формы для будущего."
+    },
+    {
+      "type": "info",
+      "id": "future-map",
+      "title": "Future forms · краткая карта",
+      "text": "Present Continuous: am / is / are + verb-ing — договорённость, уже организованный план. Пример: We’re going on holiday tomorrow. — Мы завтра едем в отпуск.\n\nbe going to + verb — намерение / уже принятое решение; также прогноз по видимым признакам. Пример: He’s going to look for a new job. — Он собирается искать новую работу.\n\nwill + verb — решение в момент речи, обещание, предложение помощи, прогноз / факт о будущем. Пример: I’ll have the steak. — Я возьму стейк.\n\nShall I ...? / Shall we ...? — предложение сделать что-то или идея для совместного действия. Пример: Shall we invite your parents? — Может, пригласим твоих родителей?"
+    },
+    {
+      "type": "info",
+      "id": "prefix-map",
+      "title": "Personality adjectives · negative prefixes",
+      "text": "Чтобы получить противоположное значение, часто добавляется приставка: un- (unfriendly), dis- (dishonest), im- (immature / impatient), in- (insensitive), ir- (irresponsible / unreliable по учебнику: unreliable с un-). Приставку нельзя выбирать случайно — форму слова нужно запоминать целиком."
+    },
+    {
+      "type": "exercise",
+      "id": "1c",
+      "title": "1 · Personality crossword",
+      "instructions": "Complete the crossword from the clues. The words go ACROSS and DOWN and cross each other.",
+      "layout": "crossword-grid",
+      "gridColumns": 13,
+      "gridRows": 17,
+      "entries": [
+        {
+          "id": "1",
+          "number": 1,
+          "direction": "down",
+          "row": 1,
+          "col": 5,
+          "answer": "SENSITIVE",
+          "clue": "Easily hurt or upset by what other people say or do."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "direction": "across",
+          "row": 2,
+          "col": 1,
+          "answer": "COMPETITIVE",
+          "clue": "Always wants to win."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "direction": "down",
+          "row": 2,
+          "col": 13,
+          "answer": "SOCIABLE",
+          "clue": "Enjoys being with other people and has lots of friends."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "direction": "down",
+          "row": 5,
+          "col": 2,
+          "answer": "RELIABLE",
+          "clue": "Someone you can trust to help or do what they promised."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "direction": "down",
+          "row": 7,
+          "col": 11,
+          "answer": "IMAGINATIVE",
+          "clue": "Good at thinking of new and interesting ideas."
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "direction": "down",
+          "row": 8,
+          "col": 9,
+          "answer": "BOSSY",
+          "clue": "Always telling other people what to do."
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "direction": "across",
+          "row": 9,
+          "col": 2,
+          "answer": "AFFECTIONATE",
+          "clue": "Shows love and care through words, hugs, etc."
+        },
+        {
+          "id": "8a",
+          "number": 8,
+          "direction": "across",
+          "row": 12,
+          "col": 5,
+          "answer": "MOODY",
+          "clue": "Sometimes happy and friendly, but suddenly angry or unhappy."
+        },
+        {
+          "id": "8d",
+          "number": 8,
+          "direction": "down",
+          "row": 12,
+          "col": 5,
+          "answer": "MATURE",
+          "clue": "Behaves in a sensible, adult way."
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1d",
+      "title": "2 · Make the opposite",
+      "instructions": "Choose the correct opposite adjective with a negative prefix.",
+      "items": [
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "honest →",
+          "input": "select",
+          "options": [
+            "dishonest",
+            "unhonest",
+            "imhonest"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "mature →",
+          "input": "select",
+          "options": [
+            "unmature",
+            "immature",
+            "dismature"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "reliable →",
+          "input": "select",
+          "options": [
+            "unreliable",
+            "irreliable",
+            "disreliable"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "sensitive →",
+          "input": "select",
+          "options": [
+            "unsensitive",
+            "insensitive",
+            "dissensitive"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "ambitious →",
+          "input": "select",
+          "options": [
+            "unambitious",
+            "inambitious",
+            "disambitious"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "imaginative →",
+          "input": "select",
+          "options": [
+            "unimaginative",
+            "disimaginative",
+            "inimaginative"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "organized →",
+          "input": "select",
+          "options": [
+            "unorganized",
+            "disorganized",
+            "imorganized"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "responsible →",
+          "input": "select",
+          "options": [
+            "irresponsible",
+            "unresponsible",
+            "disresponsible"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "sociable →",
+          "input": "select",
+          "options": [
+            "insociable",
+            "unsociable",
+            "dissociable"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "11",
+          "number": 11,
+          "prompt": "friendly →",
+          "input": "select",
+          "options": [
+            "unfriendly",
+            "infriendly",
+            "disfriendly"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "12",
+          "number": 12,
+          "prompt": "kind →",
+          "input": "select",
+          "options": [
+            "unkind",
+            "inkind",
+            "diskind"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "13",
+          "number": 13,
+          "prompt": "patient →",
+          "input": "select",
+          "options": [
+            "unpatient",
+            "impatient",
+            "dispatient"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "14",
+          "number": 14,
+          "prompt": "selfish →",
+          "input": "select",
+          "options": [
+            "unselfish",
+            "inselfish",
+            "disselfish"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "id": "three-s-words",
+      "title": "sensible · sensitive · sympathetic",
+      "text": "sensible = разумный, практичный: Be sensible — There are only three places in the car.\nsensitive = чувствительный, легко задеть: Don’t be so sensitive — I didn’t mean to make you cry.\nsympathetic = сочувствующий, понимающий чужие чувства: Be sympathetic — Her hamster has died."
+    },
+    {
+      "type": "exercise",
+      "id": "1e",
+      "title": "3 · Three similar adjectives",
+      "instructions": "Complete the sentences with sensible, sensitive or sympathetic.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "segments": [
+            "Don’t be so ",
+            "! I didn’t mean to make you cry."
+          ],
+          "input": "select",
+          "options": [
+            "sensible",
+            "sensitive",
+            "sympathetic"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "segments": [
+            "Be ",
+            "! There are only three places in our car. We can’t take the whole football team home!"
+          ],
+          "input": "select",
+          "options": [
+            "sensible",
+            "sensitive",
+            "sympathetic"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "segments": [
+            "Be ",
+            "! Her hamster has died, and she’s very upset!"
+          ],
+          "input": "select",
+          "options": [
+            "sensible",
+            "sensitive",
+            "sympathetic"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2a",
+      "title": "4 · Future forms",
+      "instructions": "Choose the correct future form. The meaning in brackets tells you WHY that form is needed. Tick ✓ if both options are possible.",
+      "inlineNumberedItems": true,
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "2",
+          "number": 2,
+          "input": "circle-or-tick",
+          "segments": [
+            "Don’t worry about the drinks. ",
+            " for them. (an offer)"
+          ],
+          "options": [
+            "I’ll pay",
+            "I’m going to pay"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "circle-or-tick",
+          "segments": [
+            "",
+            " some more coffee? (an offer)"
+          ],
+          "options": [
+            "Shall I make",
+            "Will I make"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "circle-or-tick",
+          "segments": [
+            "Do you think ",
+            " before you’re 30? (a prediction)"
+          ],
+          "options": [
+            "you’ll get married",
+            "you’re going to get married"
+          ],
+          "answer": "both"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "circle-or-tick",
+          "segments": [
+            "",
+            " on holiday tomorrow. I can’t wait! (an arrangement)"
+          ],
+          "options": [
+            "We’re going",
+            "We’ll go"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "circle-or-tick",
+          "segments": [
+            "A: Are you ready to order? B: Yes, ",
+            " the steak. (an instant decision)"
+          ],
+          "options": [
+            "I’ll have",
+            "I’m going to have"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "circle-or-tick",
+          "segments": [
+            "",
+            " 21 on my next birthday. (a fact)"
+          ],
+          "options": [
+            "I’ll be",
+            "I’m being"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "circle-or-tick",
+          "segments": [
+            "",
+            " your parents for a meal this weekend? (a suggestion)"
+          ],
+          "options": [
+            "Shall we invite",
+            "Will we invite"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "input": "circle-or-tick",
+          "segments": [
+            "I’m going to Jacky’s house for dinner. I ",
+            " late home. (a promise)"
+          ],
+          "options": [
+            "won’t be",
+            "am not going to be"
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "input": "circle-or-tick",
+          "segments": [
+            "There’s too much shopping in this bag. I think ",
+            "! (a prediction)"
+          ],
+          "options": [
+            "it’s going to break",
+            "it’s breaking"
+          ],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2-review",
+      "title": "5 · Choose the future by meaning",
+      "instructions": "Choose the form that matches the situation. Focus on the reason, not only on the time expression.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "The restaurant is booked for Friday. We ___ dinner there at 8. (arrangement)",
+          "input": "select",
+          "options": [
+            "are having",
+            "will have",
+            "are going to have"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Look at those black clouds! It ___. (prediction from present evidence)",
+          "input": "select",
+          "options": [
+            "will rain",
+            "is going to rain",
+            "is raining tomorrow"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "A: We haven’t got any bread. B: OK, I ___ some. (instant decision)",
+          "input": "select",
+          "options": [
+            "am getting",
+            "am going to get",
+            "will get"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "___ your sister to the party? (suggestion)",
+          "input": "select",
+          "options": [
+            "Shall we invite",
+            "Are we going to invite",
+            "Will we inviting"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "I promise I ___ anyone your secret. (promise)",
+          "input": "select",
+          "options": [
+            "am not telling",
+            "won’t tell",
+            "am not going to tell"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "I think people ___ more from home in the future. (prediction / opinion)",
+          "input": "select",
+          "options": [
+            "will work",
+            "are working",
+            "shall work"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "I’ve decided to learn Italian next year. I ___ lessons. (intention)",
+          "input": "select",
+          "options": [
+            "will take",
+            "am going to take",
+            "take"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}
