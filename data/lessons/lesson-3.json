@@ -1,0 +1,300 @@
+{
+  "id": "lesson-3",
+  "number": 3,
+  "title": "1A Review · Eating in...and out",
+  "subtitle": "Review: food & cooking + present simple and continuous",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-1",
+  "grammarIds": [
+    "present-simple-continuous-action-nonaction"
+  ],
+  "publishedAt": "2026-10-26",
+  "totalPoints": 20,
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "exercise",
+      "id": "review-1",
+      "title": "1 · Read and investigate",
+      "instructions": "Read the text and choose the best answer. Use both the grammar and the food vocabulary from the previous lessons.",
+      "layout": "article-mcq",
+      "articleTitle": "A different food week",
+      "articleText": "On weekdays, I usually cook at home and take lunch to work. I often make grilled chicken or steamed vegetables. But this month I’m trying to cut down on meat, so I’m eating more aubergine, avocado and beans. Today I’m working late, so I’m getting a takeaway. I don’t usually eat ready-made meals, but sometimes they’re useful. My sister is staying with me this week. She loves seafood, but she doesn’t eat prawns because she’s allergic to them.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Which sentence describes the writer’s usual routine?",
+          "input": "single",
+          "options": [
+            "She is getting a takeaway.",
+            "She cooks at home on weekdays.",
+            "She is staying with her sister."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Why is the writer eating more vegetables this month?",
+          "input": "single",
+          "options": [
+            "She is trying to eat less meat.",
+            "She is allergic to meat.",
+            "She never cooks chicken."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Why is she getting a takeaway today?",
+          "input": "single",
+          "options": [
+            "She always eats out on weekdays.",
+            "She doesn’t like home-cooked food.",
+            "She is working late."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Which food does the sister avoid?",
+          "input": "single",
+          "options": [
+            "prawns",
+            "avocado",
+            "aubergine"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Which sentence describes a temporary situation?",
+          "input": "single",
+          "options": [
+            "She loves seafood.",
+            "She is staying with the writer this week.",
+            "She doesn’t eat prawns."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "review-2",
+      "title": "2 · Choose the meaning",
+      "instructions": "Choose the form that fits the meaning. Tick ✓ if both forms are possible but the meaning changes.",
+      "inlineNumberedItems": true,
+      "hideAnswersOnError": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "circle-or-tick",
+          "segments": [
+            "I ",
+            " this soup tastes great."
+          ],
+          "options": [
+            "think",
+            "am thinking"
+          ],
+          "answer": "0",
+          "explanation": "think = have an opinion, so we normally use Present Simple."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "circle-or-tick",
+          "segments": [
+            "Can I call you later? I ",
+            " dinner."
+          ],
+          "options": [
+            "have",
+            "am having"
+          ],
+          "answer": "1",
+          "explanation": "have dinner describes an action in progress here."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "circle-or-tick",
+          "segments": [
+            "This cake ",
+            " delicious."
+          ],
+          "options": [
+            "looks",
+            "is looking"
+          ],
+          "answer": "0",
+          "explanation": "look = appear here, so it describes a state."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "circle-or-tick",
+          "segments": [
+            "She ",
+            " to eat more vegetables this month."
+          ],
+          "options": [
+            "tries",
+            "is trying"
+          ],
+          "answer": "1",
+          "explanation": "this month describes a temporary current situation."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "circle-or-tick",
+          "segments": [
+            "I ",
+            " spicy food."
+          ],
+          "options": [
+            "love",
+            "am loving"
+          ],
+          "answer": "0",
+          "explanation": "love is normally a stative verb."
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "circle-or-tick",
+          "segments": [
+            "He ",
+            " at the restaurant."
+          ],
+          "options": [
+            "works",
+            "is working"
+          ],
+          "answer": "both",
+          "explanation": "Both are possible: works = his regular job; is working = a temporary/current situation."
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "review-3",
+      "title": "3 · Food crossword",
+      "instructions": "Complete the crossword from the clues. All the words are from the previous lessons.",
+      "layout": "crossword-grid",
+      "gridColumns": 10,
+      "gridRows": 13,
+      "entries": [
+        {
+          "id": "1",
+          "number": 1,
+          "direction": "across",
+          "row": 1,
+          "col": 1,
+          "answer": "SPICY",
+          "clue": "Food with a strong hot flavour."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "direction": "across",
+          "row": 3,
+          "col": 1,
+          "answer": "GRILLED",
+          "clue": "Cooked over direct heat."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "direction": "across",
+          "row": 5,
+          "col": 1,
+          "answer": "PRAWNS",
+          "clue": "Small shellfish; a type of seafood."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "direction": "across",
+          "row": 7,
+          "col": 1,
+          "answer": "AVOCADO",
+          "clue": "A green fruit with soft flesh and a large seed."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "direction": "across",
+          "row": 9,
+          "col": 1,
+          "answer": "FROZEN",
+          "clue": "Kept at a very low temperature."
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "direction": "across",
+          "row": 11,
+          "col": 1,
+          "answer": "TOPPING",
+          "clue": "Food put on top of a pizza."
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "direction": "across",
+          "row": 13,
+          "col": 1,
+          "answer": "TAKEAWAY",
+          "clue": "A meal you buy from a restaurant and eat somewhere else."
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "id": "review-4",
+      "title": "4 · Find the correct Present Simple sentences",
+      "text": "Choose ALL sentences that correctly describe a state, fact, or regular action.",
+      "options": [
+        "I believe him.",
+        "This bag belongs to me.",
+        "I’m knowing the answer.",
+        "We eat out every Friday.",
+        "She’s loving seafood.",
+        "That music sounds awful.",
+        "I’m recognizing her now.",
+        "My boss cycles to work every morning."
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "type": "reorder",
+      "id": "review-5",
+      "title": "5 · Build the contrast sentence",
+      "text": "Put the chunks in the correct order. The sentence contrasts a usual habit with a temporary situation.",
+      "words": [
+        "I usually cook at home,",
+        "but this week",
+        "I am eating out",
+        "more often."
+      ],
+      "answer": "I usually cook at home, but this week I am eating out more often."
+    }
+  ]
+}
