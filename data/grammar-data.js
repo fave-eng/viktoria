@@ -1231,163 +1231,252 @@ if (typeof document !== 'undefined') {
     lockOnPass: true,
     revealAnswersOnError: false,
 
-    explanation: 'В английском противоположное значение многих прилагательных образуется отрицательной приставкой. Но одной универсальной приставки нет: конкретную форму нужно запоминать вместе со словом.',
-    formula: 'un- · dis- · im- · in- · ir- + adjective → opposite meaning',
+    explanation: 'Отрицательные приставки помогают образовать противоположное значение прилагательного, но универсальной приставки нет. Сначала нужно знать словарную пару (например, reliable → unreliable или honest → dishonest). Затем внутри семьи in- работает удобная звуковая закономерность: перед m / p / b обычно im-, перед l — il-, перед r — ir-, в остальных случаях остаётся in-.',
+    formula: 'Сначала учим пару → если это IN-family: MPB → IM · L → IL · R → IR · иначе IN',
 
     glanceCards: [
       {
-        icon: 'un',
-        label: 'un-',
-        hint: 'Самая частая приставка в этой группе.',
-        pattern: 'un + adjective',
-        example: 'reliable → unreliable'
+        icon: '1',
+        label: 'Главный принцип',
+        hint: 'Не придумывай приставку. Учи adjective ↔ opposite как пару.',
+        pattern: 'reliable ↔ unreliable',
+        example: 'honest ↔ dishonest'
       },
       {
-        icon: 'dis',
-        label: 'dis-',
-        hint: 'Используется с некоторыми прилагательными, но не со всеми.',
-        pattern: 'dis + adjective',
-        example: 'honest → dishonest'
+        icon: 'MPB',
+        label: 'IN-family: MPB → IM',
+        hint: 'Если слово уже относится к семье in-, перед m / p / b in- меняется на im-.',
+        pattern: 'in- → im- before m / p / b',
+        example: 'mature → immature · patient → impatient'
       },
       {
-        icon: 'im',
-        label: 'im-',
-        hint: 'В этой теме используется с mature и patient.',
-        pattern: 'im + adjective',
-        example: 'patient → impatient'
+        icon: 'L/R',
+        label: 'IN-family: L → IL · R → IR',
+        hint: 'Перед l используем il-, перед r — ir-.',
+        pattern: 'in- → il- / ir-',
+        example: 'legal → illegal · responsible → irresponsible'
       },
       {
-        icon: 'in/ir',
-        label: 'in- / ir-',
-        hint: 'Форма зависит от конкретного слова.',
-        pattern: 'in + adjective / ir + adjective',
-        example: 'sensitive → insensitive · responsible → irresponsible'
+        icon: 'un/dis',
+        label: 'un- и dis-',
+        hint: 'Это отдельные словарные семьи. По первой букве их выбрать нельзя.',
+        pattern: 'learn the pair',
+        example: 'reliable → unreliable · honest → dishonest'
       }
     ],
 
     miniRules: [
       {
+        title: 'Шаг 1. Сначала вспомни готовую пару',
+        text: 'Negative prefix — часть словарной формы. Самый надёжный способ — учить два слова вместе: adjective ↔ opposite.',
+        example: 'reliable ↔ unreliable · honest ↔ dishonest · patient ↔ impatient'
+      },
+      {
+        title: 'Шаг 2. Если слово из IN-family: MPB → IM',
+        text: 'Перед m, p, b приставка in- обычно меняется на im-, чтобы слово было легче произносить. Это не правило для всех прилагательных на m / p / b, а только для слов, которые принадлежат к семье in-.',
+        example: 'mature → immature · patient → impatient · possible → impossible'
+      },
+      {
+        title: 'Шаг 3. IN-family: L → IL, R → IR',
+        text: 'Перед l приставка in- меняется на il-, перед r — на ir-.',
+        example: 'legal → illegal · regular → irregular · responsible → irresponsible'
+      },
+      {
+        title: 'Шаг 4. В остальных IN-family словах остаётся in-',
+        text: 'Если слово относится к семье in-, но не начинается с m / p / b / l / r, обычно остаётся форма in-.',
+        example: 'sensitive → insensitive · correct → incorrect'
+      },
+      {
         title: 'un-',
-        text: 'В Unit 1B эта приставка используется с reliable, ambitious, imaginative, sociable, friendly, kind и selfish.',
+        text: 'Очень частая приставка, но её нельзя использовать как «вариант по умолчанию». В Unit 1B она встречается с reliable, ambitious, imaginative, sociable, friendly, kind и selfish.',
         example: 'unreliable · unambitious · unimaginative · unsociable · unfriendly · unkind · unselfish'
       },
       {
         title: 'dis-',
-        text: 'В Unit 1B dis- используется с honest и organized.',
+        text: 'Тоже отдельная словарная семья. В Unit 1B: honest → dishonest, organized → disorganized.',
         example: 'dishonest · disorganized'
       },
       {
-        title: 'im-',
-        text: 'В Unit 1B im- используется с mature и patient.',
-        example: 'immature · impatient'
+        title: 'Мнемоника',
+        text: 'Запомни фразу: “IN changes its face”. Внутри IN-family: MPB → IM, L → IL, R → IR.',
+        example: 'MPB = IM · L = IL · R = IR'
       },
       {
-        title: 'in-',
-        text: 'В Unit 1B in- используется с sensitive.',
-        example: 'insensitive'
-      },
-      {
-        title: 'ir-',
-        text: 'В Unit 1B ir- используется с responsible.',
-        example: 'irresponsible'
-      },
-      {
-        title: 'Почему нельзя угадывать приставку',
-        text: 'Приставка является частью словарной формы. Нельзя взять любое прилагательное и механически добавить понравившуюся приставку.',
-        example: 'reliable → unreliable, но responsible → irresponsible'
+        title: 'Почему нельзя просто смотреть на первую букву',
+        text: 'responsible → irresponsible, но reliable → unreliable. Оба слова начинаются с r, но принадлежат к разным словарным семьям.',
+        example: 'responsible → irresponsible · reliable → unreliable'
       }
     ],
 
     tables: [
       {
-        title: 'Negative prefixes из Unit 1B',
-        headers: ['Приставка', 'Исходное слово', 'Противоположное слово'],
+        title: 'Алгоритм выбора',
+        headers: ['Шаг', 'Что спросить себя', 'Что делать'],
         rows: [
-          ['dis-', 'honest', 'dishonest'],
-          ['dis-', 'organized', 'disorganized'],
-          ['im-', 'mature', 'immature'],
-          ['im-', 'patient', 'impatient'],
-          ['in-', 'sensitive', 'insensitive'],
-          ['ir-', 'responsible', 'irresponsible'],
-          ['un-', 'reliable', 'unreliable'],
-          ['un-', 'ambitious', 'unambitious'],
-          ['un-', 'imaginative', 'unimaginative'],
-          ['un-', 'sociable', 'unsociable'],
-          ['un-', 'friendly', 'unfriendly'],
-          ['un-', 'kind', 'unkind'],
-          ['un-', 'selfish', 'unselfish']
+          ['1', 'Я знаю готовую противоположную форму?', 'Если да — используй её. Не меняй приставку.'],
+          ['2', 'Слово относится к IN-family?', 'Если да — применяй правило произношения.'],
+          ['3', 'Начинается с m / p / b?', 'in- → im-'],
+          ['4', 'Начинается с l?', 'in- → il-'],
+          ['5', 'Начинается с r?', 'in- → ir-'],
+          ['6', 'Другая буква внутри IN-family?', 'остаётся in-'],
+          ['7', 'Это un- или dis- family?', 'Учи как готовую пару; по первой букве не угадываем.']
+        ]
+      },
+      {
+        title: 'Negative prefixes из Unit 1B',
+        headers: ['Приставка', 'Исходное слово', 'Противоположное слово', 'Как запомнить'],
+        rows: [
+          ['dis-', 'honest', 'dishonest', 'готовая пара'],
+          ['dis-', 'organized', 'disorganized', 'готовая пара'],
+          ['im-', 'mature', 'immature', 'IN-family: M → IM'],
+          ['im-', 'patient', 'impatient', 'IN-family: P → IM'],
+          ['in-', 'sensitive', 'insensitive', 'IN-family: обычное IN'],
+          ['ir-', 'responsible', 'irresponsible', 'IN-family: R → IR'],
+          ['un-', 'reliable', 'unreliable', 'готовая пара'],
+          ['un-', 'ambitious', 'unambitious', 'готовая пара'],
+          ['un-', 'imaginative', 'unimaginative', 'готовая пара'],
+          ['un-', 'sociable', 'unsociable', 'готовая пара'],
+          ['un-', 'friendly', 'unfriendly', 'готовая пара'],
+          ['un-', 'kind', 'unkind', 'готовая пара'],
+          ['un-', 'selfish', 'unselfish', 'готовая пара']
         ]
       }
     ],
 
     exampleGroups: [
       {
-        title: 'Пары, которые нужно учить вместе',
+        title: 'IN-family: одна приставка меняет форму',
+        items: [
+          'in- + mature → immature',
+          'in- + patient → impatient',
+          'in- + legal → illegal',
+          'in- + responsible → irresponsible',
+          'in- + sensitive → insensitive'
+        ]
+      },
+      {
+        title: 'Пары, которые лучше учить целиком',
         items: [
           'honest ↔ dishonest',
-          'mature ↔ immature',
+          'organized ↔ disorganized',
           'reliable ↔ unreliable',
-          'sensitive ↔ insensitive',
-          'responsible ↔ irresponsible',
-          'patient ↔ impatient'
+          'ambitious ↔ unambitious',
+          'friendly ↔ unfriendly',
+          'kind ↔ unkind'
         ]
       }
     ],
 
     commonMistakes: [
-      'unhonest ✗ → dishonest ✓',
-      'unmature ✗ → immature ✓',
-      'irreliable ✗ → unreliable ✓',
-      'unsensitive ✗ → insensitive ✓',
-      'unresponsible ✗ → irresponsible ✓',
-      'unpatient ✗ → impatient ✓',
-      'Главное: не угадывать приставку, а учить слово как пару.'
+      'Правило MPB → IM, L → IL, R → IR работает только внутри IN-family. Оно не означает, что любое слово на r получает ir-.',
+      'reliable начинается с r, но правильная форма unreliable, а не irreliable.',
+      'honest → dishonest, не unhonest.',
+      'mature → immature, не unmature.',
+      'sensitive → insensitive, не unsensitive.',
+      'responsible → irresponsible, не unresponsible.',
+      'patient → impatient, не unpatient.',
+      'Лучше учить adjective ↔ opposite как одну пару, а мнемонику использовать только для IN-family.'
     ],
 
     exercises: [
       {
         id: 'prefix-practice-1',
-        title: 'Выбери правильную противоположную форму',
+        title: 'Сначала пойми логику',
         difficulty: 'Легко',
-        instructions: 'Выбери правильный вариант.',
+        instructions: 'Выбери объяснение, почему используется именно эта приставка.',
         hideAnswersOnError: true,
         items: [
-          { id: '1', number: 1, input: 'select', prompt: 'honest →', options: ['unhonest', 'dishonest', 'inhonest'], answer: 1 },
-          { id: '2', number: 2, input: 'select', prompt: 'mature →', options: ['immature', 'unmature', 'dismature'], answer: 0 },
-          { id: '3', number: 3, input: 'select', prompt: 'reliable →', options: ['irreliable', 'disreliable', 'unreliable'], answer: 2 },
-          { id: '4', number: 4, input: 'select', prompt: 'sensitive →', options: ['insensitive', 'unsensitive', 'dissensitive'], answer: 0 },
-          { id: '5', number: 5, input: 'select', prompt: 'responsible →', options: ['unresponsible', 'irresponsible', 'disresponsible'], answer: 1 },
-          { id: '6', number: 6, input: 'select', prompt: 'patient →', options: ['unpatient', 'impatient', 'inpatient'], answer: 1 }
+          {
+            id: '1',
+            number: 1,
+            input: 'single',
+            prompt: 'patient → impatient. Почему im-?',
+            options: [
+              'Потому что это IN-family и слово начинается с p.',
+              'Потому что все слова на p всегда получают im-.',
+              'Потому что im- означает “очень”.'
+            ],
+            answer: 0
+          },
+          {
+            id: '2',
+            number: 2,
+            input: 'single',
+            prompt: 'responsible → irresponsible. Почему ir-?',
+            options: [
+              'Потому что это IN-family и слово начинается с r.',
+              'Потому что любое слово на r получает ir-.',
+              'Потому что responsible — глагол.'
+            ],
+            answer: 0
+          },
+          {
+            id: '3',
+            number: 3,
+            input: 'single',
+            prompt: 'sensitive → insensitive. Почему остаётся in-?',
+            options: [
+              'Потому что sensitive относится к IN-family и не начинается с m/p/b/l/r.',
+              'Потому что in- всегда используется перед s.',
+              'Потому что un- нельзя ставить перед s.'
+            ],
+            answer: 0
+          },
+          {
+            id: '4',
+            number: 4,
+            input: 'single',
+            prompt: 'reliable → unreliable, хотя слово начинается с r. Почему не ir-?',
+            options: [
+              'Потому что reliable относится к un-family, а не к IN-family.',
+              'Потому что правило R → IR неверное.',
+              'Потому что reliable не имеет противоположной формы.'
+            ],
+            answer: 0
+          }
         ]
       },
       {
         id: 'prefix-practice-2',
-        title: 'Напиши противоположное слово',
+        title: 'Используй мнемонику IN-family',
         difficulty: 'Средне',
-        instructions: 'Напиши противоположную форму полностью.',
+        instructions: 'Выбери правильную форму. Помни: MPB → IM, L → IL, R → IR.',
         hideAnswersOnError: true,
         items: [
-          { id: '1', number: 1, prompt: 'ambitious →', input: 'text', answer: 'unambitious' },
-          { id: '2', number: 2, prompt: 'imaginative →', input: 'text', answer: 'unimaginative' },
-          { id: '3', number: 3, prompt: 'organized →', input: 'text', answer: 'disorganized' },
-          { id: '4', number: 4, prompt: 'sociable →', input: 'text', answer: 'unsociable' },
-          { id: '5', number: 5, prompt: 'friendly →', input: 'text', answer: 'unfriendly' },
-          { id: '6', number: 6, prompt: 'kind →', input: 'text', answer: 'unkind' },
-          { id: '7', number: 7, prompt: 'selfish →', input: 'text', answer: 'unselfish' }
+          { id: '1', number: 1, input: 'select', prompt: 'mature →', options: ['inmature', 'immature', 'unmature'], answer: 1 },
+          { id: '2', number: 2, input: 'select', prompt: 'patient →', options: ['inpatient', 'impatient', 'unpatient'], answer: 1 },
+          { id: '3', number: 3, input: 'select', prompt: 'responsible →', options: ['inresponsible', 'irresponsible', 'unresponsible'], answer: 1 },
+          { id: '4', number: 4, input: 'select', prompt: 'sensitive →', options: ['insensitive', 'imsensitive', 'irsensitive'], answer: 0 },
+          { id: '5', number: 5, input: 'select', prompt: 'legal →', options: ['inlegal', 'illegal', 'unlegal'], answer: 1 }
         ]
       },
       {
         id: 'prefix-practice-3',
-        title: 'Выбери приставку',
+        title: 'Готовые пары: un- и dis-',
         difficulty: 'Средне',
-        instructions: 'Выбери приставку, которая используется в этом слове.',
+        instructions: 'Здесь нельзя выбрать приставку только по первой букве. Вспомни готовую пару.',
         hideAnswersOnError: true,
         items: [
-          { id: '1', number: 1, input: 'single', prompt: '___honest', options: ['un-', 'dis-', 'im-'], answer: 1 },
-          { id: '2', number: 2, input: 'single', prompt: '___mature', options: ['un-', 'im-', 'ir-'], answer: 1 },
-          { id: '3', number: 3, input: 'single', prompt: '___sensitive', options: ['in-', 'un-', 'dis-'], answer: 0 },
-          { id: '4', number: 4, input: 'single', prompt: '___responsible', options: ['ir-', 'im-', 'un-'], answer: 0 },
-          { id: '5', number: 5, input: 'single', prompt: '___reliable', options: ['ir-', 'dis-', 'un-'], answer: 2 }
+          { id: '1', number: 1, input: 'select', prompt: 'honest →', options: ['unhonest', 'dishonest', 'inhonest'], answer: 1 },
+          { id: '2', number: 2, input: 'select', prompt: 'organized →', options: ['disorganized', 'unorganized', 'imorganized'], answer: 0 },
+          { id: '3', number: 3, input: 'select', prompt: 'reliable →', options: ['irreliable', 'unreliable', 'disreliable'], answer: 1 },
+          { id: '4', number: 4, input: 'select', prompt: 'friendly →', options: ['infriendly', 'unfriendly', 'disfriendly'], answer: 1 },
+          { id: '5', number: 5, input: 'select', prompt: 'kind →', options: ['unkind', 'inkind', 'diskind'], answer: 0 }
+        ]
+      },
+      {
+        id: 'prefix-practice-4',
+        title: 'Напиши противоположное слово',
+        difficulty: 'Сложнее',
+        instructions: 'Напиши правильную форму полностью.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, prompt: 'ambitious →', input: 'text', answer: 'unambitious' },
+          { id: '2', number: 2, prompt: 'imaginative →', input: 'text', answer: 'unimaginative' },
+          { id: '3', number: 3, prompt: 'sociable →', input: 'text', answer: 'unsociable' },
+          { id: '4', number: 4, prompt: 'selfish →', input: 'text', answer: 'unselfish' },
+          { id: '5', number: 5, prompt: 'patient →', input: 'text', answer: 'impatient' },
+          { id: '6', number: 6, prompt: 'responsible →', input: 'text', answer: 'irresponsible' }
         ]
       }
     ]
@@ -1448,6 +1537,71 @@ if (typeof document !== 'undefined') {
       line-height: 1.65;
     }
 
+    .prefix-memory {
+      margin-top: 20px;
+      padding: 18px;
+      border: 1px solid #c7d2fe;
+      border-radius: 18px;
+      background: #eef2ff;
+    }
+
+    .prefix-memory strong {
+      display: block;
+      color: #312e81;
+      font-size: 1.05rem;
+    }
+
+    .prefix-memory-code {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 9px;
+      margin-top: 12px;
+    }
+
+    .prefix-memory-code span {
+      display: grid;
+      place-items: center;
+      min-height: 54px;
+      padding: 10px;
+      border-radius: 13px;
+      background: #fff;
+      color: #3730a3;
+      font-weight: 950;
+      text-align: center;
+    }
+
+    .prefix-flow {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .prefix-flow-step {
+      display: grid;
+      grid-template-columns: 38px minmax(0,1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 13px 14px;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .prefix-flow-step b:first-child {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: #111827;
+      color: #fff;
+    }
+
+    .prefix-flow-step span {
+      color: #475569;
+      line-height: 1.55;
+    }
+
     .prefix-pairs {
       display: grid;
       grid-template-columns: repeat(5,minmax(0,1fr));
@@ -1504,7 +1658,7 @@ if (typeof document !== 'undefined') {
 
     .prefix-table {
       width: 100%;
-      min-width: 640px;
+      min-width: 720px;
       border-collapse: separate;
       border-spacing: 0;
       overflow: hidden;
@@ -1573,7 +1727,8 @@ if (typeof document !== 'undefined') {
 
     @media (max-width: 820px) {
       .prefix-pairs,
-      .prefix-compare {
+      .prefix-compare,
+      .prefix-memory-code {
         grid-template-columns: 1fr;
       }
     }
@@ -1592,33 +1747,31 @@ if (typeof document !== 'undefined') {
     <div class="prefix-guide" id="prefix-grammar-guide">
       <section class="prefix-section prefix-hero">
         <p class="prefix-kicker">Opposite adjectives</p>
-        <h2>Negative prefixes: приставку нельзя выбирать случайно</h2>
-        <p class="prefix-lead">Приставка меняет значение прилагательного на противоположное. Но нет правила «всегда добавляй un-». Форму нужно учить вместе с исходным словом.</p>
+        <h2>Как выбрать negative prefix и как это запомнить</h2>
+        <p class="prefix-lead">Главное правило: <b>не угадываем приставку по первой букве слова</b>. Сначала учим готовую пару. Но внутри семьи <b>in-</b> есть очень удобная закономерность произношения.</p>
 
-        <div class="prefix-pairs">
-          <div class="prefix-card">
-            <strong>dis-</strong>
-            <span>honest → <b>dishonest</b></span>
-            <span>organized → <b>disorganized</b></span>
+        <div class="prefix-memory">
+          <strong>Мнемоника: IN changes its face</strong>
+          <div class="prefix-memory-code">
+            <span>MPB → IM</span>
+            <span>L → IL</span>
+            <span>R → IR</span>
           </div>
-          <div class="prefix-card">
-            <strong>im-</strong>
-            <span>mature → <b>immature</b></span>
-            <span>patient → <b>impatient</b></span>
+          <p class="prefix-lead">То есть <b>in-</b> меняет форму перед определёнными звуками: <b>impossible, immature, impatient · illegal · irregular, irresponsible</b>. Если это IN-family и специальной буквы нет, остаётся <b>in-</b>: <b>insensitive</b>.</p>
+        </div>
+
+        <div class="prefix-flow">
+          <div class="prefix-flow-step">
+            <b>1</b>
+            <span><b>Вспомни готовую пару.</b> Например, reliable ↔ unreliable или honest ↔ dishonest.</span>
           </div>
-          <div class="prefix-card">
-            <strong>in-</strong>
-            <span>sensitive → <b>insensitive</b></span>
+          <div class="prefix-flow-step">
+            <b>2</b>
+            <span><b>Если слово относится к IN-family</b>, используй мнемонику: MPB → IM, L → IL, R → IR.</span>
           </div>
-          <div class="prefix-card">
-            <strong>ir-</strong>
-            <span>responsible → <b>irresponsible</b></span>
-          </div>
-          <div class="prefix-card">
-            <strong>un-</strong>
-            <span>reliable → <b>unreliable</b></span>
-            <span>friendly → <b>unfriendly</b></span>
-            <span>kind → <b>unkind</b></span>
+          <div class="prefix-flow-step">
+            <b>3</b>
+            <span><b>un- и dis- не выбираются по первой букве.</b> Их нужно запоминать как часть конкретного слова.</span>
           </div>
         </div>
       </section>
@@ -1627,64 +1780,103 @@ if (typeof document !== 'undefined') {
         <div class="prefix-section-head">
           <span class="prefix-num">1</span>
           <div>
-            <h2>Все формы из Unit 1B</h2>
-            <p>Эти пары нужно запоминать как словарные единицы.</p>
+            <h2>Семья IN: здесь действительно есть логика</h2>
+            <p>im-, il- и ir- — варианты отрицательной приставки in-. Форма меняется, чтобы слово было легче произносить.</p>
           </div>
         </div>
 
-        <div class="prefix-table-wrap">
-          <table class="prefix-table">
-            <thead>
-              <tr><th>Приставка</th><th>Исходное слово</th><th>Противоположное слово</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>dis-</td><td>honest</td><td>dishonest</td></tr>
-              <tr><td>dis-</td><td>organized</td><td>disorganized</td></tr>
-              <tr><td>im-</td><td>mature</td><td>immature</td></tr>
-              <tr><td>im-</td><td>patient</td><td>impatient</td></tr>
-              <tr><td>in-</td><td>sensitive</td><td>insensitive</td></tr>
-              <tr><td>ir-</td><td>responsible</td><td>irresponsible</td></tr>
-              <tr><td>un-</td><td>reliable</td><td>unreliable</td></tr>
-              <tr><td>un-</td><td>ambitious</td><td>unambitious</td></tr>
-              <tr><td>un-</td><td>imaginative</td><td>unimaginative</td></tr>
-              <tr><td>un-</td><td>sociable</td><td>unsociable</td></tr>
-              <tr><td>un-</td><td>friendly</td><td>unfriendly</td></tr>
-              <tr><td>un-</td><td>kind</td><td>unkind</td></tr>
-              <tr><td>un-</td><td>selfish</td><td>unselfish</td></tr>
-            </tbody>
-          </table>
+        <div class="prefix-compare">
+          <div>
+            <h3>MPB → IM</h3>
+            <p><b>mature → immature</b><br><b>patient → impatient</b><br><b>possible → impossible</b></p>
+          </div>
+          <div>
+            <h3>L → IL</h3>
+            <p><b>legal → illegal</b><br><b>logical → illogical</b></p>
+          </div>
+          <div>
+            <h3>R → IR</h3>
+            <p><b>regular → irregular</b><br><b>responsible → irresponsible</b></p>
+          </div>
+          <div>
+            <h3>Остальные → IN</h3>
+            <p><b>sensitive → insensitive</b><br><b>correct → incorrect</b></p>
+          </div>
         </div>
+
+        <div class="prefix-note"><b>Ограничение:</b> это правило работает только если слово уже относится к IN-family. Например, <b>reliable</b> начинается с r, но противоположное слово — <b>unreliable</b>, потому что оно относится к другой словарной семье.</div>
       </section>
 
       <section class="prefix-section">
         <div class="prefix-section-head">
           <span class="prefix-num">2</span>
           <div>
-            <h2>Почему нельзя угадывать приставку</h2>
-            <p>Слова похожи по смыслу, но используют разные отрицательные приставки.</p>
+            <h2>un- и dis-: запоминаем парами</h2>
+            <p>Здесь нет безопасного правила по первой букве. Поэтому лучше хранить в памяти сразу две формы.</p>
           </div>
         </div>
 
-        <div class="prefix-compare">
-          <div>
-            <h3>responsible → irresponsible</h3>
-            <p>Здесь используется <b>ir-</b>, а не un-. Поэтому <i>unresponsible</i> для этого упражнения неверно.</p>
+        <div class="prefix-pairs">
+          <div class="prefix-card">
+            <strong>dis-</strong>
+            <span>honest → <b>dishonest</b></span>
+            <span>organized → <b>disorganized</b></span>
           </div>
-          <div>
-            <h3>reliable → unreliable</h3>
-            <p>Здесь используется <b>un-</b>, а не ir-. Поэтому <i>irreliable</i> неверно.</p>
+          <div class="prefix-card">
+            <strong>un-</strong>
+            <span>reliable → <b>unreliable</b></span>
+            <span>ambitious → <b>unambitious</b></span>
           </div>
-          <div>
-            <h3>mature → immature</h3>
-            <p>Нужна форма <b>immature</b>, а не <i>unmature</i>.</p>
+          <div class="prefix-card">
+            <strong>un-</strong>
+            <span>imaginative → <b>unimaginative</b></span>
+            <span>sociable → <b>unsociable</b></span>
           </div>
-          <div>
-            <h3>honest → dishonest</h3>
-            <p>Нужна форма <b>dishonest</b>, а не <i>unhonest</i>.</p>
+          <div class="prefix-card">
+            <strong>un-</strong>
+            <span>friendly → <b>unfriendly</b></span>
+            <span>kind → <b>unkind</b></span>
+          </div>
+          <div class="prefix-card">
+            <strong>un-</strong>
+            <span>selfish → <b>unselfish</b></span>
           </div>
         </div>
 
-        <div class="prefix-note"><b>Лучший способ:</b> учить пары целиком: <b>honest ↔ dishonest</b>, <b>patient ↔ impatient</b>, <b>reliable ↔ unreliable</b>.</div>
+        <div class="prefix-note"><b>Удобнее учить так:</b> не “reliable = надёжный”, а сразу <b>reliable ↔ unreliable</b>. Не “honest = честный”, а <b>honest ↔ dishonest</b>.</div>
+      </section>
+
+      <section class="prefix-section">
+        <div class="prefix-section-head">
+          <span class="prefix-num">3</span>
+          <div>
+            <h2>Все формы из Unit 1B</h2>
+            <p>Последняя колонка показывает, что здесь можно вывести логически, а что нужно просто запомнить как пару.</p>
+          </div>
+        </div>
+
+        <div class="prefix-table-wrap">
+          <table class="prefix-table">
+            <thead>
+              <tr><th>Prefix</th><th>Adjective</th><th>Opposite</th><th>Memory clue</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>dis-</td><td>honest</td><td>dishonest</td><td>learn the pair</td></tr>
+              <tr><td>dis-</td><td>organized</td><td>disorganized</td><td>learn the pair</td></tr>
+              <tr><td>im-</td><td>mature</td><td>immature</td><td>IN-family: M → IM</td></tr>
+              <tr><td>im-</td><td>patient</td><td>impatient</td><td>IN-family: P → IM</td></tr>
+              <tr><td>in-</td><td>sensitive</td><td>insensitive</td><td>IN-family: keep IN</td></tr>
+              <tr><td>ir-</td><td>responsible</td><td>irresponsible</td><td>IN-family: R → IR</td></tr>
+              <tr><td>un-</td><td>reliable</td><td>unreliable</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>ambitious</td><td>unambitious</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>imaginative</td><td>unimaginative</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>sociable</td><td>unsociable</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>friendly</td><td>unfriendly</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>kind</td><td>unkind</td><td>learn the pair</td></tr>
+              <tr><td>un-</td><td>selfish</td><td>unselfish</td><td>learn the pair</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   `;
