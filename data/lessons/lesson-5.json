@@ -5,7 +5,10 @@
   "subtitle": "Personality adjectives + future forms",
   "status": "available",
   "vocabularyId": "vocab-lesson-4",
-  "grammarIds": [],
+  "grammarIds": [
+    "future-forms",
+    "opposite-adjectives-negative-prefixes"
+  ],
   "publishedAt": "2026-10-26",
   "totalPoints": 41,
   "notification": {

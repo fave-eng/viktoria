@@ -19,79 +19,79 @@ window.GRAMMAR_DATA = [
       {
         icon: "1",
         label: "Present simple",
-        hint: "Привычки, факты, регулярные действия и состояния.",
+        hint: "Routines, facts, repeated actions, and states.",
         pattern: "I / you / we / they work · he / she / it works",
         example: "My boss cycles to work every morning."
       },
       {
         icon: "2",
         label: "Present continuous",
-        hint: "Действие происходит сейчас, в текущий период или является временным.",
+        hint: "Something happening now, around now, or temporarily.",
         pattern: "am / is / are + verb-ing",
         example: "We’re having a party right now."
       },
       {
         icon: "3",
-        label: "Глаголы состояния",
-        hint: "Глаголы believe, belong, know, love, recognize, understand и другие обычно описывают состояние, а не действие.",
-        pattern: "обычно Present Simple",
+        label: "Non-action verbs",
+        hint: "Verbs such as believe, belong, know, love, recognize, and understand usually describe states.",
+        pattern: "usually present simple",
         example: "I believe you. This bag doesn’t belong to me."
       },
       {
         icon: "4",
-        label: "Значение может меняться",
-        hint: "Некоторые глаголы в одном значении описывают состояние, а в другом — действие.",
-        pattern: "think = мнение / think about = процесс размышления",
+        label: "Meaning can change",
+        hint: "Some verbs can be stative in one meaning and active in another.",
+        pattern: "think = opinion / think about = activity",
         example: "Do you think it’s easy? · I’m thinking about dinner."
       }
     ],
     miniRules: [
       {
-        title: "Утвердительные предложения",
-        text: "Present Simple: I work / she works. Present Continuous: I am working / she is working.",
+        title: "Affirmative",
+        text: "Present simple: I work / she works. Present continuous: I am working / she is working.",
         example: "She plays tennis every week. She’s playing tennis now."
       },
       {
-        title: "Отрицательные предложения",
-        text: "Present Simple: don’t / doesn’t + начальная форма глагола. Present Continuous: am not / isn’t / aren’t + verb-ing.",
+        title: "Negative",
+        text: "Present simple: don’t / doesn’t + base verb. Present continuous: am not / isn’t / aren’t + verb-ing.",
         example: "He doesn’t use it every day. He isn’t using it now."
       },
       {
-        title: "Вопросы",
-        text: "Present Simple: Do / Does + подлежащее + начальная форма глагола? Present Continuous: Am / Is / Are + подлежащее + verb-ing?",
+        title: "Questions",
+        text: "Present simple: Do / Does + subject + base verb? Present continuous: Am / Is / Are + subject + verb-ing?",
         example: "Do you like it? · Are you watching TV?"
       },
       {
-        title: "Краткие ответы",
-        text: "Present Simple: Yes, I do. / No, she doesn’t. Present Continuous: Yes, I am. / No, he isn’t.",
+        title: "Short answers",
+        text: "Present simple: Yes, I do. / No, she doesn’t. Present continuous: Yes, I am. / No, he isn’t.",
         example: "Are they studying? – Yes, they are."
       },
       {
-        title: "Как добавить -ing",
-        text: "Обычно просто добавляем -ing. Конечную -e убираем: make → making. В некоторых коротких глаголах с ударным последним слогом удваиваем конечную согласную: sit → sitting.",
+        title: "Spelling with -ing",
+        text: "Usually add -ing. Drop final -e: make → making. Double the final consonant in some short stressed verbs: sit → sitting.",
         example: "cycle → cycling · have → having · run → running"
       },
       {
-        title: "Частые глаголы состояния",
-        text: "believe, belong, know, like, love, need, recognize, remember, understand, want, а также think в значении «считать / иметь мнение».",
+        title: "Common non-action verbs",
+        text: "believe, belong, know, like, love, need, recognize, remember, understand, want, and think when it means ‘have an opinion’.",
         example: "I love vegetables. Do you think the fish is cooked?"
       }
     ],
     tables: [
       {
-        title: "Present Simple и Present Continuous",
-        headers: ["Когда используем", "Present Simple", "Present Continuous"],
+        title: "Present simple vs present continuous",
+        headers: ["Use", "Present simple", "Present continuous"],
         rows: [
-          ["Регулярное действие", "I usually do my homework after class.", "—"],
-          ["Прямо сейчас", "—", "I’m doing my homework right now."],
-          ["Состояние / мнение", "I think English is useful.", "—"],
-          ["Временная ситуация", "—", "I’m not eating chocolate this month."]
+          ["Routine", "I usually do my homework after class.", "—"],
+          ["Now", "—", "I’m doing my homework right now."],
+          ["State / opinion", "I think English is useful.", "—"],
+          ["Temporary situation", "—", "I’m not eating chocolate this month."]
         ]
       }
     ],
     exampleGroups: [
       {
-        title: "Глаголы действия",
+        title: "Action verbs",
         items: [
           "She plays tennis every Saturday.",
           "She’s playing tennis at the moment.",
@@ -100,7 +100,7 @@ window.GRAMMAR_DATA = [
         ]
       },
       {
-        title: "Глаголы состояния",
+        title: "Non-action verbs",
         items: [
           "I believe him.",
           "This bag belongs to me.",
@@ -110,10 +110,10 @@ window.GRAMMAR_DATA = [
       }
     ],
     commonMistakes: [
-      "Глаголы состояния обычно не употребляются в Continuous: I’m believing you ✗ → I believe you ✓.",
-      "После does / doesn’t используем начальную форму глагола: She doesn’t belongs ✗ → She doesn’t belong ✓.",
-      "В Present Continuous обязательно нужен глагол be: She playing tennis ✗ → She is playing tennis ✓.",
-      "В вопросах Present Simple используем do / does, а в Present Continuous — am / is / are."
+      "Don’t normally use a non-action verb in the continuous: I’m believing you ✗ → I believe you ✓.",
+      "After does / doesn’t, use the base verb: She doesn’t belongs ✗ → She doesn’t belong ✓.",
+      "Present continuous needs be: She playing tennis ✗ → She is playing tennis ✓.",
+      "Use do / does for present-simple questions and am / is / are for present-continuous questions."
     ],
     exercises: [
       {
@@ -399,33 +399,20 @@ if (typeof document !== 'undefined') {
       outline: none;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: auto minmax(120px, 220px) auto;
       gap: 8px;
+      align-items: end;
       margin-top: 18px;
       margin-bottom: 10px;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-item-header {
-      flex: 0 0 auto;
-      align-self: flex-end;
-      margin: 0;
-      padding: 0 0 7px;
-    }
-    [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control {
-      flex: 0 1 220px;
-      display: flex;
-      align-items: flex-end;
-      gap: 2px;
-      padding: 0;
-    }
-    [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control .text-field {
-      width: 100%;
+      align-self: end;
+      padding-bottom: 7px;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item="greeting"] .exercise-control::after {
       content: ",";
       margin-left: 2px;
-      padding-bottom: 7px;
     }
     [data-task="3e"].email-letter-enhanced [data-exercise-item^="line-"] {
       margin: 2px 0;
@@ -685,141 +672,295 @@ if (typeof document !== 'undefined') {
 })();
 }
 
-/* Viktoria grammar topic bespoke guide */
-if (typeof document !== 'undefined') {
+/* Viktoria HW5 · Future forms */
 (() => {
-  const TOPIC_ID = 'present-simple-continuous-action-nonaction';
+  'use strict';
+
+  const TOPIC_ID = 'future-forms';
+  const topic = {
+    id: TOPIC_ID,
+    order: 2,
+    linkedLessonId: 'lesson-5',
+    title: 'Future forms',
+    level: 'A2.2',
+    status: 'available',
+    publishedAt: '2026-10-26',
+    page: 'grammar-topic.html?id=future-forms',
+    lockOnPass: true,
+    revealAnswersOnError: false,
+
+    explanation: 'В английском нет одной универсальной формы будущего. Present Continuous, be going to, will / won’t и Shall I / Shall we выбираются по смыслу: договорённость, намерение, решение в момент речи, обещание, предложение или прогноз.',
+    formula: 'arrangement → Present Continuous · intention / evidence → be going to · instant decision / promise / offer / prediction → will · suggestion / offer → Shall I / Shall we',
+
+    glanceCards: [
+      {
+        icon: '1',
+        label: 'Present Continuous',
+        hint: 'Уже организованный план или договорённость.',
+        pattern: 'am / is / are + verb-ing',
+        example: 'We’re going on holiday tomorrow.'
+      },
+      {
+        icon: '2',
+        label: 'be going to',
+        hint: 'Намерение / уже принятое решение; прогноз по видимым признакам.',
+        pattern: 'am / is / are + going to + verb',
+        example: 'He’s going to look for a new job.'
+      },
+      {
+        icon: '3',
+        label: 'will / won’t',
+        hint: 'Решение сейчас, обещание, предложение помощи, прогноз.',
+        pattern: 'will / won’t + verb',
+        example: 'I’ll have the steak.'
+      },
+      {
+        icon: '4',
+        label: 'Shall I...? / Shall we...?',
+        hint: 'Предложение помощи или совместного действия.',
+        pattern: 'Shall + I / we + verb?',
+        example: 'Shall we invite your parents?'
+      }
+    ],
+
+    miniRules: [
+      {
+        title: 'Present Continuous для arrangements',
+        text: 'Используем, когда событие уже организовано: есть договорённость, бронирование, билет, назначенное время или другой конкретный план.',
+        example: 'We’re going on holiday tomorrow. — Мы завтра едем в отпуск.'
+      },
+      {
+        title: 'be going to для intentions',
+        text: 'Используем для намерения или решения, которое было принято до момента речи.',
+        example: 'He’s going to look for a new job. — Он собирается искать новую работу.'
+      },
+      {
+        title: 'be going to для prediction from evidence',
+        text: 'Если прогноз основан на том, что мы видим или знаем сейчас, часто используем be going to.',
+        example: 'There’s too much shopping in this bag. It’s going to break. — В сумке слишком много покупок. Она сейчас порвётся.'
+      },
+      {
+        title: 'will для instant decisions',
+        text: 'Если решение принимается прямо во время разговора, используем will.',
+        example: 'A: Are you ready to order? B: Yes, I’ll have the steak.'
+      },
+      {
+        title: 'will / won’t для promises и offers',
+        text: 'Will / won’t часто используется для обещаний и предложений помощи.',
+        example: 'Don’t worry. I won’t be late. — Не переживай. Я не опоздаю.'
+      },
+      {
+        title: 'Shall I...? / Shall we...?',
+        text: 'Shall I...? — предложение помощи. Shall we...? — предложение сделать что-то вместе.',
+        example: 'Shall I make some more coffee? · Shall we invite your parents?'
+      }
+    ],
+
+    tables: [
+      {
+        title: 'Future forms: сравнение',
+        headers: ['Смысл', 'Форма', 'Пример'],
+        rows: [
+          ['Уже организованный план', 'Present Continuous', 'We’re going on holiday tomorrow.'],
+          ['Намерение', 'be going to + verb', 'He’s going to look for a new job.'],
+          ['Прогноз по видимым признакам', 'be going to + verb', 'It’s going to break.'],
+          ['Решение в момент речи', 'will + verb', 'I’ll have the steak.'],
+          ['Обещание', 'will / won’t + verb', 'I won’t be late.'],
+          ['Предложение / идея', 'Shall I...? / Shall we...?', 'Shall we invite your parents?']
+        ]
+      }
+    ],
+
+    exampleGroups: [
+      {
+        title: 'Одна ситуация — разные причины',
+        items: [
+          'We’re meeting them at six. — есть договорённость.',
+          'We’re going to invite them. — намерение уже есть.',
+          'I’ll invite them. — решение принято сейчас.',
+          'Shall we invite them? — предложение.'
+        ]
+      }
+    ],
+
+    commonMistakes: [
+      'Не выбирай Present Continuous только из-за tomorrow. Важно, есть ли уже arrangement.',
+      'Не используй be going to для решения, принятого прямо сейчас: обычно нужен will.',
+      'Для прогноза по видимым признакам обычно естественнее be going to: Look at those clouds. It’s going to rain.',
+      'После will и be going to смысловой глагол стоит в начальной форме: will go, going to go.',
+      'В некоторых predictions возможны и will, и be going to — контекст важнее одного маркера.'
+    ],
+
+    exercises: [
+      {
+        id: 'future-practice-1',
+        title: 'Выбери форму по смыслу',
+        difficulty: 'Средне',
+        instructions: 'Выбери форму, которая соответствует причине в скобках.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, input: 'select', prompt: 'The restaurant is booked. We ___ there at 8. (arrangement)', options: ['are having dinner', 'will have dinner', 'are going to have dinner'], answer: 0 },
+          { id: '2', number: 2, input: 'select', prompt: 'I’ve already decided. I ___ a new job. (intention)', options: ['will look for', 'am going to look for', 'am looking for tomorrow'], answer: 1 },
+          { id: '3', number: 3, input: 'select', prompt: 'A: We haven’t got any bread. B: OK, I ___ some. (instant decision)', options: ['will get', 'am going to get', 'am getting'], answer: 0 },
+          { id: '4', number: 4, input: 'select', prompt: 'Look at that bag! It ___. (present evidence)', options: ['will break', 'is going to break', 'is breaking tomorrow'], answer: 1 },
+          { id: '5', number: 5, input: 'select', prompt: '___ some more coffee? (offer)', options: ['Shall I make', 'Will I make', 'Am I making'], answer: 0 },
+          { id: '6', number: 6, input: 'select', prompt: '___ your parents this weekend? (suggestion)', options: ['Shall we invite', 'Will we invite', 'Are we going invite'], answer: 0 }
+        ]
+      },
+      {
+        id: 'future-practice-2',
+        title: 'Построй форму',
+        difficulty: 'Сложнее',
+        instructions: 'Напиши полное предложение.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, prompt: 'we / go / on holiday tomorrow (arrangement)', input: 'text', answer: 'We’re going on holiday tomorrow.', acceptedAnswers: ['We’re going on holiday tomorrow.', "We're going on holiday tomorrow.", 'We are going on holiday tomorrow.'] },
+          { id: '2', number: 2, prompt: 'he / look for / a new job (intention)', input: 'text', answer: 'He’s going to look for a new job.', acceptedAnswers: ['He’s going to look for a new job.', "He's going to look for a new job.", 'He is going to look for a new job.'] },
+          { id: '3', number: 3, prompt: 'I / not be / late (promise)', input: 'text', answer: 'I won’t be late.', acceptedAnswers: ['I won’t be late.', "I won't be late.", 'I will not be late.'] },
+          { id: '4', number: 4, prompt: 'we / invite / your parents? (suggestion)', input: 'text', answer: 'Shall we invite your parents?' }
+        ]
+      },
+      {
+        id: 'future-practice-3',
+        title: 'Почему именно эта форма?',
+        difficulty: 'Сложнее',
+        instructions: 'Выбери причину использования формы.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, input: 'single', prompt: 'We’re meeting Jack at 7.', options: ['arrangement', 'instant decision', 'promise'], answer: 0 },
+          { id: '2', number: 2, input: 'single', prompt: 'I’ll answer the phone.', options: ['intention from before', 'instant decision', 'arrangement'], answer: 1 },
+          { id: '3', number: 3, input: 'single', prompt: 'It’s going to rain.', options: ['prediction from present evidence', 'suggestion', 'promise'], answer: 0 },
+          { id: '4', number: 4, input: 'single', prompt: 'Shall we order pizza?', options: ['prediction', 'suggestion', 'arrangement'], answer: 1 }
+        ]
+      }
+    ]
+  };
+
+  window.GRAMMAR_DATA = Array.isArray(window.GRAMMAR_DATA) ? window.GRAMMAR_DATA : [];
+  if (!window.GRAMMAR_DATA.some((item) => item?.id === TOPIC_ID)) {
+    window.GRAMMAR_DATA.push(topic);
+  }
+
+  if (typeof document === 'undefined') return;
 
   const styles = `
-    .grammar-bespoke-hidden { display: none !important; }
+    .future-hidden { display: none !important; }
 
-    .v-grammar-guide {
+    .future-guide {
       display: grid;
-      gap: 28px;
+      gap: 26px;
       margin-bottom: 34px;
     }
-    .v-grammar-guide * { box-sizing: border-box; }
 
-    .v-grammar-hero {
-      overflow: hidden;
-      border: 1px solid #d9e1ee;
-      border-radius: 26px;
-      background:
-        radial-gradient(circle at 92% 10%, rgba(99,102,241,.14), transparent 28%),
-        linear-gradient(135deg, #ffffff 0%, #f7f8ff 52%, #f8fafc 100%);
-      box-shadow: 0 18px 45px rgba(15,23,42,.07);
-    }
-    .v-grammar-hero-top {
-      padding: 28px 30px 22px;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    .v-grammar-kicker {
-      margin: 0 0 8px;
-      color: #4f46e5;
-      font-size: .72rem;
-      font-weight: 900;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
-    .v-grammar-hero h2 {
-      margin: 0;
-      max-width: 800px;
-      color: #111827;
-      font-size: clamp(1.7rem, 3vw, 2.6rem);
-      line-height: 1.08;
-    }
-    .v-grammar-hero-top > p:last-child {
-      max-width: 820px;
-      margin: 13px 0 0;
-      color: #526077;
-      line-height: 1.65;
-    }
+    .future-guide * { box-sizing: border-box; }
 
-    .v-tense-lanes {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-    }
-    .v-tense-lane {
-      min-width: 0;
-      padding: 26px 30px 30px;
-    }
-    .v-tense-lane + .v-tense-lane {
-      border-left: 1px solid #e2e8f0;
-      background: rgba(238,242,255,.46);
-    }
-    .v-tense-tag {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      margin-bottom: 11px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: #4338ca;
-      font-size: .7rem;
-      font-weight: 900;
-      letter-spacing: .04em;
-    }
-    .v-tense-lane:nth-child(2) .v-tense-tag {
-      background: #ede9fe;
-      color: #6d28d9;
-    }
-    .v-tense-lane h3 {
-      margin: 0 0 6px;
-      color: #0f172a;
-      font-size: 1.35rem;
-    }
-    .v-tense-formula {
-      margin: 0 0 18px;
-      color: #64748b;
-      font-weight: 800;
-    }
-    .v-criterion-list {
-      display: grid;
-      gap: 12px;
-    }
-    .v-criterion {
-      padding: 14px 15px;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      background: #fff;
-    }
-    .v-criterion-label {
-      display: block;
-      margin-bottom: 7px;
-      color: #475569;
-      font-size: .72rem;
-      font-weight: 900;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-    .v-example-en {
-      margin: 0;
-      color: #111827;
-      font-weight: 850;
-      line-height: 1.48;
-    }
-    .v-example-ru {
-      margin: 4px 0 0;
-      color: #64748b;
-      line-height: 1.48;
-    }
-
-    .v-grammar-section {
+    .future-section {
       padding: 27px 28px 30px;
       border: 1px solid #dbe3ef;
       border-radius: 24px;
       background: #fff;
       box-shadow: 0 12px 30px rgba(15,23,42,.045);
     }
-    .v-grammar-section-head {
+
+    .future-hero {
+      overflow: hidden;
+      padding: 0;
+      background:
+        radial-gradient(circle at 94% 7%, rgba(124,58,237,.14), transparent 28%),
+        linear-gradient(135deg,#fff,#f8f9ff);
+    }
+
+    .future-hero-copy {
+      padding: 28px 30px 23px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .future-kicker {
+      margin: 0 0 7px;
+      color: #4f46e5;
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .future-guide h2 {
+      margin: 0;
+      color: #111827;
+      font-size: clamp(1.45rem,2.5vw,2rem);
+      line-height: 1.15;
+    }
+
+    .future-lead {
+      max-width: 850px;
+      margin: 10px 0 0;
+      color: #5c687d;
+      line-height: 1.65;
+    }
+
+    .future-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .future-card {
+      min-width: 0;
+      padding: 24px 28px;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .future-card:nth-child(2n) { border-right: 0; }
+    .future-card:nth-last-child(-n+2) { border-bottom: 0; }
+
+    .future-card h3 {
+      margin: 0 0 6px;
+      color: #111827;
+      font-size: 1.08rem;
+    }
+
+    .future-purpose {
+      margin: 0 0 11px;
+      color: #64748b;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .future-formula {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 7px 10px;
+      border-radius: 10px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-family: ui-monospace,SFMono-Regular,Menlo,monospace;
+      font-size: .84rem;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .future-en {
+      margin: 0;
+      color: #111827;
+      font-weight: 850;
+      line-height: 1.5;
+    }
+
+    .future-ru {
+      margin: 4px 0 0;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .future-section-head {
       display: grid;
       grid-template-columns: auto minmax(0,1fr);
-      gap: 14px;
+      gap: 13px;
       align-items: start;
-      margin-bottom: 22px;
+      margin-bottom: 19px;
     }
-    .v-grammar-number {
+
+    .future-num {
       width: 38px;
       height: 38px;
       display: grid;
@@ -829,572 +970,214 @@ if (typeof document !== 'undefined') {
       color: #fff;
       font-weight: 900;
     }
-    .v-grammar-section h2 {
-      margin: 0;
-      color: #111827;
-      font-size: clamp(1.4rem, 2.3vw, 1.9rem);
-    }
-    .v-grammar-section-head p {
+
+    .future-section-head p {
       margin: 5px 0 0;
       color: #64748b;
       line-height: 1.55;
     }
 
-    .v-compare-wrap {
-      overflow-x: auto;
-      margin-top: 4px;
-      padding-bottom: 4px;
-    }
-    .v-compare-table {
+    .future-table-wrap { overflow-x: auto; }
+
+    .future-table {
       width: 100%;
-      min-width: 760px;
+      min-width: 800px;
       border-collapse: separate;
       border-spacing: 0;
       overflow: hidden;
       border: 1px solid #dbe3ef;
-      border-radius: 18px;
-      background: #fff;
+      border-radius: 16px;
     }
-    .v-compare-table th,
-    .v-compare-table td {
-      padding: 15px 16px;
-      vertical-align: top;
+
+    .future-table th,
+    .future-table td {
+      padding: 13px 14px;
       border-right: 1px solid #e2e8f0;
       border-bottom: 1px solid #e2e8f0;
       text-align: left;
+      vertical-align: top;
     }
-    .v-compare-table th:last-child,
-    .v-compare-table td:last-child { border-right: 0; }
-    .v-compare-table tr:last-child td { border-bottom: 0; }
-    .v-compare-table thead th {
+
+    .future-table th:last-child,
+    .future-table td:last-child { border-right: 0; }
+
+    .future-table tr:last-child td { border-bottom: 0; }
+
+    .future-table th {
       background: #111827;
       color: #fff;
-      font-size: .92rem;
+      font-size: .84rem;
     }
-    .v-compare-table thead th:nth-child(2) { background: #3730a3; }
-    .v-compare-table thead th:nth-child(3) { background: #6d28d9; }
-    .v-compare-label {
-      width: 22%;
-      min-width: 150px;
-      background: #f8fafc;
-      color: #334155;
-      font-size: .78rem;
-      font-weight: 900;
-      letter-spacing: .02em;
-    }
-    .v-formula {
-      display: inline-block;
-      margin-bottom: 8px;
-      padding: 6px 9px;
-      border-radius: 9px;
-      background: #eef2ff;
-      color: #3730a3;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: .86rem;
-      font-weight: 900;
-      line-height: 1.45;
-    }
-    .v-compare-table td:nth-child(3) .v-formula {
-      background: #f3e8ff;
-      color: #6d28d9;
-    }
-    .v-compare-example {
-      margin: 0;
-      color: #111827;
-      font-weight: 800;
-      line-height: 1.45;
-    }
-    .v-compare-translation {
-      margin: 4px 0 0;
-      color: #64748b;
-      font-size: .9rem;
-      line-height: 1.45;
-    }
-    .v-compare-note {
-      margin: 14px 0 0;
-      padding: 13px 15px;
-      border-radius: 14px;
-      background: #f8fafc;
-      color: #475569;
-      line-height: 1.55;
-    }
-    .v-compare-note strong { color: #111827; }
 
-    .v-state-groups {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 14px;
-    }
-    .v-state-group {
-      padding: 16px;
-      border-radius: 17px;
+    .future-table td:first-child {
       background: #f8fafc;
-      border: 1px solid #e2e8f0;
-    }
-    .v-state-group strong {
-      display: block;
-      margin-bottom: 8px;
       color: #334155;
+      font-weight: 850;
     }
-    .v-state-words {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-    .v-state-words span {
-      padding: 6px 9px;
-      border-radius: 999px;
-      background: #fff;
-      border: 1px solid #dbe3ef;
-      color: #1e293b;
-      font-size: .9rem;
-      font-weight: 750;
-    }
-    .v-state-note {
-      margin: 16px 0 0;
-      padding: 14px 16px;
+
+    .future-note {
+      margin-top: 14px;
+      padding: 13px 15px;
       border-left: 4px solid #6366f1;
-      border-radius: 0 14px 14px 0;
+      border-radius: 0 13px 13px 0;
       background: #f5f7ff;
-      color: #374151;
+      color: #475569;
       line-height: 1.6;
     }
 
-    .v-ing-board {
+    .future-contrast {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 14px;
-    }
-    .v-ing-rule {
-      position: relative;
-      overflow: hidden;
-      padding: 18px;
-      border: 1px solid #dfe6f0;
-      border-radius: 18px;
-      background: #fbfcfe;
-    }
-    .v-ing-rule::before {
-      content: attr(data-rule);
-      position: absolute;
-      right: 12px;
-      top: 10px;
-      color: #cbd5e1;
-      font-size: 1.55rem;
-      font-weight: 950;
-    }
-    .v-ing-rule h3 {
-      margin: 0 44px 8px 0;
-      color: #111827;
-      font-size: 1rem;
-    }
-    .v-ing-rule p {
-      margin: 0;
-      color: #566176;
-      line-height: 1.55;
-    }
-    .v-ing-pattern {
-      display: block;
-      margin-top: 12px;
-      padding: 10px 12px;
-      border-radius: 12px;
-      background: #fff;
-      color: #312e81;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-weight: 850;
-      line-height: 1.45;
-    }
-    .v-ing-rule em {
-      display: block;
-      margin-top: 9px;
-      color: #7c3aed;
-      font-style: normal;
-      font-size: .86rem;
-      font-weight: 750;
-    }
-    .v-ing-structure {
-      display: inline-flex;
-      gap: 4px;
-      margin-top: 8px;
-      font-size: .76rem;
-      font-weight: 900;
-    }
-    .v-ing-structure span {
-      padding: 4px 7px;
-      border-radius: 8px;
-      background: #eef2ff;
-      color: #4338ca;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 12px;
     }
 
-    .v-meaning-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 14px;
-    }
-    .v-meaning-card {
-      padding: 18px;
+    .future-contrast > div {
+      padding: 16px;
       border: 1px solid #e2e8f0;
-      border-radius: 18px;
-      background: linear-gradient(180deg,#fff,#f8fafc);
+      border-radius: 15px;
+      background: #fbfcfe;
     }
-    .v-meaning-card h3 {
-      margin: 0 0 12px;
+
+    .future-contrast h3 {
+      margin: 0 0 8px;
       color: #111827;
     }
-    .v-meaning-pair {
-      display: grid;
-      gap: 11px;
-    }
-    .v-meaning-case {
-      padding-top: 11px;
-      border-top: 1px solid #e2e8f0;
-    }
-    .v-meaning-case:first-child {
-      padding-top: 0;
-      border-top: 0;
-    }
-    .v-meaning-case strong {
-      display: block;
-      margin-bottom: 5px;
+
+    .future-contrast p {
+      margin: 0;
       color: #475569;
-      font-size: .78rem;
+      line-height: 1.58;
     }
 
     @media (max-width: 820px) {
-      .v-tense-lanes,
-      .v-state-groups,
-      .v-ing-board,
-      .v-meaning-grid {
+      .future-grid,
+      .future-contrast {
         grid-template-columns: 1fr;
       }
-      .v-tense-lane + .v-tense-lane {
-        border-left: 0;
-        border-top: 1px solid #e2e8f0;
+
+      .future-card {
+        border-right: 0 !important;
+        border-bottom: 1px solid #e2e8f0 !important;
       }
+
+      .future-card:last-child { border-bottom: 0 !important; }
     }
+
     @media (max-width: 520px) {
-      .v-grammar-hero-top,
-      .v-tense-lane,
-      .v-grammar-section {
+      .future-section,
+      .future-hero-copy,
+      .future-card {
         padding-left: 18px;
         padding-right: 18px;
       }
-      .v-grammar-section-head {
-        grid-template-columns: 1fr;
-      }
+
+      .future-section-head { grid-template-columns: 1fr; }
     }
   `;
 
-  const guideHtml = `
-    <div class="v-grammar-guide" id="viktoria-grammar-guide">
-      <section class="v-grammar-hero">
-        <div class="v-grammar-hero-top">
-          <p class="v-grammar-kicker">Сначала выбери смысл, потом форму</p>
-          <h2>Present Simple или Present Continuous?</h2>
-          <p>Не начинай с окончания глагола. Сначала определи, что ты хочешь сказать: это обычное/постоянное или происходит сейчас/временно?</p>
+  const guide = `
+    <div class="future-guide" id="future-grammar-guide">
+      <section class="future-section future-hero">
+        <div class="future-hero-copy">
+          <p class="future-kicker">Future forms</p>
+          <h2>Сначала определи причину, потом выбирай форму</h2>
+          <p class="future-lead">В английском нет одной универсальной формы будущего. Present Continuous, be going to и will описывают разные типы планов, решений и прогнозов.</p>
         </div>
 
-        <div class="v-tense-lanes">
-          <article class="v-tense-lane">
-            <span class="v-tense-tag">ОБЫЧНО · ВСЕГДА · ФАКТ · СОСТОЯНИЕ</span>
-            <h3>Present Simple</h3>
-            <p class="v-tense-formula">do / does · verb / verb-s</p>
-            <div class="v-criterion-list">
-              <div class="v-criterion">
-                <span class="v-criterion-label">Критерий: регулярное действие</span>
-                <p class="v-example-en">My boss cycles to work every morning.</p>
-                <p class="v-example-ru">Мой начальник ездит на работу на велосипеде каждое утро.</p>
-              </div>
-              <div class="v-criterion">
-                <span class="v-criterion-label">Критерий: мнение / состояние</span>
-                <p class="v-example-en">I think English is useful.</p>
-                <p class="v-example-ru">Я считаю, что английский полезен.</p>
-              </div>
-            </div>
+        <div class="future-grid">
+          <article class="future-card">
+            <h3>Present Continuous</h3>
+            <p class="future-purpose">Уже организованная договорённость</p>
+            <span class="future-formula">am / is / are + V-ing</span>
+            <p class="future-en">We’re going on holiday tomorrow.</p>
+            <p class="future-ru">Мы завтра едем в отпуск. Поездка уже организована.</p>
           </article>
 
-          <article class="v-tense-lane">
-            <span class="v-tense-tag">СЕЙЧАС · В ЭТОТ ПЕРИОД · ВРЕМЕННО</span>
-            <h3>Present Continuous</h3>
-            <p class="v-tense-formula">am / is / are + verb-ing</p>
-            <div class="v-criterion-list">
-              <div class="v-criterion">
-                <span class="v-criterion-label">Критерий: действие прямо сейчас</span>
-                <p class="v-example-en">We’re having a party right now.</p>
-                <p class="v-example-ru">У нас сейчас вечеринка.</p>
-              </div>
-              <div class="v-criterion">
-                <span class="v-criterion-label">Критерий: временная ситуация</span>
-                <p class="v-example-en">I’m not eating chocolate this month.</p>
-                <p class="v-example-ru">В этом месяце я временно не ем шоколад.</p>
-              </div>
-            </div>
+          <article class="future-card">
+            <h3>be going to</h3>
+            <p class="future-purpose">Намерение / прогноз по видимым признакам</p>
+            <span class="future-formula">am / is / are + going to + V</span>
+            <p class="future-en">He’s going to look for a new job.</p>
+            <p class="future-ru">Он собирается искать новую работу. Решение уже принято.</p>
+          </article>
+
+          <article class="future-card">
+            <h3>will / won’t</h3>
+            <p class="future-purpose">Решение сейчас · обещание · offer · prediction</p>
+            <span class="future-formula">will / won’t + V</span>
+            <p class="future-en">I’ll have the steak.</p>
+            <p class="future-ru">Я возьму стейк. Решение принято прямо сейчас.</p>
+          </article>
+
+          <article class="future-card">
+            <h3>Shall I...? / Shall we...?</h3>
+            <p class="future-purpose">Предложение помощи или совместного действия</p>
+            <span class="future-formula">Shall + I / we + V?</span>
+            <p class="future-en">Shall we invite your parents?</p>
+            <p class="future-ru">Может, пригласим твоих родителей?</p>
           </article>
         </div>
       </section>
 
-      <section class="v-grammar-section">
-        <div class="v-grammar-section-head">
-          <span class="v-grammar-number">1</span>
+      <section class="future-section">
+        <div class="future-section-head">
+          <span class="future-num">1</span>
           <div>
-            <h2>Сравнение Present Simple и Present Continuous</h2>
-            <p>Эта таблица показывает не только, когда использовать каждое время, но и как построить утверждение, отрицание и вопрос.</p>
+            <h2>Как строятся формы</h2>
+            <p>Сравни утверждение, отрицание и вопрос. После will и going to смысловой глагол остаётся в начальной форме.</p>
           </div>
         </div>
 
-        <div class="v-compare-wrap">
-          <table class="v-compare-table">
+        <div class="future-table-wrap">
+          <table class="future-table">
             <thead>
-              <tr>
-                <th>Что строим</th>
-                <th>Present Simple</th>
-                <th>Present Continuous</th>
-              </tr>
+              <tr><th>Форма</th><th>Present Continuous</th><th>be going to</th><th>will</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="v-compare-label">Когда используем</td>
-                <td>
-                  <span class="v-formula">обычно · регулярно · факт · состояние</span>
-                  <p class="v-compare-example">I work every day.</p>
-                  <p class="v-compare-translation">Я работаю каждый день.</p>
-                </td>
-                <td>
-                  <span class="v-formula">сейчас · в текущий период · временно</span>
-                  <p class="v-compare-example">I’m working now.</p>
-                  <p class="v-compare-translation">Я сейчас работаю.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="v-compare-label">Утверждение</td>
-                <td>
-                  <span class="v-formula">I / you / we / they + verb<br>he / she / it + verb-s</span>
-                  <p class="v-compare-example">She plays tennis every Friday.</p>
-                  <p class="v-compare-translation">Она играет в теннис каждую пятницу.</p>
-                </td>
-                <td>
-                  <span class="v-formula">subject + am / is / are + verb-ing</span>
-                  <p class="v-compare-example">She is playing tennis now.</p>
-                  <p class="v-compare-translation">Она сейчас играет в теннис.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="v-compare-label">Отрицание</td>
-                <td>
-                  <span class="v-formula">I / you / we / they + don’t + verb<br>he / she / it + doesn’t + verb</span>
-                  <p class="v-compare-example">She doesn’t play tennis on Mondays.</p>
-                  <p class="v-compare-translation">Она не играет в теннис по понедельникам.</p>
-                </td>
-                <td>
-                  <span class="v-formula">subject + am not / isn’t / aren’t + verb-ing</span>
-                  <p class="v-compare-example">She isn’t playing tennis now.</p>
-                  <p class="v-compare-translation">Она сейчас не играет в теннис.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="v-compare-label">Общий вопрос</td>
-                <td>
-                  <span class="v-formula">Do / Does + subject + verb?</span>
-                  <p class="v-compare-example">Does she play tennis every week?</p>
-                  <p class="v-compare-translation">Она играет в теннис каждую неделю?</p>
-                </td>
-                <td>
-                  <span class="v-formula">Am / Is / Are + subject + verb-ing?</span>
-                  <p class="v-compare-example">Is she playing tennis now?</p>
-                  <p class="v-compare-translation">Она сейчас играет в теннис?</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="v-compare-label">Wh-вопрос</td>
-                <td>
-                  <span class="v-formula">Wh-word + do / does + subject + verb?</span>
-                  <p class="v-compare-example">Where does she usually play tennis?</p>
-                  <p class="v-compare-translation">Где она обычно играет в теннис?</p>
-                </td>
-                <td>
-                  <span class="v-formula">Wh-word + am / is / are + subject + verb-ing?</span>
-                  <p class="v-compare-example">What is she doing right now?</p>
-                  <p class="v-compare-translation">Что она делает прямо сейчас?</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="v-compare-label">Краткий ответ</td>
-                <td>
-                  <span class="v-formula">Yes, she does. / No, she doesn’t.</span>
-                  <p class="v-compare-translation">В ответе повторяем do / does.</p>
-                </td>
-                <td>
-                  <span class="v-formula">Yes, she is. / No, she isn’t.</span>
-                  <p class="v-compare-translation">В ответе повторяем am / is / are.</p>
-                </td>
-              </tr>
+              <tr><td>Утверждение</td><td>I’m meeting Anna.</td><td>I’m going to call her.</td><td>I’ll call her.</td></tr>
+              <tr><td>Отрицание</td><td>I’m not meeting Anna.</td><td>I’m not going to call her.</td><td>I won’t call her.</td></tr>
+              <tr><td>Вопрос</td><td>Are you meeting Anna?</td><td>Are you going to call her?</td><td>Will you call her?</td></tr>
             </tbody>
           </table>
         </div>
 
-        <p class="v-compare-note"><strong>Главное различие:</strong> в Present Simple для вопросов и отрицаний нужен помощник <b>do / does</b>, а в Present Continuous глагол <b>be</b> уже находится внутри конструкции: <b>am / is / are + verb-ing</b>.</p>
+        <div class="future-note"><b>Не ориентируйся только на tomorrow / next week.</b> Например, <i>We’re going on holiday tomorrow</i> — Present Continuous, потому что это arrangement. Важно не время, а причина выбора формы.</div>
       </section>
 
-      <section class="v-grammar-section">
-        <div class="v-grammar-section-head">
-          <span class="v-grammar-number">2</span>
+      <section class="future-section">
+        <div class="future-section-head">
+          <span class="future-num">2</span>
           <div>
-            <h2>Глаголы состояния: почему они обычно не идут в Continuous</h2>
-            <p>Они описывают не действие в процессе, а мнение, чувство, принадлежность, знание или восприятие.</p>
+            <h2>Prediction: will или be going to?</h2>
+            <p>Обе формы могут говорить о будущем, но оттенок часто разный.</p>
           </div>
         </div>
 
-        <div class="v-state-groups">
-          <div class="v-state-group">
-            <strong>Мысли и знания</strong>
-            <div class="v-state-words"><span>believe</span><span>know</span><span>remember</span><span>understand</span><span>think = считать</span></div>
-          </div>
-          <div class="v-state-group">
-            <strong>Чувства и желания</strong>
-            <div class="v-state-words"><span>like</span><span>love</span><span>want</span><span>need</span></div>
-          </div>
-          <div class="v-state-group">
-            <strong>Принадлежность</strong>
-            <div class="v-state-words"><span>belong</span><span>have = иметь</span></div>
-          </div>
-          <div class="v-state-group">
-            <strong>Восприятие</strong>
-            <div class="v-state-words"><span>recognize</span><span>sound</span><span>look = выглядеть</span></div>
-          </div>
-        </div>
-
-        <div class="v-state-note">
-          <strong>Пример:</strong> I believe him. — Я ему верю. Здесь <b>believe</b> — состояние/мнение, поэтому нужен Present Simple, даже если речь идёт о том, что я думаю сейчас.
-        </div>
-      </section>
-
-      <section class="v-grammar-section">
-        <div class="v-grammar-section-head">
-          <span class="v-grammar-number">3</span>
+        <div class="future-contrast">
           <div>
-            <h2>Как образуется форма с -ing</h2>
-            <p>Окончание не всегда просто добавляется. Смотри на последние буквы глагола и на ударение.</p>
+            <h3>will</h3>
+            <p><b>I think you’ll get married before 30.</b><br>Это мнение / прогноз говорящего.</p>
           </div>
-        </div>
-
-        <div class="v-ing-board">
-          <article class="v-ing-rule" data-rule="01">
-            <h3>Обычный случай: просто + ing</h3>
-            <p>Если специальных условий нет, добавляем <b>-ing</b>.</p>
-            <span class="v-ing-pattern">work → working<br>play → playing<br>go → going</span>
-            <em>Конечная y обычно не меняется: study → studying.</em>
-          </article>
-
-          <article class="v-ing-rule" data-rule="02">
-            <h3>Немая -e в конце: убираем e</h3>
-            <p>Если глагол заканчивается на одну немую <b>-e</b>, она исчезает перед <b>-ing</b>.</p>
-            <span class="v-ing-pattern">make → making<br>write → writing<br>have → having</span>
-            <em>Но двойную ee не убираем: see → seeing, agree → agreeing.</em>
-          </article>
-
-          <article class="v-ing-rule" data-rule="03">
-            <h3>-ie в конце: ie → y + ing</h3>
-            <p>Сочетание <b>-ie</b> меняется на <b>y</b>, затем добавляется -ing.</p>
-            <span class="v-ing-pattern">lie → lying<br>die → dying<br>tie → tying</span>
-          </article>
-
-          <article class="v-ing-rule" data-rule="04">
-            <h3>Короткий ударный CVC: удваиваем согласную</h3>
-            <p>Если короткий глагол заканчивается по модели <b>согласная + гласная + согласная</b>, последнюю согласную обычно удваиваем.</p>
-            <div class="v-ing-structure"><span>C</span><span>V</span><span>C</span></div>
-            <span class="v-ing-pattern">run → running<br>sit → sitting<br>stop → stopping</span>
-          </article>
-
-          <article class="v-ing-rule" data-rule="05">
-            <h3>w, x, y обычно не удваиваются</h3>
-            <p>Даже если конец похож на CVC, буквы <b>w, x, y</b> в этой позиции не удваиваем.</p>
-            <span class="v-ing-pattern">snow → snowing<br>fix → fixing<br>play → playing</span>
-          </article>
-
-          <article class="v-ing-rule" data-rule="06">
-            <h3>Длинный глагол: смотри на ударение</h3>
-            <p>Если последний слог ударный и конец CVC, согласную удваиваем. Если ударение не на последнем слоге — обычно нет.</p>
-            <span class="v-ing-pattern">begin → beginning<br>prefer → preferring<br>visit → visiting<br>open → opening</span>
-            <em>В British English: travel → travelling. В American English чаще traveling.</em>
-          </article>
-        </div>
-      </section>
-
-      <section class="v-grammar-section">
-        <div class="v-grammar-section-head">
-          <span class="v-grammar-number">4</span>
           <div>
-            <h2>Один глагол, два значения</h2>
-            <p>Иногда выбор времени зависит не от самого глагола, а от его значения в конкретном предложении.</p>
+            <h3>be going to</h3>
+            <p><b>There’s too much shopping in this bag. It’s going to break.</b><br>Есть видимый признак прямо сейчас.</p>
           </div>
         </div>
 
-        <div class="v-meaning-grid">
-          <article class="v-meaning-card">
-            <h3>think</h3>
-            <div class="v-meaning-pair">
-              <div class="v-meaning-case">
-                <strong>Мнение → Present Simple</strong>
-                <p class="v-example-en">Do you think English is easy?</p>
-                <p class="v-example-ru">Ты считаешь, что английский лёгкий?</p>
-              </div>
-              <div class="v-meaning-case">
-                <strong>Процесс размышления → Continuous</strong>
-                <p class="v-example-en">I’m thinking about what to cook.</p>
-                <p class="v-example-ru">Я сейчас думаю, что приготовить.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="v-meaning-card">
-            <h3>have</h3>
-            <div class="v-meaning-pair">
-              <div class="v-meaning-case">
-                <strong>Иметь / обладать → Present Simple</strong>
-                <p class="v-example-en">I have a car.</p>
-                <p class="v-example-ru">У меня есть машина.</p>
-              </div>
-              <div class="v-meaning-case">
-                <strong>Действие → Continuous</strong>
-                <p class="v-example-en">I’m having lunch right now.</p>
-                <p class="v-example-ru">Я сейчас обедаю.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="v-meaning-card">
-            <h3>look</h3>
-            <div class="v-meaning-pair">
-              <div class="v-meaning-case">
-                <strong>Выглядеть → Present Simple</strong>
-                <p class="v-example-en">That cake looks delicious.</p>
-                <p class="v-example-ru">Этот торт выглядит очень вкусно.</p>
-              </div>
-              <div class="v-meaning-case">
-                <strong>Смотреть → действие</strong>
-                <p class="v-example-en">I’m looking at the cake.</p>
-                <p class="v-example-ru">Я сейчас смотрю на торт.</p>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div class="future-note">В некоторых контекстах возможны две формы. В ключе к Unit 1B для <b>you / get married (a prediction)</b> допускаются <b>you’ll get</b> и <b>you’re going to get</b>.</div>
       </section>
     </div>
   `;
 
-  const ensureStyle = () => {
-    if (document.getElementById('viktoria-grammar-guide-styles')) return;
+  function ensureStyle() {
+    if (document.getElementById('future-grammar-style')) return;
     const style = document.createElement('style');
-    style.id = 'viktoria-grammar-guide-styles';
+    style.id = 'future-grammar-style';
     style.textContent = styles;
     document.head.appendChild(style);
-  };
+  }
 
-  const apply = () => {
+  function apply() {
     if (new URLSearchParams(location.search).get('id') !== TOPIC_ID) return;
     const root = document.getElementById('grammar-topic-root');
     if (!root) return;
@@ -1410,20 +1193,543 @@ if (typeof document !== 'undefined') {
       '#grammar-tables',
       '#grammar-examples',
       '#grammar-mistakes'
-    ].forEach((selector) => root.querySelector(selector)?.classList.add('grammar-bespoke-hidden'));
+    ].forEach((selector) => root.querySelector(selector)?.classList.add('future-hidden'));
 
-    if (!root.querySelector('#viktoria-grammar-guide')) {
-      practice.insertAdjacentHTML('beforebegin', guideHtml);
+    if (!root.querySelector('#future-grammar-guide')) {
+      practice.insertAdjacentHTML('beforebegin', guide);
     }
+  }
 
-    root.dataset.bespokeGrammarApplied = 'true';
-  };
-
-  document.addEventListener('DOMContentLoaded', () => {
+  function start() {
     const root = document.getElementById('grammar-topic-root');
     if (!root) return;
     new MutationObserver(apply).observe(root, { childList: true, subtree: true });
     apply();
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
+  }
 })();
-}
+
+/* Viktoria HW5 · Opposite adjectives with negative prefixes */
+(() => {
+  'use strict';
+
+  const TOPIC_ID = 'opposite-adjectives-negative-prefixes';
+  const topic = {
+    id: TOPIC_ID,
+    order: 3,
+    linkedLessonId: 'lesson-5',
+    title: 'Opposite adjectives with negative prefixes',
+    level: 'A2.2',
+    status: 'available',
+    publishedAt: '2026-10-26',
+    page: 'grammar-topic.html?id=opposite-adjectives-negative-prefixes',
+    lockOnPass: true,
+    revealAnswersOnError: false,
+
+    explanation: 'В английском противоположное значение многих прилагательных образуется отрицательной приставкой. Но одной универсальной приставки нет: конкретную форму нужно запоминать вместе со словом.',
+    formula: 'un- · dis- · im- · in- · ir- + adjective → opposite meaning',
+
+    glanceCards: [
+      {
+        icon: 'un',
+        label: 'un-',
+        hint: 'Самая частая приставка в этой группе.',
+        pattern: 'un + adjective',
+        example: 'reliable → unreliable'
+      },
+      {
+        icon: 'dis',
+        label: 'dis-',
+        hint: 'Используется с некоторыми прилагательными, но не со всеми.',
+        pattern: 'dis + adjective',
+        example: 'honest → dishonest'
+      },
+      {
+        icon: 'im',
+        label: 'im-',
+        hint: 'В этой теме используется с mature и patient.',
+        pattern: 'im + adjective',
+        example: 'patient → impatient'
+      },
+      {
+        icon: 'in/ir',
+        label: 'in- / ir-',
+        hint: 'Форма зависит от конкретного слова.',
+        pattern: 'in + adjective / ir + adjective',
+        example: 'sensitive → insensitive · responsible → irresponsible'
+      }
+    ],
+
+    miniRules: [
+      {
+        title: 'un-',
+        text: 'В Unit 1B эта приставка используется с reliable, ambitious, imaginative, sociable, friendly, kind и selfish.',
+        example: 'unreliable · unambitious · unimaginative · unsociable · unfriendly · unkind · unselfish'
+      },
+      {
+        title: 'dis-',
+        text: 'В Unit 1B dis- используется с honest и organized.',
+        example: 'dishonest · disorganized'
+      },
+      {
+        title: 'im-',
+        text: 'В Unit 1B im- используется с mature и patient.',
+        example: 'immature · impatient'
+      },
+      {
+        title: 'in-',
+        text: 'В Unit 1B in- используется с sensitive.',
+        example: 'insensitive'
+      },
+      {
+        title: 'ir-',
+        text: 'В Unit 1B ir- используется с responsible.',
+        example: 'irresponsible'
+      },
+      {
+        title: 'Почему нельзя угадывать приставку',
+        text: 'Приставка является частью словарной формы. Нельзя взять любое прилагательное и механически добавить понравившуюся приставку.',
+        example: 'reliable → unreliable, но responsible → irresponsible'
+      }
+    ],
+
+    tables: [
+      {
+        title: 'Negative prefixes из Unit 1B',
+        headers: ['Приставка', 'Исходное слово', 'Противоположное слово'],
+        rows: [
+          ['dis-', 'honest', 'dishonest'],
+          ['dis-', 'organized', 'disorganized'],
+          ['im-', 'mature', 'immature'],
+          ['im-', 'patient', 'impatient'],
+          ['in-', 'sensitive', 'insensitive'],
+          ['ir-', 'responsible', 'irresponsible'],
+          ['un-', 'reliable', 'unreliable'],
+          ['un-', 'ambitious', 'unambitious'],
+          ['un-', 'imaginative', 'unimaginative'],
+          ['un-', 'sociable', 'unsociable'],
+          ['un-', 'friendly', 'unfriendly'],
+          ['un-', 'kind', 'unkind'],
+          ['un-', 'selfish', 'unselfish']
+        ]
+      }
+    ],
+
+    exampleGroups: [
+      {
+        title: 'Пары, которые нужно учить вместе',
+        items: [
+          'honest ↔ dishonest',
+          'mature ↔ immature',
+          'reliable ↔ unreliable',
+          'sensitive ↔ insensitive',
+          'responsible ↔ irresponsible',
+          'patient ↔ impatient'
+        ]
+      }
+    ],
+
+    commonMistakes: [
+      'unhonest ✗ → dishonest ✓',
+      'unmature ✗ → immature ✓',
+      'irreliable ✗ → unreliable ✓',
+      'unsensitive ✗ → insensitive ✓',
+      'unresponsible ✗ → irresponsible ✓',
+      'unpatient ✗ → impatient ✓',
+      'Главное: не угадывать приставку, а учить слово как пару.'
+    ],
+
+    exercises: [
+      {
+        id: 'prefix-practice-1',
+        title: 'Выбери правильную противоположную форму',
+        difficulty: 'Легко',
+        instructions: 'Выбери правильный вариант.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, input: 'select', prompt: 'honest →', options: ['unhonest', 'dishonest', 'inhonest'], answer: 1 },
+          { id: '2', number: 2, input: 'select', prompt: 'mature →', options: ['immature', 'unmature', 'dismature'], answer: 0 },
+          { id: '3', number: 3, input: 'select', prompt: 'reliable →', options: ['irreliable', 'disreliable', 'unreliable'], answer: 2 },
+          { id: '4', number: 4, input: 'select', prompt: 'sensitive →', options: ['insensitive', 'unsensitive', 'dissensitive'], answer: 0 },
+          { id: '5', number: 5, input: 'select', prompt: 'responsible →', options: ['unresponsible', 'irresponsible', 'disresponsible'], answer: 1 },
+          { id: '6', number: 6, input: 'select', prompt: 'patient →', options: ['unpatient', 'impatient', 'inpatient'], answer: 1 }
+        ]
+      },
+      {
+        id: 'prefix-practice-2',
+        title: 'Напиши противоположное слово',
+        difficulty: 'Средне',
+        instructions: 'Напиши противоположную форму полностью.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, prompt: 'ambitious →', input: 'text', answer: 'unambitious' },
+          { id: '2', number: 2, prompt: 'imaginative →', input: 'text', answer: 'unimaginative' },
+          { id: '3', number: 3, prompt: 'organized →', input: 'text', answer: 'disorganized' },
+          { id: '4', number: 4, prompt: 'sociable →', input: 'text', answer: 'unsociable' },
+          { id: '5', number: 5, prompt: 'friendly →', input: 'text', answer: 'unfriendly' },
+          { id: '6', number: 6, prompt: 'kind →', input: 'text', answer: 'unkind' },
+          { id: '7', number: 7, prompt: 'selfish →', input: 'text', answer: 'unselfish' }
+        ]
+      },
+      {
+        id: 'prefix-practice-3',
+        title: 'Выбери приставку',
+        difficulty: 'Средне',
+        instructions: 'Выбери приставку, которая используется в этом слове.',
+        hideAnswersOnError: true,
+        items: [
+          { id: '1', number: 1, input: 'single', prompt: '___honest', options: ['un-', 'dis-', 'im-'], answer: 1 },
+          { id: '2', number: 2, input: 'single', prompt: '___mature', options: ['un-', 'im-', 'ir-'], answer: 1 },
+          { id: '3', number: 3, input: 'single', prompt: '___sensitive', options: ['in-', 'un-', 'dis-'], answer: 0 },
+          { id: '4', number: 4, input: 'single', prompt: '___responsible', options: ['ir-', 'im-', 'un-'], answer: 0 },
+          { id: '5', number: 5, input: 'single', prompt: '___reliable', options: ['ir-', 'dis-', 'un-'], answer: 2 }
+        ]
+      }
+    ]
+  };
+
+  window.GRAMMAR_DATA = Array.isArray(window.GRAMMAR_DATA) ? window.GRAMMAR_DATA : [];
+  if (!window.GRAMMAR_DATA.some((item) => item?.id === TOPIC_ID)) {
+    window.GRAMMAR_DATA.push(topic);
+  }
+
+  if (typeof document === 'undefined') return;
+
+  const styles = `
+    .prefix-hidden { display: none !important; }
+
+    .prefix-guide {
+      display: grid;
+      gap: 26px;
+      margin-bottom: 34px;
+    }
+
+    .prefix-guide * { box-sizing: border-box; }
+
+    .prefix-section {
+      padding: 27px 28px 30px;
+      border: 1px solid #dbe3ef;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(15,23,42,.045);
+    }
+
+    .prefix-hero {
+      background:
+        radial-gradient(circle at 92% 6%, rgba(79,70,229,.12), transparent 30%),
+        linear-gradient(135deg,#fff,#f8f9ff);
+    }
+
+    .prefix-kicker {
+      margin: 0 0 7px;
+      color: #4f46e5;
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .prefix-guide h2 {
+      margin: 0;
+      color: #111827;
+      font-size: clamp(1.45rem,2.5vw,2rem);
+      line-height: 1.15;
+    }
+
+    .prefix-lead {
+      max-width: 860px;
+      margin: 10px 0 0;
+      color: #5c687d;
+      line-height: 1.65;
+    }
+
+    .prefix-pairs {
+      display: grid;
+      grid-template-columns: repeat(5,minmax(0,1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .prefix-card {
+      padding: 15px;
+      border: 1px solid #e2e8f0;
+      border-radius: 15px;
+      background: #fbfcfe;
+    }
+
+    .prefix-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #4f46e5;
+      font-size: 1.08rem;
+    }
+
+    .prefix-card span {
+      display: block;
+      color: #334155;
+      line-height: 1.62;
+    }
+
+    .prefix-section-head {
+      display: grid;
+      grid-template-columns: auto minmax(0,1fr);
+      gap: 13px;
+      align-items: start;
+      margin-bottom: 19px;
+    }
+
+    .prefix-num {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #111827;
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .prefix-section-head p {
+      margin: 5px 0 0;
+      color: #64748b;
+      line-height: 1.55;
+    }
+
+    .prefix-table-wrap { overflow-x: auto; }
+
+    .prefix-table {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border: 1px solid #dbe3ef;
+      border-radius: 16px;
+    }
+
+    .prefix-table th,
+    .prefix-table td {
+      padding: 12px 14px;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .prefix-table th:last-child,
+    .prefix-table td:last-child { border-right: 0; }
+
+    .prefix-table tr:last-child td { border-bottom: 0; }
+
+    .prefix-table th {
+      background: #111827;
+      color: #fff;
+    }
+
+    .prefix-table td:first-child {
+      background: #f8fafc;
+      color: #4338ca;
+      font-weight: 900;
+    }
+
+    .prefix-note {
+      margin-top: 14px;
+      padding: 13px 15px;
+      border-left: 4px solid #6366f1;
+      border-radius: 0 13px 13px 0;
+      background: #f5f7ff;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .prefix-compare {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 12px;
+    }
+
+    .prefix-compare > div {
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 15px;
+      background: #fbfcfe;
+    }
+
+    .prefix-compare h3 {
+      margin: 0 0 8px;
+      color: #111827;
+    }
+
+    .prefix-compare p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 820px) {
+      .prefix-pairs,
+      .prefix-compare {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .prefix-section {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .prefix-section-head { grid-template-columns: 1fr; }
+    }
+  `;
+
+  const guide = `
+    <div class="prefix-guide" id="prefix-grammar-guide">
+      <section class="prefix-section prefix-hero">
+        <p class="prefix-kicker">Opposite adjectives</p>
+        <h2>Negative prefixes: приставку нельзя выбирать случайно</h2>
+        <p class="prefix-lead">Приставка меняет значение прилагательного на противоположное. Но нет правила «всегда добавляй un-». Форму нужно учить вместе с исходным словом.</p>
+
+        <div class="prefix-pairs">
+          <div class="prefix-card">
+            <strong>dis-</strong>
+            <span>honest → <b>dishonest</b></span>
+            <span>organized → <b>disorganized</b></span>
+          </div>
+          <div class="prefix-card">
+            <strong>im-</strong>
+            <span>mature → <b>immature</b></span>
+            <span>patient → <b>impatient</b></span>
+          </div>
+          <div class="prefix-card">
+            <strong>in-</strong>
+            <span>sensitive → <b>insensitive</b></span>
+          </div>
+          <div class="prefix-card">
+            <strong>ir-</strong>
+            <span>responsible → <b>irresponsible</b></span>
+          </div>
+          <div class="prefix-card">
+            <strong>un-</strong>
+            <span>reliable → <b>unreliable</b></span>
+            <span>friendly → <b>unfriendly</b></span>
+            <span>kind → <b>unkind</b></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="prefix-section">
+        <div class="prefix-section-head">
+          <span class="prefix-num">1</span>
+          <div>
+            <h2>Все формы из Unit 1B</h2>
+            <p>Эти пары нужно запоминать как словарные единицы.</p>
+          </div>
+        </div>
+
+        <div class="prefix-table-wrap">
+          <table class="prefix-table">
+            <thead>
+              <tr><th>Приставка</th><th>Исходное слово</th><th>Противоположное слово</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>dis-</td><td>honest</td><td>dishonest</td></tr>
+              <tr><td>dis-</td><td>organized</td><td>disorganized</td></tr>
+              <tr><td>im-</td><td>mature</td><td>immature</td></tr>
+              <tr><td>im-</td><td>patient</td><td>impatient</td></tr>
+              <tr><td>in-</td><td>sensitive</td><td>insensitive</td></tr>
+              <tr><td>ir-</td><td>responsible</td><td>irresponsible</td></tr>
+              <tr><td>un-</td><td>reliable</td><td>unreliable</td></tr>
+              <tr><td>un-</td><td>ambitious</td><td>unambitious</td></tr>
+              <tr><td>un-</td><td>imaginative</td><td>unimaginative</td></tr>
+              <tr><td>un-</td><td>sociable</td><td>unsociable</td></tr>
+              <tr><td>un-</td><td>friendly</td><td>unfriendly</td></tr>
+              <tr><td>un-</td><td>kind</td><td>unkind</td></tr>
+              <tr><td>un-</td><td>selfish</td><td>unselfish</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="prefix-section">
+        <div class="prefix-section-head">
+          <span class="prefix-num">2</span>
+          <div>
+            <h2>Почему нельзя угадывать приставку</h2>
+            <p>Слова похожи по смыслу, но используют разные отрицательные приставки.</p>
+          </div>
+        </div>
+
+        <div class="prefix-compare">
+          <div>
+            <h3>responsible → irresponsible</h3>
+            <p>Здесь используется <b>ir-</b>, а не un-. Поэтому <i>unresponsible</i> для этого упражнения неверно.</p>
+          </div>
+          <div>
+            <h3>reliable → unreliable</h3>
+            <p>Здесь используется <b>un-</b>, а не ir-. Поэтому <i>irreliable</i> неверно.</p>
+          </div>
+          <div>
+            <h3>mature → immature</h3>
+            <p>Нужна форма <b>immature</b>, а не <i>unmature</i>.</p>
+          </div>
+          <div>
+            <h3>honest → dishonest</h3>
+            <p>Нужна форма <b>dishonest</b>, а не <i>unhonest</i>.</p>
+          </div>
+        </div>
+
+        <div class="prefix-note"><b>Лучший способ:</b> учить пары целиком: <b>honest ↔ dishonest</b>, <b>patient ↔ impatient</b>, <b>reliable ↔ unreliable</b>.</div>
+      </section>
+    </div>
+  `;
+
+  function ensureStyle() {
+    if (document.getElementById('prefix-grammar-style')) return;
+    const style = document.createElement('style');
+    style.id = 'prefix-grammar-style';
+    style.textContent = styles;
+    document.head.appendChild(style);
+  }
+
+  function apply() {
+    if (new URLSearchParams(location.search).get('id') !== TOPIC_ID) return;
+    const root = document.getElementById('grammar-topic-root');
+    if (!root) return;
+    const practice = root.querySelector('#grammar-practice-section');
+    if (!practice) return;
+
+    ensureStyle();
+
+    [
+      '.grammar-intro-card',
+      '#grammar-at-a-glance',
+      '#grammar-rule-map',
+      '#grammar-tables',
+      '#grammar-examples',
+      '#grammar-mistakes'
+    ].forEach((selector) => root.querySelector(selector)?.classList.add('prefix-hidden'));
+
+    if (!root.querySelector('#prefix-grammar-guide')) {
+      practice.insertAdjacentHTML('beforebegin', guide);
+    }
+  }
+
+  function start() {
+    const root = document.getElementById('grammar-topic-root');
+    if (!root) return;
+    new MutationObserver(apply).observe(root, { childList: true, subtree: true });
+    apply();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
+  }
+})();
