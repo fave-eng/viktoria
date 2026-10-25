@@ -1,0 +1,553 @@
+{
+  "id": "lesson-4",
+  "number": 4,
+  "title": "1B Modern families",
+  "subtitle": "Vocabulary: family + adjectives of personality",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-4",
+  "grammarIds": [],
+  "publishedAt": "2026-10-26",
+  "totalPoints": 35,
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "exercise",
+      "id": "1a",
+      "title": "1 · Family connections",
+      "instructions": "Choose the correct family word. Read the whole definition before choosing.",
+      "items": [
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Your grandfather’s father is your ...",
+          "input": "select",
+          "options": [
+            "great-grandfather",
+            "stepfather",
+            "brother-in-law",
+            "nephew"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "A child who has no brothers or sisters is an ...",
+          "input": "select",
+          "options": [
+            "adopted child",
+            "only child",
+            "half-sister",
+            "niece"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Your brother’s or sister’s daughter is your ...",
+          "input": "select",
+          "options": [
+            "niece",
+            "stepsister",
+            "sister-in-law",
+            "cousin"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "A child whose parents take them into their family and treat them as their own is an ...",
+          "input": "select",
+          "options": [
+            "only child",
+            "adopted child",
+            "nephew",
+            "stepchild"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Your partner, children, parents, and brothers and sisters are your ... family.",
+          "input": "select",
+          "options": [
+            "extended",
+            "immediate",
+            "adopted",
+            "step"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Your father’s new wife is your ...",
+          "input": "select",
+          "options": [
+            "stepmother",
+            "mother-in-law",
+            "stepsister",
+            "half-sister"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "Your wife or husband’s brother is your ...",
+          "input": "select",
+          "options": [
+            "stepbrother",
+            "brother-in-law",
+            "nephew",
+            "cousin"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "A sister who shares one parent with you is your ...",
+          "input": "select",
+          "options": [
+            "stepsister",
+            "half-sister",
+            "sister-in-law",
+            "niece"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "Your brothers and sisters are your ...",
+          "input": "select",
+          "options": [
+            "siblings",
+            "relatives",
+            "cousins",
+            "parents"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "11",
+          "number": 11,
+          "prompt": "Your grandparents, aunts, uncles and cousins are your ... family.",
+          "input": "select",
+          "options": [
+            "immediate",
+            "extended",
+            "step",
+            "adopted"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "12",
+          "number": 12,
+          "prompt": "Your brother’s or sister’s son is your ...",
+          "input": "select",
+          "options": [
+            "nephew",
+            "brother-in-law",
+            "stepbrother",
+            "grandson"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "13",
+          "number": 13,
+          "prompt": "Your stepmother’s or stepfather’s daughter from an earlier relationship is your ...",
+          "input": "select",
+          "options": [
+            "half-sister",
+            "stepsister",
+            "niece",
+            "sister-in-law"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1a-review",
+      "title": "2 · Who is who?",
+      "instructions": "Choose the family word that matches each situation.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Mia and Ben have the same mother, but different fathers. Mia is Ben’s ...",
+          "input": "single",
+          "options": [
+            "stepsister",
+            "half-sister",
+            "niece"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Leo’s wife has a brother called Max. Max is Leo’s ...",
+          "input": "single",
+          "options": [
+            "brother-in-law",
+            "stepbrother",
+            "nephew"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Eva’s parents have no other children. Eva is an ...",
+          "input": "single",
+          "options": [
+            "only child",
+            "adopted child",
+            "extended family member"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Sam’s mother married Paul. Paul already had a daughter, Lily. Lily is Sam’s ...",
+          "input": "single",
+          "options": [
+            "half-sister",
+            "stepsister",
+            "niece"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Anna’s sister has a son called Tom. Tom is Anna’s ...",
+          "input": "single",
+          "options": [
+            "nephew",
+            "brother-in-law",
+            "great-grandfather"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Parents, children and siblings are usually part of your ... family.",
+          "input": "single",
+          "options": [
+            "extended",
+            "immediate",
+            "step"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1b",
+      "title": "3 · What are they like?",
+      "instructions": "Match each comment to the personality adjective from the list.",
+      "wordBank": [
+        "ambitious",
+        "anxious",
+        "honest",
+        "independent",
+        "insecure",
+        "patient",
+        "rebellious",
+        "self-confident",
+        "selfish",
+        "sensible",
+        "stubborn"
+      ],
+      "items": [
+        {
+          "id": "2",
+          "number": 2,
+          "segments": [
+            "I find it very hard to relax. Sometimes I lie awake at night for hours worrying about things. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "anxious",
+            "patient",
+            "self-confident",
+            "sensible"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "segments": [
+            "There aren’t any prawns left for you. I was hungry, so I ate them all. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "honest",
+            "selfish",
+            "patient",
+            "independent"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "segments": [
+            "I’m going to go to bed early so I can sleep well before my exam tomorrow. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "rebellious",
+            "sensible",
+            "stubborn",
+            "insecure"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "segments": [
+            "I feel very comfortable when I’m speaking in public. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "anxious",
+            "self-confident",
+            "insecure",
+            "patient"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "segments": [
+            "I’d like to be the manager of a big multinational company. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "ambitious",
+            "selfish",
+            "honest",
+            "patient"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "segments": [
+            "That’s what I think, and I’m not going to change my mind. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "sensible",
+            "stubborn",
+            "independent",
+            "anxious"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "segments": [
+            "I’d prefer to do this on my own, thanks. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "independent",
+            "insecure",
+            "selfish",
+            "rebellious"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "segments": [
+            "I was a really difficult teenager. I didn’t obey any rules at school or home. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "patient",
+            "honest",
+            "rebellious",
+            "self-confident"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "segments": [
+            "Take your time, I can wait. I’m not in a hurry. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "patient",
+            "ambitious",
+            "stubborn",
+            "selfish"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "11",
+          "number": 11,
+          "segments": [
+            "Excuse me. You dropped some money. Here it is. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "sensible",
+            "honest",
+            "independent",
+            "insecure"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "12",
+          "number": 12,
+          "segments": [
+            "I’m not sure if Jess is my friend or not. She says she is, but I don’t really know. → ",
+            ""
+          ],
+          "input": "select",
+          "options": [
+            "self-confident",
+            "insecure",
+            "patient",
+            "ambitious"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1b-review",
+      "title": "4 · Personality in real life",
+      "instructions": "Choose the adjective that best describes the person.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Nina keeps trying to get promoted and wants to run the company one day.",
+          "input": "single",
+          "options": [
+            "ambitious",
+            "patient",
+            "insecure"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Oleg admits that he broke the plate instead of blaming someone else.",
+          "input": "single",
+          "options": [
+            "selfish",
+            "honest",
+            "rebellious"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Sara can wait for a long time without getting annoyed.",
+          "input": "single",
+          "options": [
+            "patient",
+            "stubborn",
+            "anxious"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Daniel doesn’t need other people to organize everything for him.",
+          "input": "single",
+          "options": [
+            "independent",
+            "insecure",
+            "spoilt"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Lena worries that other people don’t really like her.",
+          "input": "single",
+          "options": [
+            "self-confident",
+            "insecure",
+            "sensible"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Max knows he should revise tonight instead of staying up late gaming.",
+          "input": "single",
+          "options": [
+            "rebellious",
+            "sensible",
+            "selfish"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "1b-writing",
+      "title": "5 · Describe two people",
+      "instructions": "Choose two people you know. Describe their relationship to you and their personalities. Use at least two family words and four personality adjectives from this lesson.",
+      "items": [
+        {
+          "id": "writing",
+          "number": "",
+          "input": "textarea",
+          "scored": false,
+          "placeholder": "Example: My cousin Anna is very independent and self-confident. My brother is patient, but he can also be stubborn..."
+        }
+      ]
+    }
+  ]
+}

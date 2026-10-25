@@ -71,5 +71,43 @@ window.VOCABULARY_DATA = [
       { id: "v2-get-up", en: "get up", ru: "вставать, подниматься с постели", exampleEn: "We don’t usually get up late.", exampleRu: "Мы обычно не встаём поздно." },
       { id: "v2-try-to", en: "try to", ru: "стараться, пытаться", exampleEn: "She’s trying to be healthier.", exampleRu: "Она старается вести более здоровый образ жизни." }
     ]
+  },
+  {
+    id: "vocab-lesson-4",
+    order: 4,
+    title: "1B Modern families",
+    label: "Homework #4 · Family and personality",
+    icon: "👥",
+    type: "lesson",
+    linkedLessonId: "lesson-4",
+    publishedAt: "2026-10-26",
+    page: "vocabulary.html?id=vocab-lesson-4",
+    words: [
+      { id: "v4-great-grandfather", en: "great-grandfather", ru: "прадедушка", exampleEn: "My great-grandfather lived to be 94.", exampleRu: "Мой прадедушка прожил до 94 лет." },
+      { id: "v4-only-child", en: "only child", ru: "единственный ребёнок в семье", exampleEn: "I’m an only child, so I don’t have any siblings.", exampleRu: "Я единственный ребёнок в семье, поэтому у меня нет братьев или сестёр." },
+      { id: "v4-niece", en: "niece", ru: "племянница", exampleEn: "My niece is my sister’s daughter.", exampleRu: "Моя племянница — дочь моей сестры." },
+      { id: "v4-adopted-child", en: "adopted child", ru: "усыновлённый / удочерённый ребёнок", exampleEn: "They welcomed an adopted child into their family.", exampleRu: "Они приняли в свою семью усыновлённого ребёнка." },
+      { id: "v4-immediate-family", en: "immediate family", ru: "ближайшие родственники, ближайшая семья", exampleEn: "My immediate family includes my parents and siblings.", exampleRu: "К моей ближайшей семье относятся родители и братья с сёстрами." },
+      { id: "v4-stepmother", en: "stepmother", ru: "мачеха", exampleEn: "His father remarried, so he now has a stepmother.", exampleRu: "Его отец снова женился, поэтому теперь у него есть мачеха." },
+      { id: "v4-brother-in-law", en: "brother-in-law", ru: "шурин / деверь / зять; брат супруга или муж сестры", exampleEn: "My brother-in-law is my wife’s brother.", exampleRu: "Мой brother-in-law — брат моей жены." },
+      { id: "v4-half-sister", en: "half-sister", ru: "единокровная / единоутробная сестра", exampleEn: "We have the same mother, so she is my half-sister.", exampleRu: "У нас одна мать, поэтому она моя сводная сестра по одному родителю." },
+      { id: "v4-siblings", en: "siblings", ru: "братья и сёстры", exampleEn: "I have two siblings: a brother and a sister.", exampleRu: "У меня двое братьев и сестёр: брат и сестра." },
+      { id: "v4-extended-family", en: "extended family", ru: "расширенная семья, дальние родственники", exampleEn: "Our extended family gets together at New Year.", exampleRu: "Наша большая семья собирается вместе на Новый год." },
+      { id: "v4-nephew", en: "nephew", ru: "племянник", exampleEn: "My nephew is my brother’s son.", exampleRu: "Мой племянник — сын моего брата." },
+      { id: "v4-stepsister", en: "stepsister", ru: "сводная сестра (без общего родителя)", exampleEn: "My dad’s new wife has a daughter, so she is my stepsister.", exampleRu: "У новой жены моего отца есть дочь, поэтому она моя сводная сестра." },
+
+      { id: "v4-spoilt", en: "spoilt", ru: "избалованный", exampleEn: "He is spoilt because his parents give him everything he wants.", exampleRu: "Он избалован, потому что родители дают ему всё, что он хочет." },
+      { id: "v4-anxious", en: "anxious", ru: "тревожный, беспокойный", exampleEn: "She gets anxious before important exams.", exampleRu: "Она тревожится перед важными экзаменами." },
+      { id: "v4-selfish", en: "selfish", ru: "эгоистичный", exampleEn: "It was selfish to eat all the food and leave none for anyone else.", exampleRu: "Было эгоистично съесть всю еду и ничего не оставить другим." },
+      { id: "v4-sensible", en: "sensible", ru: "разумный, благоразумный", exampleEn: "It was sensible to go to bed early before the exam.", exampleRu: "Было разумно лечь спать пораньше перед экзаменом." },
+      { id: "v4-self-confident", en: "self-confident", ru: "уверенный в себе", exampleEn: "She is self-confident when she speaks in public.", exampleRu: "Она уверена в себе, когда выступает на публике." },
+      { id: "v4-ambitious", en: "ambitious", ru: "амбициозный, целеустремлённый", exampleEn: "He is ambitious and wants to run a large company.", exampleRu: "Он амбициозен и хочет руководить крупной компанией." },
+      { id: "v4-stubborn", en: "stubborn", ru: "упрямый", exampleEn: "He is stubborn and rarely changes his mind.", exampleRu: "Он упрямый и редко меняет своё мнение." },
+      { id: "v4-independent", en: "independent", ru: "самостоятельный, независимый", exampleEn: "She is independent and likes doing things on her own.", exampleRu: "Она самостоятельная и любит делать всё сама." },
+      { id: "v4-rebellious", en: "rebellious", ru: "бунтарский, непокорный", exampleEn: "He was rebellious as a teenager and often broke the rules.", exampleRu: "В подростковом возрасте он был бунтарём и часто нарушал правила." },
+      { id: "v4-patient", en: "patient", ru: "терпеливый", exampleEn: "A patient person can wait without getting annoyed.", exampleRu: "Терпеливый человек может ждать, не раздражаясь." },
+      { id: "v4-honest", en: "honest", ru: "честный", exampleEn: "She was honest and returned the money she found.", exampleRu: "Она поступила честно и вернула найденные деньги." },
+      { id: "v4-insecure", en: "insecure", ru: "неуверенный в себе", exampleEn: "He feels insecure about whether people really like him.", exampleRu: "Он не уверен в себе и переживает, действительно ли он нравится людям." }
+    ]
   }
 ];
